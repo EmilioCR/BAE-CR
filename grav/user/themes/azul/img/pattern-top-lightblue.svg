@@ -1,0 +1,38 @@
+<svg width="214" height="71" viewBox="0 0 214 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Mask Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12580 -1478)">
+<g id="Mask Group" opacity="0.6">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Rectangle 6">
+<use xlink:href="#path0_fill" transform="matrix(-0.999979 0.00647157 -0.00647157 -0.999979 12794.6 1606.53)" fill="#FFFFFF"/>
+</g>
+</mask>
+<g id="Group 6.2" mask="url(#mask0_alpha)">
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12813.4 1468.62)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12801.3 1455.6)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12789.2 1442.57)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12777.1 1429.55)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12765 1416.52)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.825142 0.564925 -0.680356 -0.732881 12752.9 1403.5)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 271.557 0L 271.557 128.531L 0 128.531L 0 0Z"/>
+<path id="path1_stroke" d="M 0 -3.5C -1.933 -3.5 -3.5 -1.933 -3.5 0C -3.5 1.933 -1.933 3.5 0 3.5L 0 -3.5ZM 170.455 27.8873C 172.145 26.9495 172.755 24.819 171.817 23.1288C 170.879 21.4385 168.749 20.8286 167.058 21.7664L 170.455 27.8873ZM 0 3.5C 26.5994 3.5 58.0824 12.2273 90.5204 27.9754L 93.5776 21.6783C 60.5585 5.64807 28.006 -3.5 0 -3.5L 0 3.5ZM 90.5204 27.9754C 124.532 44.4877 157.805 34.9056 170.455 27.8873L 167.058 21.7664C 155.843 27.9891 125.023 36.9444 93.5776 21.6783L 90.5204 27.9754Z"/>
+<path id="path2_stroke" d="M 0 -3.5C -1.933 -3.5 -3.5 -1.933 -3.5 0C -3.5 1.933 -1.933 3.5 0 3.5L 0 -3.5ZM 170.455 27.8873C 172.145 26.9495 172.755 24.819 171.817 23.1288C 170.879 21.4385 168.749 20.8286 167.058 21.7664L 170.455 27.8873ZM 0 3.5C 26.5994 3.5 58.0824 12.2273 90.5204 27.9754L 93.5776 21.6783C 60.5585 5.64807 28.006 -3.5 0 -3.5L 0 3.5ZM 90.5204 27.9754C 124.532 44.4877 157.805 34.9056 170.455 27.8873L 167.058 21.7664C 155.843 27.9891 125.023 36.9444 93.5776 21.6783L 90.5204 27.9754Z"/>
+</defs>
+</svg>

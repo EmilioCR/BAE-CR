@@ -1,0 +1,80 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+	<div class="intro section-pattern section-pattern-lightblue section-how-is-BAE">
+		<div class="howIsBAE">
+			<h1>{{ header.about_title }}</h1>
+			<p>{{ header.about_text }}</p>			
+		</div>
+		<div>
+			{% set image_parts = pathinfo(header.about_image) %}
+			{% set image_basename = image_parts.basename %}
+			{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+
+			{{ image_page.media[image_basename].resize(600).html() }}		
+		</div>
+
+	</div>
+
+	<div class="section-pattern section-pattern-lightblue-left goal">
+		<div class="goal-info">
+			<h2>{{header.goal_title}}</h2>
+			<p>{{header.goal_content}}</p>			
+		</div>
+
+		<div>
+			{% set image_parts = pathinfo(header.goal_image) %}
+			{% set image_basename = image_parts.basename %}
+			{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+
+			{{ image_page.media[image_basename].resize(600).html() }}
+		</div>
+	</div>
+
+    <div class="tabs">
+        <h2>Logros</h2>
+        <ul>
+            <li>{{header.achieve_first_title}}</li>
+            <li>{{header.achieve_second_title}}</li>
+            <li>{{header.achieve_third_title}}</li>
+            <li>{{header.achieve_fourth_title}}</li>
+        </ul>
+    
+        <div class="tabs-content">
+            <article>
+                <img src="{{(header.achieve_first_image|first).path}}" alt="">
+                <p>{{header.achieve_first_content}}</p>   
+            </article>
+            <article>
+                <img src="{{(header.achieve_second_image|first).path}}" alt="">
+                <p>{{header.achieve_second_content}}</p>
+            </article>
+            <article>
+                <img src="{{(header.achieve_third_image|first).path}}" alt="">
+                <p>{{header.achieve_third_content}}</p>
+            </article>
+            <article>
+                <img src="{{(header.achieve_fourth_image|first).path}}" alt="">
+                <p>{{header.achieve_fourth_content}}</p>
+            </article>
+        </div>
+        
+    </div>
+
+	<div class="team">
+		<div class="team-info">
+			<h3>{{header.team_title}}</h3>
+			<p>{{header.team_content}}</p>			
+		</div>
+
+		<ul>
+			{% for member in header.team_list %}
+			    <li> <img src="{{(member.member_image|first).path}}" alt=""></li>
+			    <li> <h4>{{member.member_name}}</h4></li>
+			    <li> <h5> Coordinador {{member.organization_name}}</h5></li>
+			{% endfor %}
+		</ul>
+	</div>
+
+{% endblock %}

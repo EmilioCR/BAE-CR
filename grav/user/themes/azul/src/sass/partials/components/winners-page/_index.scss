@@ -1,0 +1,117 @@
+.intro-winners {
+    display: flex;
+    flex-direction: column;
+    padding: 82px 0 170px 100px;
+    
+    h1 {
+        color: $c-blue; 
+        padding-bottom: 3%;
+    }
+    
+} 
+
+.intro-winners-info {
+    position: absolute;
+    width: 480px;
+    display: inline-block;
+    margin: 6% 60%;  
+    font-family: $body-font;
+
+    a {
+        margin-top: 12%; 
+        font-size: 20px; 
+        background-color: $c-blue;
+        color: #fff;      
+    }
+}
+
+.header-winners-image {
+    margin-top: 178px;
+    width: 440px;
+    position: absolute;
+}
+
+.section-indicators {
+    margin-top: 265px;
+    padding: 70px;
+    width: 100%;
+    background: url(../img/pattern-white-cover.svg) no-repeat  $c-lightgray;
+    background-size: cover;
+    
+    h1 {
+        color: $c-blue; 
+        padding-bottom: 3%;
+    }
+    
+    .indicators {
+        margin: 0 auto;
+        padding: 200px;
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: center;
+
+        div {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            margin-left: 128px;
+            border-radius: 50%;
+            background-color: $c-green;
+            border: 8px solid #AEE8AD;     
+            color: white;
+            font-size: 50px;
+            align-items: center;
+            justify-content: center;
+            
+            span {
+                padding: 80px;
+            }
+
+            p {
+                position: absolute;
+                margin-top: 130px;
+                font-family: $body-font;
+                font-weight: 700;
+            }
+        }   
+
+        .category-indicator {
+            border-radius: 4px;
+            font-size: 20px;
+            width: 250px;
+            align-self: initial; 
+            
+            li {
+                list-style-type: none;
+            }
+        }
+
+    }
+}
+
+.closing {
+    color: white;
+    padding: 70px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 20px;
+        font-family: $body-font;
+        margin-left: 50px;
+    }
+
+    a {
+        margin-right: 80px;
+    }
+}
+
+
+
+
+
+
+
+

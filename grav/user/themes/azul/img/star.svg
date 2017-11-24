@@ -1,0 +1,23 @@
+<svg width="41" height="40" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>star</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-4017 -2208)">
+<g id="star" filter="url(#filter0_d)">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(4019 2208)" fill="#FFC300"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="4017" y="2208" width="41" height="40" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="3"/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 18.5 -1.31611e-09L 24.2161 11.5213L 37 13.3687L 27.75 22.3367L 29.9329 35L 18.5 29.0213L 7.06627 35L 9.25002 22.3367L 0 13.3687L 12.7831 11.5213L 18.5 -1.31611e-09Z"/>
+</defs>
+</svg>

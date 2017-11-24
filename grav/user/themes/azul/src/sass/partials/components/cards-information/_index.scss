@@ -1,0 +1,25 @@
+//
+// Cards Information
+//
+// Markup: cards-information.html
+// 
+// .cards-information - Cards Information
+// 
+// styleguide Components.cards-information
+// 
+
+.cards-information {
+	border-top: 7px solid $c-orange;
+	padding: 30px;
+	width: 445px;
+	height: 430px;
+	background-color: #fff;
+	
+	h3 {
+		color: $c-blue;
+	}
+
+	a {
+		margin: 20px 0;
+	}
+}

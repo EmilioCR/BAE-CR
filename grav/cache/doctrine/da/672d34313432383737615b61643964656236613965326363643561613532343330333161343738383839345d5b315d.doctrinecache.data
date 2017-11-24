@@ -1,0 +1,27 @@
+1512162536
+a:2:{s:7:"content";s:1479:"<div class="section">
+	<h3>Casos de exito</h3>
+	<div class="success-stories">
+		<img src="user/pages/01.inicio/_historia-de-exito/bandera-azul.jpg" alt="Historia de exito">
+		<h2>Historia de exito</h2>
+		<p>Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci.</p>
+		<a href="/BAE/grav/casos-de-exito">Ver todos</a>
+	</div>
+	
+	<h3>Siguenos en Facebook</h3>
+	<div class="facebook-block">
+		<div class="fb-page" data-href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" data-tabs="timeline" data-width="300px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">Programa Bandera Azul Ecologica(Costa Rica)</a></blockquote></div>
+		<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10&appId=195932157209239';
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+
+		</div>
+
+</div>	";s:12:"content_meta";N;}

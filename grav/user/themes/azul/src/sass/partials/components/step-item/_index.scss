@@ -1,0 +1,41 @@
+//
+// Step Item
+//
+// Markup: step-item.html
+// 
+// .step-item - Step Item
+// .step-number - Step Number
+// 
+// styleguide Components.step-item
+
+.step-item {
+	background-color: #fff;
+	width: 20%;
+	text-align: center;
+	-webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
+    -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
+    box-shadow: 0px 8px 15px -5px #a19d9d;
+    display: inline-block;
+    padding: 50px;
+
+    p {
+    	margin: 10px;
+    }
+	
+}
+
+
+.step-number {
+	background-color: $c-blue;
+	display: inline-block;
+	padding: 15% 20%;
+	color: #fff;
+	border-radius: 50%;
+	border: 5px solid #87cbff;
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.step-dates {
+	color: #929292;
+}

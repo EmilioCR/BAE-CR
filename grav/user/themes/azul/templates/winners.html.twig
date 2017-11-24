@@ -1,0 +1,50 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+	<div class="section-pattern section-pattern-lightblue">
+		<div class="all-info-winners">
+			<div class="intro-winners-info">
+				{{ page.content }}
+				<a class= "button button-white" href="{{ page.media[header.winners_file_select].cache.url }}">Ver lista de galardonados</a>
+			</div>
+			<div class="intro-winners">
+				<h1>{{ header.title }}</h1>
+				<h2>{{ header.summary_winners }}</h2>
+				<h2>{{ header.summary_time_winners }}</h2>
+				<img class="header-winners-image"src='{{ (header.winners_image|first).path }}'>	
+			</div>
+		</div>
+	</div>
+	<section class="section-indicators">
+		<h1>{{ header.title_indicators }}</h1>
+		<p>{{header.description_indicators}}</p>
+		<div class="indicators">
+			<div>
+				<span>{{ header.kpi_first }}</span>
+				<p>Aumento de participantes</p>
+			</div> 
+			<div>
+				<span>{{ header.kpi_second }}</span>
+				<p>Aumento de ganadores</p>
+			</div>
+			<div class= "category-indicator">
+				<span>
+					<ul>
+						<li>{{ header.firstCategory }}</li>
+						<li>{{ header.secondCategory }}</li>
+						<li>{{ header.thirdCategory }}</li>
+					</ul>
+				</span>
+				<p>Categorías con más galardones</p>	
+			</div>						
+		</div>	
+	</section>
+	<div class="section-pattern section-pattern-green">
+		<div class="closing">
+			<h3> Sea parte del cambio <br> con Bandera Azul Ecológica Costa Rica</h3>
+			<a class="button button-white" href="#">Conozca como aplicar</a>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+1512162536
+a:2:{s:7:"content";s:1341:"<div class="intro-bae">
+		<h1>Bandera Azul Ecologica</h1>
+		Este galardón promueve la organización de comités locales, la sana competencia y la organización comunitaria para el beneficio de las presentes y futuras generaciones.
+		<a href="header.button_first_url" class="button button-border-blue
+">Conozca Bandera Azul Ecológica</a>
+		<a href="header.button_second_url" class="button button-border-blue
+">Conozca los galardonados</a>
+		<a href="header.button_third_url" class="button button-border-blue
+">Quiero aplicar</a>
+</div>
+
+<div class="categories">
+	<h2>Descubra su categoría</h2>
+	Conozca las diferentes categorías en que puede participar e inicie su proceso de inscripción
+</div>
+
+<div class="categories-list">
+	<!-- tenemos que enlistar todas las categorías -->
+	<ul>
+		    <li><a href="/BAE/grav/inicio">Cambio Climático</a></li>
+		    <li><a href="/BAE/grav/inicio">Centros Educativos</a></li>
+		    <li><a href="/BAE/grav/inicio">Hogares Sostenibles</a></li>
+		    <li><a href="/BAE/grav/que-es-bae">Construcción Sostenible</a></li>
+		    <li><a href="/BAE/grav/landing-de-categorias/clima">Playas</a></li>
+		    <li><a href="/BAE/grav/landing-de-categorias/panama">Salud Comunitaria</a></li>
+		</ul>
+	<a href="/BAE/grav/landing-de-categorias" class="button button-border-white">Ver todas las categorías</a>
+</div>";s:12:"content_meta";N;}

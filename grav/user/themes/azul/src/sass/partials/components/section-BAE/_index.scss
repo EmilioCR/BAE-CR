@@ -1,0 +1,23 @@
+//
+// Section Que es BAE
+//
+// Markup: section-BAE.html
+// 
+// .howIsBAE - Que es BAE
+// 
+// styleguide Components.section-BAE
+.section-how-is-BAE {
+    display: flex;
+    padding: 40px
+}
+.howIsBAE {
+    h1 {
+        font: 700 30px $headings-font;
+        color: $c-blue;
+    }
+    p {
+        font: 16px $body-font;
+        width: 84%;
+        padding-top: 20px;
+    }
+}

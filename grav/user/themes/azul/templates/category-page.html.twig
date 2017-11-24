@@ -1,0 +1,41 @@
+{% embed 'partials/base.html.twig' %}
+	{% set collection = page.collection() %}
+	
+	{% block content %}
+
+		<div class="section-pattern section-pattern-lightgray">
+			<div class="discover-category">
+				<h1>{{ page.header.page_title }}</h1>
+				{{ page.content }}
+			</div>
+		</div>
+	
+		<div class="list-categories">
+			<h5>Seleccione la categoría que corresponde a su comité</h5>
+			<ul id="content" class="grid">
+				<li class="active"><a href="#" class="all">Todas</a></li>
+  				<li><a href="#" class="community">Playas</a></li>
+  				<li><a href="#" class="company">Empresa</a></li>
+  				<li><a href="#" class="church">Iglesia</a></li>
+  				<li><a href="#" class="community">Comunidad</a></li>
+  				<li><a href="#" class="house">Hogar</a></li>
+			</ul>
+		</div>
+
+			
+		<div class="wrapper-categories">
+			<div id="listing">
+				<ul class="holder">
+					{% set sum = 1 %} 
+					{% for child in collection %}
+						<li data-type="{{child.header.commitee_type}}" data-id ="{{sum}}" class="card-categories">
+			        		{% include 'categories.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+			        		{% set sum = sum + 1 %}
+			    		</li>
+			  		{% endfor %}
+			  	</ul>
+			</div>
+		</div>
+	{% endblock %}
+
+{% endembed %}

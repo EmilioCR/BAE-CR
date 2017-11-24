@@ -1,0 +1,25 @@
+<div class="intro-bae">
+		<h1>{{ header.title }}</h1>
+		{{ header.text }}
+		<a href="header.button_first_url" class="button button-border-blue
+">{{header.button_first_text}}</a>
+		<a href="header.button_second_url" class="button button-border-blue
+">{{header.button_second_text}}</a>
+		<a href="header.button_third_url" class="button button-border-blue
+">{{header.button_third_text}}</a>
+</div>
+
+<div class="categories">
+	<h2>{{header.categories_title}}</h2>
+	{{header.categories_content}}
+</div>
+
+<div class="categories-list">
+	<!-- tenemos que enlistar todas las categorías -->
+	<ul>
+	{% for item in header.list_content %}
+	    <li><a href="{{base_url}}{{item.categorie_page}}">{{item.content_categorie}}</a></li>
+	{% endfor %}
+	</ul>
+	<a href="{{base_url}}/landing-de-categorias" class="button button-border-white">Ver todas las categorías</a>
+</div>

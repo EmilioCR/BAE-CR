@@ -1,0 +1,38 @@
+<svg width="75" height="245" viewBox="0 0 75 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Mask Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2890 -1689)">
+<g id="Mask Group" opacity="0.6">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Rectangle 6">
+<use xlink:href="#path0_fill" transform="matrix(6.07153e-17 -1 1 6.07153e-17 2832 1939)" fill="#C4C4C4"/>
+</g>
+</mask>
+<g id="Group 6.2" mask="url(#mask0_alpha)">
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 2972.55 1929.81)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 2986.1 1917.38)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 2999.66 1904.96)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 3013.22 1892.53)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 3026.78 1880.11)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="matrix(-0.559574 -0.828781 0.737269 -0.675599 3040.34 1867.69)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 281 0L 281 133L 0 133L 0 0Z"/>
+<path id="path1_stroke" d="M 0 -3.5C -1.933 -3.5 -3.5 -1.933 -3.5 0C -3.5 1.933 -1.933 3.5 0 3.5L 0 -3.5ZM 176.323 28.7506C 178.013 27.8128 178.623 25.6823 177.685 23.9921C 176.747 22.3018 174.617 21.6918 172.926 22.6297L 176.323 28.7506ZM 0 3.5C 27.5487 3.5 60.1451 12.538 93.7212 28.8387L 96.7783 22.5416C 62.6212 5.95885 28.9553 -3.5 0 -3.5L 0 3.5ZM 93.7212 28.8387C 128.871 45.9035 163.258 35.9991 176.323 28.7506L 172.926 22.6297C 161.296 29.0826 129.361 38.3601 96.7783 22.5416L 93.7212 28.8387Z"/>
+<path id="path2_stroke" d="M 0 -3.5C -1.933 -3.5 -3.5 -1.933 -3.5 0C -3.5 1.933 -1.933 3.5 0 3.5L 0 -3.5ZM 95.2497 25.6901L 93.7212 28.8387L 95.2497 25.6901ZM 176.323 28.7506C 178.013 27.8128 178.623 25.6823 177.685 23.9921C 176.747 22.3018 174.617 21.6918 172.926 22.6297L 176.323 28.7506ZM 0 3.5C 27.5487 3.5 60.1451 12.538 93.7212 28.8387L 96.7783 22.5416C 62.6212 5.95885 28.9553 -3.5 0 -3.5L 0 3.5ZM 93.7212 28.8387C 128.871 45.9035 163.258 35.9991 176.323 28.7506L 172.926 22.6297C 161.296 29.0826 129.361 38.3601 96.7783 22.5416L 93.7212 28.8387Z"/>
+</defs>
+</svg>

@@ -1,0 +1,23 @@
+.success-story {
+    width: 1200px;
+    margin: 0 auto; 
+    background: url(../img/pattern-lightgray-right.svg) no-repeat right;
+
+    h1 {
+        color: $c-blue;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 84px; 
+    }
+}
+
+.container-success {
+    margin: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    .info-success {
+        width: 480px;
+    }
+}

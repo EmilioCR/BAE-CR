@@ -1,0 +1,11 @@
+<div class="allies-section">
+	<h2>Aliados</h2>
+	<p>Bandera Azul es posile garcias al apoyo de estas organizaciones</p>
+	<div class="allies-list">
+		<ul>
+			{% for allies in header.allies %}
+			    <li><img src="{{(allies.allie_item|first).path}}" alt=""></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>	

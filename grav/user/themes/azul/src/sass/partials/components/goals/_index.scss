@@ -1,0 +1,29 @@
+//
+// Section Que pretende BAE
+//
+// Markup: goals.html
+// 
+// .goal-info  -  Section que pretende BAE
+// .goal-image
+// 
+// styleguide Components.goals
+
+.goal{
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 100px;
+}
+
+.goal-info{
+    h2{
+        color: $c-blue;
+        font: 700 25px $headings-font;
+        text-align: center;
+        width: 55%;
+    }
+    p{
+        font: 16px $body-font;
+        color: #333333;   
+        margin: 48px 74px 0 74px;
+    }
+}

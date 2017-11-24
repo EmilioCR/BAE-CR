@@ -1,0 +1,42 @@
+1512162525
+a:2:{s:7:"content";s:1990:"<section class="section-pattern section-pattern-lightgray-vertical info-apply">
+    <h1>¿Cómo Aplicar?</h1>
+    <p>Para aplicar a Bandera Azul usted tiene que cumplir con un set de requisitos, para esto sigue los siguientes pasos</p>
+</section>
+
+<section>
+    <div class="info-pre-apply">
+        <h2>Pre aplicación</h2>
+        <p>Asegurese de cumplir con estos 2 requisitos para poder aplicar
+ correctamente a Bandera Azul.</p> 
+    </div>
+    <div class="pre-apply">
+        <div class="section-pattern section-pattern-lightblue-squard pre-apply-step">
+            <h4>1</h4>
+            <h5>Descubra su Categoría</h3> 
+            <p>Actualmente nuestro programa cuenta con 15 categorías…identifique la categoría más idónea para su comité y comience a participar del programa.</p> 
+            <a class="button button-border-blue" href="/BAE/grav/landing-de-categorias">Conocer categorías</a>
+        </div>
+        <div class="section-pattern section-pattern-lightgray-squard pre-apply-step">
+            <h4>2</h4>
+            <h5>Conforme su comité</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p> 
+            <a class="button button-border-blue" href="" download="">Conformación del comité</a>
+        </div>
+    </div>
+    <div class="title-apply">
+        <h2>Aplicación</h2>
+    </div>
+    <div class="apply">
+        <div class="section-pattern section-pattern-lightgray-squard apply-step">
+            <h4>3</h4>
+            <h5>Inscripción</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p> 
+        </div>
+        <div class="section-pattern section-pattern-lightblue-squard apply-step">
+            <h4>4</h4>
+            <h5>Informe Final</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p> 
+        </div>
+    </div>
+</section>";s:12:"content_meta";N;}

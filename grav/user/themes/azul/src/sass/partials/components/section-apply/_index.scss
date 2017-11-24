@@ -1,0 +1,86 @@
+//
+// Section Como aplicar
+//
+// Markup: section-apply.html
+// 
+// .info-apply - Informacion de como aplicar
+// 
+// styleguide Components.section-apply
+
+.info-apply {
+    padding: 80px 15px 80px 15px;
+    h1{
+        color: $c-blue;
+        font: 700 30px $headings-font;
+        text-align: center;
+    }
+    p {
+        color: #7A7A7A;
+        text-align: center;
+    }
+}
+.title-apply {
+    h2{
+        color: $c-blue;
+        font: 700 25px $headings-font;
+        padding: 53px 0;
+        text-align: center;   
+    }
+
+}
+
+.info-pre-apply {
+    padding: 60px 0 60px 0;
+    h2{
+        color: $c-blue;
+        font: 700 25px $headings-font;
+        text-align: center;
+        
+    }
+    p{
+        color: #7a7a7a;
+        text-align: center;
+    }
+}
+.apply {
+    padding-bottom: 200px;
+}
+.pre-apply, .apply {
+    display: flex;
+    .pre-apply-step, .apply-step {
+        margin: 0 20px;
+        padding: 30px;
+        text-align: center;
+        -webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
+        -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
+        box-shadow: 0px 8px 15px -5px #a19d9d;
+    }
+    h4{
+        color: #7a7a7a;
+        float: left;
+        font: 700 27px $headings-font;
+        margin: 0 auto;
+    }
+    h5{ 
+        color: #7a7a7a;
+        font: 700 25px $headings-font;
+    }
+    p{
+        padding: 10px 0 15px 0;
+    }
+    a{
+        font: 16px $headings-font;
+    }
+}
+.section-go-category {
+    padding: 75px 0;
+    display: flex;
+    justify-content:space-around;
+    h3{
+        color: #fff;
+        font: 700 36px $headings-font;
+    }
+    a{
+        font:20px $headings-font;
+    }
+}

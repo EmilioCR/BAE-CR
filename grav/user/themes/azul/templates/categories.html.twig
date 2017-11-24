@@ -1,0 +1,173 @@
+{% if truncate %}
+<!-- se muestra si es la lista de categorías -->
+
+<div class="list-item {{page.header.commitee_type}} ">
+
+	{% set image_parts = pathinfo(page.header.logo_image) %}
+	{% set image_basename = image_parts.basename %}
+	{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+
+	<a href="{{ page.url }}"> {{ image_page.media[image_basename].resize(130, 140).html() }}</a> 
+
+	{{ page.summary(100) }}
+	<p><a class="button button-blue" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+
+</div>
+
+{% else %}
+<!-- se muestra si es el detalle de la categoría -->
+
+	{% embed 'partials/base.html.twig' %}
+
+	{% block content %}
+
+	<div class="category-item">
+
+		{% set header_image = page.header.header_image|defined(true) %}
+		{% set header_image_file = page.header.header_image_file %}
+
+		<div class="section-pattern section-pattern-cordinator info-category">
+			
+			<div class=" category-content">
+				<div class="category-logo">
+					{% set image_parts = pathinfo(header.logo_image) %}
+					{% set image_basename = image_parts.basename %}
+					{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+
+					{{ image_page.media[image_basename].resize(200).html() }}
+				</div>
+				<div class="item-category-content">
+					<div class="category-description">
+						{{ page.content }}
+					</div>
+					
+					<div class="category-require-list">
+						{% if header.require_list %}
+							<h3>Requisitos</h3>
+							<ul>
+								{% for requirement in header.require_list %}
+								    <li>{{requirement.require_item}}</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+
+			<div class="coordinator">
+				{% set image_parts = pathinfo(header.coordinator_picture) %}
+				{% set image_basename = image_parts.basename %}
+				{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+
+				{{ image_page.media[image_basename].resize(150, 170).html() }}
+				<h3>{{header.coordinator_name}}</h3>
+				<p>{{header.coordinator_org}}</p>
+				<p>{{header.coordinator_email}}</p>
+				<p>{{header.coordinator_tel}}</p>
+			</div>
+
+		</div>
+		<div class="steps">
+		{% set sum = 1 %}
+			{% if header.steps_signup_enable == 1 %}
+
+			<div class="step-item">
+				<span class="step-number">{{sum}}</span>
+				<h3>{{header.steps_signup_title}}</h3>
+				<p class="step-dates"> {{header.steps_signup_date_start}} <br>
+				{{header.steps_signup_date_end}} </p>
+				<div>
+					
+					<p>{{header.steps_signup_description}}</p>
+
+					{% if header.steps_signup_file %}
+						<a href="{{(header.steps_signup_file|first).path}}" download="" class="button button-blue">Descargar</a>	
+					{% endif %}
+
+				</div>
+				{% set sum = sum + 1 %}
+			</div>
+			{% endif %}
+
+			{% if header.steps_diagnose_enable == 1 %}
+			<div class="step-item">
+				<span class="step-number">{{sum}}</span>
+				<h3>{{header.steps_diagnose_title}}</h3>
+				<p class="step-dates">{{header.steps_diagnose_date_start}} <br>
+				{{header.steps_diagnose_date_end}}</p>		
+				<div>
+					
+					<p> {{header.steps_diagnose_description}} </p>
+
+					{% if header.steps_diagnose_file %}
+						<a href="{{(header.steps_diagnose_file|first).path}}" download="" class="button button-blue">Descargar</a>
+					{% endif %}
+					    
+				</div>
+				{% set sum = sum + 1 %}
+			</div>
+			{% endif %}
+
+			{% if header.steps_plan_enable == 1 %}
+			<div class="step-item">
+				<span class="step-number">{{sum}}</span>
+				<h3>{{header.steps_plan_title}}</h3>
+				<p class="step-dates">{{header.steps_plan_date_start}} <br>
+				{{header.steps_plan_date_end}}</p>
+				<div>
+					
+					<p>{{header.steps_plan_description}}</p>
+
+					{% if header.steps_plan_file %}
+						<a href="{{(header.steps_plan_file|first).path}}" download="" class="button button-blue">Descargar</a>
+					{% endif %}
+
+				</div>
+				{% set sum = sum + 1 %}
+			</div>
+			{% endif %}
+
+			{% if header.steps_report_enable == 1 %}
+			<div class="step-item">
+				<span class="step-number">{{sum}}</span>
+				<h3>{{header.steps_report_title}}</h3>
+				<p class="step-dates">{{header.steps_report_date_start}} <br>
+				{{header.steps_report_date_end}}</p>
+				<div>
+					
+					<p>{{header.steps_report_description}}</p>
+					{% if header.steps_report_file %}
+						<a href="{{(header.steps_report_file|first).path}}" download="" class="button button-blue">Descargar</a>
+					{% endif %}
+				</div>
+				{% set sum = sum + 1 %}
+			</div>
+			{% endif %}
+
+		</div>
+
+		<div class="resources">
+			<h3>Recursos relacionados</h3>
+			{% for resource in page.header.document_files %}
+			<div class="resources-item">
+				<h4>{{resource.resource_title}}</h4>
+				<p>{{resource.resource_description}}</p>
+
+				{% if resource.resource_url %}
+					<a href="{{resource.resource_url}}" class="button button-blue">Ver recurso</a>
+				{% endif %}
+
+				{% if resource.resource_file_upload %}
+					<a href="{{(resource.resource_file_upload|first).path}}" download="" class="button button-blue">Descargar recurso relacionado</a>
+				{% endif %}
+
+			</div>
+			{% endfor %}
+		</div>
+
+	</div>
+	{% endblock %}
+
+	{% endembed %}
+
+	{% endif %}
