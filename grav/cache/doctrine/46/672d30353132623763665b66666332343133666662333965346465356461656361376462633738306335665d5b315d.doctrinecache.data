@@ -1,0 +1,45 @@
+1512256885
+a:2:{s:7:"content";s:2103:"<div class="section-pattern section-pattern-lightblue">
+	<div class="limiter">
+		<div class="intro-bae">
+				<div class="intro-home-description">
+					<h1>Bandera Azul Ecologica</h1>
+					<p>Este galardón promueve la organización de comités locales, la sana competencia y la organización comunitaria para el beneficio de las presentes y futuras generaciones.</p>
+					<img class="photo-intro-bae" src="user/pages/01.inicio/_inicio/Group.png">
+				</div>	
+				
+				<div class="intro-home-buttons">
+					<ul>
+						<li><a href="header.button_first_url" class="button button-border-blue">Conozca Bandera Azul Ecológica</a></li>
+						<li><a href="header.button_second_url" class="button button-border-blue">Conozca los galardonados</a></li>
+						<li><a href="header.button_third_url" class="button button-orange">Quiero aplicar</a></li>
+					</ul>
+				</div>
+			 
+		</div>
+	</div>
+</div>
+<div class="limiter">
+	<div class="home-intro-categories">
+		<h2>Descubra su categoría</h2>
+		<p>Conozca las diferentes categorías en que puede participar e inicie su proceso de inscripción</p>
+	</div>
+</div>
+<div class="limiter">
+	<div class="section-pattern-category section-pattern-category-blue section-intro-categories-list">
+		<!-- tenemos que enlistar todas las categorías -->
+		<div class="categories-list">
+			<ul class="list-content">
+						    <li><a class="underline" href="/BAE/grav/inicio">Cambio Climático</a></li>
+						    <li><a class="underline" href="/BAE/grav/inicio">Centros Educativos</a></li>
+						    <li><a class="underline" href="/BAE/grav/inicio">Hogares Sostenibles</a></li>
+						    <li><a class="underline" href="/BAE/grav/que-es-bae">Construcción Sostenible</a></li>
+						    <li><a class="underline" href="/BAE/grav/landing-de-categorias/clima">Recursos Naturales</a></li>
+						    <li><a class="underline" href="/BAE/grav/landing-de-categorias/panama">Salud Comunitaria</a></li>
+						</ul>
+			<div class="btn-categories">
+				<a href="/BAE/grav/landing-de-categorias" class="button button-border-white">Ver todas las categorías</a>
+			</div>
+		</div>
+	</div>
+</div>	";s:12:"content_meta";N;}

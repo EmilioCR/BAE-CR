@@ -9,25 +9,27 @@
 .global-footer {
     background: $c-blue;
     color: #fff;
+}
+
+.content-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
     p {
         color: #fff;
         font:16px $body-font;
         text-align: center;
+        display: inline-block;
     }
     h6 {
         font:16px $body-font;
     }
     li{
-        list-style: none;
         display: inline-block;
     }
-    a{
-        text-decoration: none;
-    }
 }
-.social-media {
+.social-media-footer {
     display: inline-flex;
+
 }

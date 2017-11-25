@@ -58,16 +58,16 @@ class __TwigTemplate_4d3b07bd1dadcf5441b78ff45106c44301070c4573aad63c967249f40ee
         ";
         // line 54
         $this->displayBlock('body', $context, $blocks);
-        // line 61
+        // line 59
         echo "
         ";
-        // line 62
+        // line 60
         $this->displayBlock('footer', $context, $blocks);
-        // line 80
+        // line 77
         echo "
     </div>
     ";
-        // line 103
+        // line 100
         echo "
 </body>
 </html>
@@ -212,48 +212,45 @@ class __TwigTemplate_4d3b07bd1dadcf5441b78ff45106c44301070c4573aad63c967249f40ee
         echo "        <section class=\"";
         echo ($context["class"] ?? null);
         echo "\">
-            <div class=\"limiter\">
-              ";
-        // line 57
+            ";
+        // line 56
         $this->displayBlock('content', $context, $blocks);
-        // line 58
-        echo "            </div>
-        </section>
+        // line 57
+        echo "        </section>
         ";
     }
 
-    // line 57
+    // line 56
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 62
+    // line 60
     public function block_footer($context, array $blocks = array())
     {
-        // line 63
+        // line 61
         echo "        <footer class=\"global-footer\">
-            <img src=\"";
+            <div class=\"limiter\">  
+                <div class=\"content-footer\">
+                    <img src=\"";
         // line 64
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/logo_PBAE.png");
         echo "\" alt=\"Logo Bandera Azul\">
-            <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
-            <div class=\"social-media\">
-                <h6>Siguenos en:</h6>
-                <ul>
-                    <a href=\"https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/\">
-                        <li><img src=\"";
-        // line 70
+                    <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
+                    <div class=\"social-media-footer\">
+                        <h6>Siguenos en:</h6>
+                        <ul>
+                            <li><a href=\"https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/\"><img src=\"";
+        // line 69
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/facebook_logo_white.svg");
-        echo "\" alt=\"Logo Facebook\"></li>
-                    </a>
-                    <a href=\"#\">
-                       <li><img src=\"";
-        // line 73
+        echo "\" alt=\"Logo Facebook\"></a></li>
+                            <li><a href=\"#\"><img src=\"";
+        // line 70
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://img/youtube-logo.png");
-        echo "\" alt=\"Logo Youtube\"></li> 
-                    </a>
-                    
-                </ul>   
+        echo "\" alt=\"Logo Youtube\"></a></li>    
+                        </ul>   
+                    </div>
+                </div>
             </div>
         </footer>
         ";
@@ -271,7 +268,7 @@ class __TwigTemplate_4d3b07bd1dadcf5441b78ff45106c44301070c4573aad63c967249f40ee
 
     public function getDebugInfo()
     {
-        return array (  252 => 73,  246 => 70,  237 => 64,  234 => 63,  231 => 62,  226 => 57,  220 => 58,  218 => 57,  212 => 55,  209 => 54,  204 => 52,  200 => 45,  197 => 44,  194 => 43,  189 => 42,  181 => 46,  178 => 43,  176 => 42,  169 => 38,  165 => 37,  160 => 34,  157 => 33,  149 => 23,  147 => 22,  142 => 21,  140 => 20,  137 => 19,  134 => 18,  130 => 15,  127 => 14,  124 => 13,  116 => 26,  114 => 18,  108 => 16,  106 => 13,  101 => 11,  97 => 10,  94 => 9,  92 => 8,  84 => 7,  81 => 6,  78 => 5,  71 => 103,  67 => 80,  65 => 62,  62 => 61,  60 => 54,  57 => 53,  55 => 52,  52 => 51,  50 => 33,  44 => 30,  41 => 29,  39 => 5,  34 => 3,  31 => 2,  29 => 1,);
+        return array (  249 => 70,  245 => 69,  237 => 64,  232 => 61,  229 => 60,  224 => 56,  219 => 57,  217 => 56,  212 => 55,  209 => 54,  204 => 52,  200 => 45,  197 => 44,  194 => 43,  189 => 42,  181 => 46,  178 => 43,  176 => 42,  169 => 38,  165 => 37,  160 => 34,  157 => 33,  149 => 23,  147 => 22,  142 => 21,  140 => 20,  137 => 19,  134 => 18,  130 => 15,  127 => 14,  124 => 13,  116 => 26,  114 => 18,  108 => 16,  106 => 13,  101 => 11,  97 => 10,  94 => 9,  92 => 8,  84 => 7,  81 => 6,  78 => 5,  71 => 100,  67 => 77,  65 => 60,  62 => 59,  60 => 54,  57 => 53,  55 => 52,  52 => 51,  50 => 33,  44 => 30,  41 => 29,  39 => 5,  34 => 3,  31 => 2,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -339,27 +336,24 @@ class __TwigTemplate_4d3b07bd1dadcf5441b78ff45106c44301070c4573aad63c967249f40ee
 
         {% block body %}
         <section class=\"{{ class }}\">
-            <div class=\"limiter\">
-              {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
         </section>
         {% endblock %}
 
         {% block footer %}
         <footer class=\"global-footer\">
-            <img src=\"{{ url('theme://img/logo_PBAE.png')}}\" alt=\"Logo Bandera Azul\">
-            <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
-            <div class=\"social-media\">
-                <h6>Siguenos en:</h6>
-                <ul>
-                    <a href=\"https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/\">
-                        <li><img src=\"{{ url('theme://img/facebook_logo_white.svg')}}\" alt=\"Logo Facebook\"></li>
-                    </a>
-                    <a href=\"#\">
-                       <li><img src=\"{{ url('theme://img/youtube-logo.png')}}\" alt=\"Logo Youtube\"></li> 
-                    </a>
-                    
-                </ul>   
+            <div class=\"limiter\">  
+                <div class=\"content-footer\">
+                    <img src=\"{{ url('theme://img/logo_PBAE.png')}}\" alt=\"Logo Bandera Azul\">
+                    <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
+                    <div class=\"social-media-footer\">
+                        <h6>Siguenos en:</h6>
+                        <ul>
+                            <li><a href=\"https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/\"><img src=\"{{ url('theme://img/facebook_logo_white.svg')}}\" alt=\"Logo Facebook\"></a></li>
+                            <li><a href=\"#\"><img src=\"{{ url('theme://img/youtube-logo.png')}}\" alt=\"Logo Youtube\"></a></li>    
+                        </ul>   
+                    </div>
+                </div>
             </div>
         </footer>
         {% endblock %}

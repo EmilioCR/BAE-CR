@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/BAE/grav/user/config/system.yaml',
-    'modified' => 1511557676,
+    'modified' => 1511652080,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',

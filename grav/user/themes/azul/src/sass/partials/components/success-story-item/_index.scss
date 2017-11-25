@@ -1,0 +1,48 @@
+.section-stories {
+	background-color: $c-lightgray;
+	padding-top: 10%;
+}
+
+.content-intro-stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.success-title {
+    color: $c-orange;
+}
+
+.item-section-stories {
+	width: 40%;
+	
+	h2 {
+		color: $c-orange;
+	}
+}
+
+.card-succes {
+	background-color: #fff;
+	border-top: 7px solid $c-orange;
+	padding: 2% 5%;
+	margin-bottom: 5%;
+
+	h2 {
+		color: $c-blue;
+	}
+
+	h2, p {
+		margin-bottom: 5%;
+	}
+}
+
+.card-facebook-block {
+	border-top: 7px solid $c-orange;
+	background-color: #fff;
+	text-align:center;
+	padding: 2% 5%;
+	margin-bottom: 5%;
+}
+
+
+
