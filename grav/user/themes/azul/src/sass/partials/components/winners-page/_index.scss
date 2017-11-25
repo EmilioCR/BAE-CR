@@ -45,7 +45,7 @@
     
     .indicators {
         margin: 0 auto;
-        padding: 200px;
+        padding: 60px 0;
         display: flex;
         flex-direction: row wrap;
         justify-content: center;
@@ -83,6 +83,9 @@
             
             li {
                 list-style-type: none;
+            }
+            ul {
+                padding: 0;
             }
         }
 

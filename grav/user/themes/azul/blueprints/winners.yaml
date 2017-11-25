@@ -119,7 +119,17 @@ form:
             header.thirdCategory:
               type: text
               label: Tercer Categoria con mas galadornados
-
+            header.kpi_fourth:
+              type: section
+              autofocus: true
+              style: vertical
+              label: Link Redireccionado a Como Aplicar
+              title: Link Redireccionado a Como Aplicar
+            header.link_go_apply:
+              type: pages
+              size: medium
+              classes: fancy
+              label: Redirección de pagina
 
         options:
           type: tab
