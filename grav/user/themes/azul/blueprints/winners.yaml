@@ -29,11 +29,28 @@ form:
               label: Título
               default: Galardonados
 
+            header.summary_winners:
+              type: text
+              label: Cantidad de galardonados
+
+            header.summary_time_winners:
+              type: text
+              label: Periodo de tiempo
+
             content:
               label: Texto introductorio
               type: editor
               validate:
                 type: textarea
+
+            header.winners_image:
+              type: file
+              label: Suba Imagen
+              destination: 'self@'
+              limit: 1
+              filesize: 1
+              accept:
+                - '*'
 
             team:
               type: section
@@ -59,6 +76,17 @@ form:
               title: Indicadores
               underline: true
 
+            header.title_indicators:
+              type: text
+              autofocus: true
+              style: vertical
+              label: Título
+              default: Impacto
+
+            header.description_indicators:
+              label: Texto introductorio a indicadores
+              type: textarea
+
             header.kpi_first:
               type: text
               autofocus: true
@@ -74,18 +102,24 @@ form:
               default: 20
 
             header.kpi_third:
-              type: text
+              type: section
               autofocus: true
               style: vertical
               label: Tercer indicador
-              default: 50
+              title: Tercer indicador
 
-            header.kpi_fourth:
+            header.firstCategory:
               type: text
-              autofocus: true
-              style: vertical
-              label: Cuarto indicador
-              default: 150
+              label: Primer Categoria con mas galadornados
+
+            header.secondCategory:
+              type: text
+              label: Segunda Categoria con mas galadornados
+
+            header.thirdCategory:
+              type: text
+              label: Tercer Categoria con mas galadornados
+
 
         options:
           type: tab
