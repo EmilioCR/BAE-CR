@@ -23,3 +23,14 @@
         padding: 0 90px 0 90px;
     }
 }
+.team-images{
+    img {
+        border: 4px solid #DEDEDE;
+    }
+    h4{
+        color: $c-blue;
+    }
+    p {
+        font: 14px $body-font;
+    }
+}

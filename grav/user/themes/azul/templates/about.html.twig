@@ -68,11 +68,22 @@
 			<p>{{header.team_content}}</p>			
 		</div>
 
-		<ul>
+		<ul class="team-card">
 			{% for member in header.team_list %}
-			    <li> <img src="{{(member.member_image|first).path}}" alt=""></li>
-			    <li> <h4>{{member.member_name}}</h4></li>
-			    <li> <h5> Coordinador {{member.organization_name}}</h5></li>
+                <li class="team-item">
+                    <div class="team-cards">
+                        <div>
+                            <img src="{{(member.member_image|first).path}}" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4>{{member.member_name}}</h4>
+                            <p> Coordinador {{member.category_name}}</p>
+                             <p>{{member.organization_name}}</p>
+                        </div>                        
+                    </div>
+
+                </li>
+
 			{% endfor %}
 		</ul>
 	</div>
