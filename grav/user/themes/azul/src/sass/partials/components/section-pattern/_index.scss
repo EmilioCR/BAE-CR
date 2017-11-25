@@ -14,6 +14,7 @@
 // .section-pattern-lightgray-squard - Section Lightgray Squard
 // .section-pattern-lightgray-right - Section Lightgray Right
 // .section-pattern-lightblue-top - Section Lightblue Top
+// .section-pattern-olas - Section olas
 // 
 // styleguide Components.section-pattern
 // 
@@ -71,4 +72,8 @@
     background: url(../img/pattern-top-lightblue.svg) no-repeat right top , url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-lightblue;
     border-left: 0;
     border-left: 30px solid $c-yellow;
+}
+.section-pattern-olas {
+    background: url(../img/pattern-olas.svg) no-repeat;
+    border-left: 0;
 }

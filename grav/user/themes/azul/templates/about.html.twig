@@ -67,25 +67,36 @@
 			<h3>{{header.team_title}}</h3>
 			<p>{{header.team_content}}</p>			
 		</div>
-
-		<ul class="team-card">
-			{% for member in header.team_list %}
-                <li class="team-item">
-                    <div class="team-cards">
-                        <div>
-                            <img src="{{(member.member_image|first).path}}" alt="">
+        <div class="section-pattern section-pattern-olas">
+            <div class="director">
+                <div class="image-director">
+                    <img src="{{(header.director_img|first).path}}" alt="">
+                </div>
+                <div class="director-content">
+                    <h4>{{header.director_name}}</h4>
+                    <p>{{header.director_BAE}}</p>
+                    <p>Institución {{header.director_organization}}</p>
+                </div>
+            </div>
+            <ul class="team-card">
+                {% for member in header.team_list %}
+                    <li class="team-item">
+                        <div class="team-cards">
+                            <div>
+                                <img src="{{(member.member_image|first).path}}" alt="">
+                            </div>
+                            <div class="team-content">
+                                <h4>{{member.member_name}}</h4>
+                                <p>{{member.category_name}}</p>
+                                <p>Institución {{member.organization_name}}</p>
+                            </div>                        
                         </div>
-                        <div class="team-content">
-                            <h4>{{member.member_name}}</h4>
-                            <p> Coordinador {{member.category_name}}</p>
-                             <p>{{member.organization_name}}</p>
-                        </div>                        
-                    </div>
+                    </li>
 
-                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-			{% endfor %}
-		</ul>
 	</div>
 
 {% endblock %}

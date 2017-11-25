@@ -106,7 +106,27 @@ form:
               type: editor
               validate:
                 type: textarea
-
+            header.info_director:
+              type: column
+              label: Director de BAE CR 
+              fields:
+                header.director_img:
+                  type: file
+                  label: Imagen del integrante
+                  destination: 'self@'
+                  limit: 1
+                  filesize: 1
+                  accept:
+                    - '*'  
+                header.director_name:
+                  type: text
+                  label: Nombre del Director
+                header.director_BAE:
+                  type: text
+                  label: Puesto
+                header.director_organization:
+                  type: text
+                  label: Nombre del organizacion a la que pertenece                                          
             header.team_list:
               type: list
               label: Lista de integrantes de BAE
