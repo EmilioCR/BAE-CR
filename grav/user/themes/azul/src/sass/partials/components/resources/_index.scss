@@ -9,7 +9,12 @@
 
 .resources {
 	color: $c-blue;
-	padding: 100px;
+	padding: 10% 0;
+
+	h3 {
+		font-size: 30px;
+		margin-bottom: 2%;
+	}
 }
 
 .resources-item {
@@ -21,7 +26,7 @@
     padding: 2%;
 	color: #000;
 	margin: 0 5% 2% 0;
-	width: 30%;
+	width: 40%;
 	vertical-align: top;
 	p {
 		margin: 0 0 2%;

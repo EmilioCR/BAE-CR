@@ -1,0 +1,37 @@
+.hero-header {
+	width: 20%;
+	display: inline-block;
+	margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+.title-allies {
+	color: $c-blue;
+}
+
+.allies-section {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin:50px;
+}
+
+.allies-list {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.our-allies {
+	width: calc(100% * (1/4));
+
+	img {
+		margin: 5%;
+	}
+}
