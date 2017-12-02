@@ -12,7 +12,7 @@
 		<div class="content-wrapper blog-content-list grid pure-g">
 			<div id="listing" class="block pure-u-2-3 h-feed">
 				{% for child in collection %}
-			        {% include 'success-story-item.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+			    {% include 'success-story-item.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
 			  {% endfor %}
 			</div>
 		</div>

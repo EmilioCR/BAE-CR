@@ -7,29 +7,31 @@
 // styleguide Components.main-footer
 
 .global-footer {
-    background: $c-blue;
-    color: #fff;
+  background: $c-blue;
+  color: #fff;
 }
 
 .content-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    p {
-        color: #fff;
-        font:16px $body-font;
-        text-align: center;
-        display: inline-block;
-    }
-    h6 {
-        font:16px $body-font;
-    }
-    li{
-        display: inline-block;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  p {
+    color: #fff;
+    font:16px $body-font;
+    text-align: center;
+    display: inline-block;
+  }
+
+  h6 {
+    font:16px $body-font;
+  }
+
+  li{
+    display: inline-block;
+  }
+
 }
 .social-media-footer {
-    display: inline-flex;
-
+  display: inline-flex;
 }
