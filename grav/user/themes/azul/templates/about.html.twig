@@ -7,18 +7,16 @@
 			<div class="section-what-is-BAE">
 				<div>
 					<h1>{{ header.about_title }}</h1>
-					<p>{{ header.about_text }}</p>			
+					<p>{{ header.about_text }}</p>
 				</div>
 				<div>
 					{% set image_parts = pathinfo(header.about_image) %}
 					{% set image_basename = image_parts.basename %}
 					{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-
-					{{ image_page.media[image_basename].resize(600).html() }}		
+					{{ image_page.media[image_basename].resize(600).html() }}
 				</div>
-			</div>	
+			</div>
 		</div>
-
 	</div>
 
 	<div class="section-pattern section-pattern-lightblue-left">
@@ -26,63 +24,59 @@
 			<div class="section-goal-container">
 				<h2>{{header.goal_title}}</h2>
 				<div class="section-goal">
-
 					<div>
 						{% set image_parts = pathinfo(header.goal_image) %}
 						{% set image_basename = image_parts.basename %}
 						{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-
 						{{ image_page.media[image_basename].resize(600).html() }}
 					</div>
-
 					<div>
-						<p>{{header.goal_content}}</p>			
+						<p>{{header.goal_content}}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-    <div class="tabs">
-        <h2>Logros</h2>
-        <ul>
-        	<li class="limiter">
-        		<ul class="container-achieve-list">
-            		<li>{{header.achieve_first_title}}</li>
-            		<li>{{header.achieve_second_title}}</li>
-            		<li>{{header.achieve_third_title}}</li>
-            		<li>{{header.achieve_fourth_title}}</li>
-            	</ul>
-            </li>
+  <div class="tabs">
+    <h2>Logros</h2>
+    <ul>
+    	<li class="limiter">
+    		<ul class="container-achieve-list">
+        	<li>{{header.achieve_first_title}}</li>
+        	<li>{{header.achieve_second_title}}</li>
+        	<li>{{header.achieve_third_title}}</li>
+        	<li>{{header.achieve_fourth_title}}</li>
         </ul>
-    
-        	<div class="tabs-content">
-        		<div class="limiter">
-        	    	<article>
-        	    	    <img src="{{(header.achieve_first_image|first).path}}" alt="">
-        	    	    <p>{{header.achieve_first_content}}</p>   
-        	    	</article>
-        	    	<article>
-        	    	    <img src="{{(header.achieve_second_image|first).path}}" alt="">
-        	    	    <p>{{header.achieve_second_content}}</p>
-        	    	</article>
-        	    	<article>
-        	    	    <img src="{{(header.achieve_third_image|first).path}}" alt="">
-        	    	    <p>{{header.achieve_third_content}}</p>
-        	    	</article>
-        	    	<article>
-        	    	    <img src="{{(header.achieve_fourth_image|first).path}}" alt="">
-        	    	    <p>{{header.achieve_fourth_content}}</p>
-        	    	</article>
-        	    </div>
-        	</div>
-        
+      </li>
+    </ul>
+
+    <div class="tabs-content">
+    	<div class="limiter">
+        <article>
+            <img src="{{(header.achieve_first_image|first).path}}" alt="">
+            <p>{{header.achieve_first_content}}</p>
+        </article>
+        <article>
+            <img src="{{(header.achieve_second_image|first).path}}" alt="">
+            <p>{{header.achieve_second_content}}</p>
+        </article>
+        <article>
+            <img src="{{(header.achieve_third_image|first).path}}" alt="">
+            <p>{{header.achieve_third_content}}</p>
+        </article>
+        <article>
+          <img src="{{(header.achieve_fourth_image|first).path}}" alt="">
+          <p>{{header.achieve_fourth_content}}</p>
+        </article>
+      </div>
     </div>
+  </div>
 
 	<div class="team">
 		<div class="team-info">
 			<h3>{{header.team_title}}</h3>
-			<p>{{header.team_content}}</p>			
+			<p>{{header.team_content}}</p>
 		</div>
         <div class="section-pattern section-pattern-olas">
             <div class="limiter">
@@ -107,15 +101,13 @@
                                     <h4>{{member.member_name}}</h4>
                                     <p>{{member.category_name}}</p>
                                     <p>Institución {{member.organization_name}}</p>
-                                </div>                        
+                                </div>
                             </div>
                         </li>
                     {% endfor %}
-                </ul>   
+                </ul>
             </div>
-
         </div>
-
 	</div>
 
 {% endblock %}

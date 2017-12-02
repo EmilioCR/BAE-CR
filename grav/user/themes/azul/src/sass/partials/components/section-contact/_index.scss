@@ -8,44 +8,49 @@
 // styleguide Components.section-contact
 
 .contact_title {
-    h1 {
-        color: $c-blue;
-        font-size: 30px;
-        text-align: center;
-        padding: 3%;
-    }
+  h1 {
+    color: $c-blue;
+    font-size: 30px;
+    text-align: center;
+    padding: 3%;
+  }
+  
 }
 
 .contact {
-    display: flex;
-    justify-content: space-between;
-    padding: 14% 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 14% 0;
 
-    p{
-        color: #333;
-        font-size: 18px;
-        padding-bottom: 4%;
-    }
+  p{
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 4%;
+  }
+  
 }
 
 .contact-image {
-    text-align: center;
-    position: relative;
-    top: 30px;
+  text-align: center;
+  position: relative;
+  top: 30px;
 }
 
 .social-media-contact {
-    display: flex;
+  display: flex;
 
-    p {
-        color: #333;
-        font-size: 18px;
-    }
-    ul{
-        display: flex;
-        list-style: none;
-    }
-    a{
-        padding-right: 25%;
-    }
+  p {
+    color: #333;
+    font-size: 18px;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
+  }
+
+  a{
+    padding-right: 25%;
+  }
+  
 }

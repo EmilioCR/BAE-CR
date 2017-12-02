@@ -1,105 +1,111 @@
 .all-info-winners {
-    padding: 8% 0 17%;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 8% 0 17%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .intro-winners {
-    width: 50%;
-    h1 {
-        color: $c-blue; 
-        padding-bottom: 3%;
-    }
+  width: 50%;
+
+  h1 {
+    color: $c-blue; 
+    padding-bottom: 3%;
+  }
     
 } 
 
 .intro-winners-info {
-    font-family: $body-font;
-    width: 40%;
-    a {
-        margin-top: 12%; 
-        font-size: 20px; 
-        background-color: $c-blue;
-        color: #fff;      
-    }
+  font-family: $body-font;
+  width: 40%;
+
+  a {
+    margin-top: 12%; 
+    font-size: 20px; 
+    background-color: $c-blue;
+    color: #fff;      
+  }
+
 }
 
 .header-winners-image {
-    margin-top: 5%;
-    position: absolute;
+  margin-top: 5%;
+  position: absolute;
 }
 
 .section-indicators {
-    margin-top: 15%;
-    padding: 7% 0;
-    width: 100%;
-    background: url(../img/pattern-white.svg) $c-lightgray;
-    font-weight: 700;
-    background-size: cover;
+  margin-top: 15%;
+  padding: 7% 0;
+  width: 100%;
+  background: url(../img/pattern-white.svg) $c-lightgray;
+  font-weight: 700;
+  background-size: cover;
 
-    h1 {
-        color: $c-blue; 
-        padding-bottom: 3%;
-    }
+  h1 {
+    color: $c-blue; 
+    padding-bottom: 3%;
+  }
     
 }
 
 .indicators {
-    margin: 0 auto;
-    padding: 10% 0;
+  margin: 0 auto;
+  padding: 10% 0;
+  display: flex;
+  justify-content: flex-end;
+  
+  ul {
+    padding: 0;
+  }
+
+  div {
     display: flex;
-    justify-content: flex-end;
-    
-    ul {
-        padding: 0;
+    margin-left: 10%;
+    background-color: $c-green;
+    border: 8px solid #AEE8AD;     
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 5% 0;
+  
+    p {
+      position: absolute;
+      margin-top: 10%;
+      font-family: $body-font;
+      font-weight: 700;
     }
 
-    div {
-        display: flex;
-        margin-left: 10%;
-        background-color: $c-green;
-        border: 8px solid #AEE8AD;     
-        color: white;
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-        padding: 5% 0;
-    
-        p {
-            position: absolute;
-            margin-top: 10%;
-            font-family: $body-font;
-            font-weight: 700;
-        }
-    }
+  }
+
 }
 
 .circle-indicator {
-    border-radius: 50%;
-    font-size: 50px;
+  border-radius: 50%;
+  font-size: 50px;
 }
 
 .category-indicator {
-    border-radius: 0;
-    font-size: 23px;
+  border-radius: 0;
+  font-size: 23px;
 }
 
 .know-how-to-apply-section {
+  color: #fff;
+  padding: 7% 0;
+  margin-top: 9%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  p {
+    font-size: 25px;
     color: #fff;
-    padding: 7% 0;
-    margin-top: 9%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  }
 
-    p {
-        font-size: 25px;
-        color: #fff;
-    }
-
-    a {
-        font-size: 20px;
-    }
+  a {
+    font-size: 20px;
+  }
+  
 }
 
 

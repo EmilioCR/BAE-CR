@@ -1,27 +1,26 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
-    <div class="success-story">
-        <div class="limiter">
-            <h1>Casos de Exitos</h1>
-            {% for story in header.success %}
-                <div class="container-success"> 
-                    <div>
-                        {% if story.successStory_image %}
-                            <img src="{{(story.successStory_image|first).path}}" alt="">
-                        {% endif %}
-                        {% if story.successStory_video %}
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{story.successStory_video}}" frameborder="0" allowfullscreen></iframe>
-                        {% endif %}
-                    </div>
-                    <div class= "info-success">
-                        <h2>{{ story.successStory_title }}</h2>
-                        <p>{{ story.successStory_description }}</p>
-                    </div>
-                    
-                </div>
-            {% endfor %}
+  {{ page.content }}
+  <div class="success-story">
+    <div class="limiter">
+      <h1>Casos de Exitos</h1>
+      {% for story in header.success %}
+        <div class="container-success"> 
+          <div>
+            {% if story.successStory_image %}
+              <img src="{{(story.successStory_image|first).path}}" alt="">
+            {% endif %}
+            {% if story.successStory_video %}
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/{{story.successStory_video}}" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+          </div>
+          <div class= "info-success">
+            <h2>{{ story.successStory_title }}</h2>
+            <p>{{ story.successStory_description }}</p>
+          </div>
         </div>
+      {% endfor %}
     </div>
+  </div>
 {% endblock %}

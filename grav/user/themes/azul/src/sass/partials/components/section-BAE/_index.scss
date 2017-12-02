@@ -7,18 +7,19 @@
 // 
 // styleguide Components.section-BAE
 .section-what-is-BAE {
-    display: flex;
-    padding: 4% 0;
-    
-    h1 {
-        font: 700 30px $headings-font;
-        color: $c-blue;
-    }
-    p {
-        font: 16px $body-font;
-        width: 84%;
-        margin-top: 4%;
-    }
+  display: flex;
+  padding: 4% 0;
+  
+  h1 {
+    font: 700 30px $headings-font;
+    color: $c-blue;
+  }
+
+  p {
+    font: 16px $body-font;
+    width: 84%;
+    margin-top: 4%;
+  }
 
 }
 
