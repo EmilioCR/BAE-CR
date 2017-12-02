@@ -1,34 +1,34 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content}}
+  {{ page.content}}
+  <div class="limiter">
+    <div class="contact_title">
+      <h1>{{header.contact_title}}</h1>
+    </div>
+    <div class="contact-image">
+      <img src="{{(header.bgImage|first).path}}" alt="">
+    </div>
+  </div>
+  <div class="section-pattern section-pattern-lightblue-top">
     <div class="limiter">
-        <div class="contact_title">
-            <h1>{{header.contact_title}}</h1>
+      <div class="contact">
+        <div>
+          <p>{{header.description}}</p>
+          <a class="button button-white" href="{{base_url}}{{header.redirect_section}}">Ir a la sección de categorías</a>
         </div>
-        <div class="contact-image">
-             <img src="{{(header.bgImage|first).path}}" alt="">
+        <div class="social-media-contact">
+          <p>{{header.redes_sociales}}</p>
+          <ul>
+            <a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">
+              <li><img src="{{ url('theme://img/facebook_logo_color.svg')}}" alt="Logo Facebook"></li>
+            </a>
+            <a href="#">
+              <li><img src="{{ url('theme://img/youtube-logo-color.png')}}" alt="Logo Youtube"></li>
+            </a>
+          </ul>   
         </div>
+      </div>
     </div>
-    <div class="section-pattern section-pattern-lightblue-top">
-        <div class="limiter">
-            <div class="contact">
-                <div>
-                    <p>{{header.description}}</p>
-                    <a class="button button-white" href="{{base_url}}{{header.redirect_section}}">Ir a la sección de categorías</a>
-                </div>
-                <div class="social-media-contact">
-                    <p>{{header.redes_sociales}}</p>
-                    <ul>
-                        <a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">
-                            <li><img src="{{ url('theme://img/facebook_logo_color.svg')}}" alt="Logo Facebook"></li>
-                        </a>
-                        <a href="#">
-                            <li><img src="{{ url('theme://img/youtube-logo-color.png')}}" alt="Logo Youtube"></li>
-                        </a>
-                    </ul>   
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 {% endblock %}

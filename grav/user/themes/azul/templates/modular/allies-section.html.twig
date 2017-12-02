@@ -1,15 +1,15 @@
 <div class="allies-section">
-	<div class="hero-header">
-		<h2 class="title-allies">Aliados</h2>
-		<p>Bandera Azul es posible gracias al apoyo de estas organizaciones.</p>
-	</div>
-	<div class="allies-list">
-		
-			{% for allies in header.allies %}
-			<figure class="our-allies">
-			    <img src="{{(allies.allie_item|first).path}}" alt="">
-			</figure>
-			{% endfor %}
-		
-	</div>
-</div>	
+  <div class="limiter">
+    <div class="hero-header">
+      <h2 class="title-allies">Aliados</h2>
+      <p>Bandera Azul es posible gracias al apoyo de estas organizaciones.</p>
+    </div>
+    <div class="allies-list">
+      {% for allies in header.allies %}
+        <figure class="our-allies">
+           <img src="{{(allies.allie_item|first).path}}" alt="">
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</div>  

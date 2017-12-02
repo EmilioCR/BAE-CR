@@ -1,44 +1,47 @@
 .intro-bae {
-	display: flex;
-	justify-content: space-between;
-	padding: 8% 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 8% 0;
 }
 
 .intro-home-description {
-	display: flex;
-	flex-direction: column;
-	width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 
-	p {	
-		margin-top: 2%;
-	}
+  p { 
+    margin-top: 2%;
+  }
 
-	h1 {
-		color: $c-blue;
-	}
+  h1 {
+    color: $c-blue;
+  }
+
 }
 
 .intro-home-buttons {
-	display: inline-block;
-	margin-right: 5.5%;
-	width: 40%;
+  display: inline-block;
+  margin-right: 5.5%;
+  width: 40%;
 
-	ul {
-		list-style: none;
-	}
+  ul {
+    list-style: none;
+  }
 
-	li {
-		margin-top: 23px;
-	}
+  li {
+    margin-top: 23px;
+  }
 
-	a {
-		display: block;
-		padding: 5%;
-	}
+  a {
+    display: block;
+    padding: 5%;
+  }
+
 }
 
 .photo-intro-bae {
-    margin-top: 10%;
-    width: 25%;
-    position: absolute;
+  margin-top: 10%;
+  width: 25%;
+  position: absolute;
+  
 }

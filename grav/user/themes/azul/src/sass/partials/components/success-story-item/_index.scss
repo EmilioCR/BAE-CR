@@ -1,47 +1,49 @@
 .section-stories {
-	background-color: $c-lightgray;
-	padding-top: 10%;
+  background-color: $c-lightgray;
+  padding-top: 10%;
 }
 
 .content-intro-stories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .success-title {
-    color: $c-orange;
+  color: $c-orange;
 }
 
 .item-section-stories {
-	width: 40%;
-	
-	h2 {
-		color: $c-orange;
-	}
+  width: 40%;
+  
+  h2 {
+    color: $c-orange;
+  }
+
 }
 
 .card-succes {
-	background-color: #fff;
-	border-top: 7px solid $c-orange;
-	padding: 2% 5%;
-	margin-bottom: 5%;
+  background-color: #fff;
+  border-top: 7px solid $c-orange;
+  padding: 2% 5%;
+  margin-bottom: 5%;
 
-	h2 {
-		color: $c-blue;
-	}
+  h2 {
+    color: $c-blue;
+  }
 
-	h2, p {
-		margin-bottom: 5%;
-	}
+  h2, p {
+    margin-bottom: 5%;
+  }
+  
 }
 
 .card-facebook-block {
-	border-top: 7px solid $c-orange;
-	background-color: #fff;
-	text-align:center;
-	padding: 2% 5%;
-	margin-bottom: 5%;
+  border-top: 7px solid $c-orange;
+  background-color: #fff;
+  text-align:center;
+  padding: 2% 5%;
+  margin-bottom: 5%;
 }
 
 
