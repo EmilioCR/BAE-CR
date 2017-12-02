@@ -7,15 +7,15 @@
 			<div class="section-what-is-BAE">
 				<div>
 					<h1>{{ header.about_title }}</h1>
-					<p>{{ header.about_text }}</p>			
+					<p>{{ header.about_text }}</p>
 				</div>
 				<div>
 					{% set image_parts = pathinfo(header.about_image) %}
 					{% set image_basename = image_parts.basename %}
 					{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-					{{ image_page.media[image_basename].resize(600).html() }}		
+					{{ image_page.media[image_basename].resize(600).html() }}
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 
@@ -31,7 +31,7 @@
 						{{ image_page.media[image_basename].resize(600).html() }}
 					</div>
 					<div>
-						<p>{{header.goal_content}}</p>			
+						<p>{{header.goal_content}}</p>
 					</div>
 				</div>
 			</div>
@@ -50,12 +50,12 @@
         </ul>
       </li>
     </ul>
-  
+
     <div class="tabs-content">
     	<div class="limiter">
         <article>
             <img src="{{(header.achieve_first_image|first).path}}" alt="">
-            <p>{{header.achieve_first_content}}</p>   
+            <p>{{header.achieve_first_content}}</p>
         </article>
         <article>
             <img src="{{(header.achieve_second_image|first).path}}" alt="">
@@ -70,21 +70,44 @@
           <p>{{header.achieve_fourth_content}}</p>
         </article>
       </div>
-    </div>  
+    </div>
   </div>
 
 	<div class="team">
 		<div class="team-info">
 			<h3>{{header.team_title}}</h3>
-			<p>{{header.team_content}}</p>			
+			<p>{{header.team_content}}</p>
 		</div>
-		<ul>
-			{% for member in header.team_list %}
-			    <li><img src="{{(member.member_image|first).path}}" alt=""></li>
-			    <li><h4>{{member.member_name}}</h4></li>
-			    <li><h5> Coordinador {{member.organization_name}}</h5></li>
-			{% endfor %}
-		</ul>
+        <div class="section-pattern section-pattern-olas">
+            <div class="limiter">
+                <div class="director">
+                    <div class="image-director">
+                        <img src="{{(header.director_img|first).path}}" alt="">
+                    </div>
+                    <div class="director-content">
+                        <h4>{{header.director_name}}</h4>
+                        <p>{{header.director_BAE}}</p>
+                        <p>Institución {{header.director_organization}}</p>
+                    </div>
+                </div>
+                <ul class="team-card">
+                    {% for member in header.team_list %}
+                        <li class="team-item">
+                            <div class="team-cards">
+                                <div>
+                                    <img src="{{(member.member_image|first).path}}" alt="">
+                                </div>
+                                <div class="team-content">
+                                    <h4>{{member.member_name}}</h4>
+                                    <p>{{member.category_name}}</p>
+                                    <p>Institución {{member.organization_name}}</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
 	</div>
 
 {% endblock %}
