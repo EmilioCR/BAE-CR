@@ -6,6 +6,7 @@
 // .section-pattern-lightblue - Section Lightblue
 // .section-pattern-blue - Section Blue
 // .section-pattern-lightgray - Section Lightgray
+// .section-pattern-lightgray-repeat - Section Lightgray Repeat
 // .section-pattern-gray - Section Gray
 // .section-pattern-lightblue-left - Section Lightblue left
 // .section-pattern-green - Section Green
@@ -15,6 +16,7 @@
 // .section-pattern-lightgray-right - Section Lightgray Right
 // .section-pattern-lightblue-top - Section Lightblue Top
 // .section-pattern-olas - Section olas
+// .section-pattern-category - Section Pattern Category List
 // 
 // styleguide Components.section-pattern
 // 
@@ -27,6 +29,7 @@
 
 .section-pattern-lightblue {
     background: url(../img/pattern-white.svg) no-repeat right $c-lightblue;
+    background-size: contain;
 }
 
 .section-pattern-blue {
@@ -37,43 +40,58 @@
     background: url(../img/pattern-white.svg) no-repeat right $c-lightgray;
 }
 
+.section-pattern-lightgray-repeat {
+    background: url(../img/pattern-white.svg) $c-lightgray;
+}
+
 .section-pattern-gray {
     background: url(../img/pattern-top-white.svg) no-repeat right, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-gray;
     border-left: 0;
     border-right: 30px solid $c-yellow;
 }
+
 .section-pattern-lightblue-left{
     background: url(../img/pattern-lightblue.svg)no-repeat left;
     border-left: 0;
 }
+
 .section-pattern-green {
     background: url(../img/pattern-top-white.svg) no-repeat right, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-green;
     border-left: 0;
 }
+
 .section-pattern-lightgray-vertical {
     background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
     border-left: 0;
     border-right: 30px solid $c-yellow;
     border-left: 30px solid $c-yellow;
 }
-.section-pattern-lightblue-squard {
+.section-pattern-lightblue-squard { 
     background: url(../img/pattern-white-left.svg) no-repeat left top $c-lightblue;
     border-left: 0; 
 }
+
 .section-pattern-lightgray-squard {
     background: url(../img/pattern-white-left.svg) no-repeat left top $c-gray ;
     border-left: 0;
 }
+
 .section-pattern-lightgray-right{
     background: url(../img/pattern-lightgray-right.svg)no-repeat right;
     border-left: 0;
 }
+
 .section-pattern-lightblue-top {
-    background: url(../img/pattern-top-lightblue.svg) no-repeat right top , url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-lightblue;
+    background: url(../img/pattern-top-lightblue.svg) no-repeat right top, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-lightblue;
     border-left: 0;
     border-left: 30px solid $c-yellow;
 }
 .section-pattern-olas {
-    background: url(../img/pattern-olas.svg) no-repeat;
+    background-size: cover;
+    background: url(../img/pattern-olas.svg);
     border-left: 0;
+}
+.section-pattern-category-blue {
+    background: url(../img/pattern-top-white.svg) no-repeat right, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-blue;
+    border-left: 30px solid $c-yellow;
 }

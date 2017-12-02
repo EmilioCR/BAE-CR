@@ -20,11 +20,17 @@ list_content:
         content_categorie: 'Construcción Sostenible'
         categorie_page: /que-es-bae
     -
-        content_categorie: Playas
+        content_categorie: 'Recursos Naturales'
         categorie_page: /landing-de-categorias/clima
     -
         content_categorie: 'Salud Comunitaria'
         categorie_page: /landing-de-categorias/panama
+image:
+    user/pages/01.inicio/_inicio/Group.png:
+        name: Group.png
+        type: image/png
+        size: 169069
+        path: user/pages/01.inicio/_inicio/Group.png
 texto_intro: 'Que es'
 ---
 

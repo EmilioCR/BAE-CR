@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
         $(this).each(function(){
 
             var settings = $.extend({
-                tabsList: 'ul:first-of-type',
+                tabsList: $('.container-achieve-list'),
                 tabsListItems: 'li',
                 tabsContent: '.tabs-content',
                 tabsSections: 'article',
@@ -84,8 +84,6 @@ jQuery(document).ready(function($){
 
                 tabsSections.css({
                     'position': 'absolute',
-                    'top': 0,
-                    'left': 0,
                     'opacity': 0
                 });
 
