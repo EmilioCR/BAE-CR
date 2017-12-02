@@ -97,4 +97,18 @@ a {
 .limiter {
   max-width: 1280px;
   margin: 0 auto;
+  @media screen and (max-width: $x-large) {
+    max-width: $large;
+  }
+  @media screen and (max-width: $large) {
+    max-width: $medium;
+  }
+  @media screen and (max-width: $medium) {
+    max-width: $small;
+  }
+  @media screen and (max-width: $small) {
+    max-width: 100%;
+  }
 }
+
+

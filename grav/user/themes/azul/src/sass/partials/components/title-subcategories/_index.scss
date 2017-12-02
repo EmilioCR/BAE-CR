@@ -6,5 +6,12 @@
   h2 {
     color: $c-blue;
   }
-  
+  @media screen and(max-width:$large ) {
+      width: 100%;
+      text-align: center;
+  }  
+  @media screen and (max-width: $small) {
+    margin: 0;
+    padding: 20px;
+  }
 }
