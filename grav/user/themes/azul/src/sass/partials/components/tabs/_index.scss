@@ -8,14 +8,12 @@
 // styleguide Components.tabs
 
 .tabs {
-    margin-top: 40px;
     
     ul:first-of-type {
         display: flex;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
+        background: $c-lightgray;
+        border-bottom: 4px solid #FAC917;
+
         li {
             flex: 1;
             cursor: pointer;
@@ -29,7 +27,7 @@
             line-height: 50px;
             text-align: center;
             text-transform: uppercase;
-            border-bottom: 4px solid #FAC917;
+            
     
             &.active {
                 background: $c-lightblue;
@@ -42,15 +40,13 @@
 
         }
     }
+    
     p{
         font: 700 18px $body-font;
         color: #768291;
-        width: 50%;
-        float: right;
-        position: relative;
-        top: 93px;
-        right: 62px;
+        margin: 5%;
     }
+
     h2 {
         font-size: 2.8rem;
         color:#0984e3;
@@ -66,4 +62,7 @@
 
 article {
     padding: 30px;
+    width: 100%;
+    display: flex;
+    max-width: 1280px;
 }

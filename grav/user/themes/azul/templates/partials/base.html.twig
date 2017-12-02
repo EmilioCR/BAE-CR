@@ -53,27 +53,24 @@
 
         {% block body %}
         <section class="{{ class }}">
-            <div class="limiter">
-              {% block content %}{% endblock %}
-            </div>
+            {% block content %}{% endblock %}
         </section>
         {% endblock %}
 
         {% block footer %}
         <footer class="global-footer">
-            <img src="{{ url('theme://img/logo_PBAE.png')}}" alt="Logo Bandera Azul">
-            <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
-            <div class="social-media">
-                <h6>Siguenos en:</h6>
-                <ul>
-                    <a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">
-                        <li><img src="{{ url('theme://img/facebook_logo_white.svg')}}" alt="Logo Facebook"></li>
-                    </a>
-                    <a href="#">
-                       <li><img src="{{ url('theme://img/youtube-logo.png')}}" alt="Logo Youtube"></li> 
-                    </a>
-                    
-                </ul>   
+            <div class="limiter">  
+                <div class="content-footer">
+                    <img src="{{ url('theme://img/logo_PBAE.png')}}" alt="Logo Bandera Azul">
+                    <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
+                    <div class="social-media-footer">
+                        <h6>Siguenos en:</h6>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/"><img src="{{ url('theme://img/facebook_logo_white.svg')}}" alt="Logo Facebook"></a></li>
+                            <li><a href="#"><img src="{{ url('theme://img/youtube-logo.png')}}" alt="Logo Youtube"></a></li>    
+                        </ul>   
+                    </div>
+                </div>
             </div>
         </footer>
         {% endblock %}

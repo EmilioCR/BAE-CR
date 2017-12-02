@@ -8,6 +8,7 @@
 // .button-border-blue - Border blue button
 // .button-border-white - Border white button
 // .button-white - White button
+// .button-orange - Orange button
 // 
 // styleguide Components.buttons
 
@@ -17,20 +18,20 @@
   display: inline-block;
   font-family: $headings-font;
   font-size: 1.4rem;
-  padding: 10px 14px;
+  padding: 1% 5%;
   text-decoration: none;
 }
 .button-white {
   background-color: #fff;
   border-radius: 4px;
   color: $c-green;
-
-  &:after {
-    content: '\00003e';
-    margin-left: 20px;
-  }
-
 }
+
+.button-orange {
+  background-color: $c-orange;
+  color: #fff;
+}
+
 .button-blue {
   background-color: $c-blue;
   border: solid 2px $c-blue;
@@ -42,10 +43,6 @@
     border: solid 2px $c-orange;
     border-radius: 4px;
     color: #fff;
-  }
-  &:after {
-    content: '\00003e';
-    margin-left: 20px;
   }
 
 }
@@ -62,26 +59,17 @@
     border-radius: 4px;
     color: #fff;
   }
-  &:after {
-    content: '\00003e';
-    margin-left: 20px;
-  }
 }
 
 .button-border-blue {
   background: transparent;
   border: solid 2px $c-blue;
   color: $c-blue;
-  padding: 8px 10px;
 
   &:hover {
     background-color: $c-orange;
     border: solid 2px $c-orange;
     color: #fff;
-  }
-  &:after {
-    content: '\00003e';
-    margin-left: 20px;
   }
 }
 
@@ -89,16 +77,12 @@
   background: transparent;
   border: solid 2px #fff;
   color: #fff;
-  padding: 8px 10px;
 
   &:hover {
     background-color: #fff;
     border: solid 2px #fff;
     color: $c-blue;
   }
-  &:after {
-    content: '\00003e';
-    margin-left: 20px;
-  }
+
 }
 
