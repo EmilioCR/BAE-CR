@@ -1,41 +1,40 @@
 <div class="section-pattern section-pattern-lightblue">
-	<div class="limiter">
-		<div class="intro-bae">
-				<div class="intro-home-description">
-					<h1>{{ header.title }}</h1>
-					<p>{{ header.text }}</p>
-					<img class="photo-intro-bae" src="{{(header.image|first).path}}">
-				</div>	
-				
-				<div class="intro-home-buttons">
-					<ul>
-						<li><a href="header.button_first_url" class="button button-border-blue">{{header.button_first_text}}</a></li>
-						<li><a href="header.button_second_url" class="button button-border-blue">{{header.button_second_text}}</a></li>
-						<li><a href="header.button_third_url" class="button button-orange">{{header.button_third_text}}</a></li>
-					</ul>
-				</div>
-			 
-		</div>
-	</div>
+  <div class="limiter">
+    <div class="intro-bae">
+      <div class="intro-home-description">
+        <h1>{{ header.title }}</h1>
+        <p>{{ header.text }}</p>
+        <img class="photo-intro-bae" src="{{(header.image|first).path}}">
+      </div>  
+      <div class="intro-home-buttons">
+        <ul>
+          <li><a href="header.button_first_url" class="button button-border-blue">{{header.button_first_text}}</a></li>
+          <li><a href="header.button_second_url" class="button button-border-blue">{{header.button_second_text}}</a></li>
+          <li><a href="header.button_third_url" class="button button-orange">{{header.button_third_text}}</a></li>
+        </ul>
+      </div>    
+    </div>
+  </div>
 </div>
+
 <div class="limiter">
-	<div class="home-intro-categories">
-		<h2>{{header.categories_title}}</h2>
-		<p>{{header.categories_content}}</p>
-	</div>
+  <div class="home-intro-categories">
+    <h2>{{header.categories_title}}</h2>
+    <p>{{header.categories_content}}</p>
+  </div>
 </div>
+
 <div class="limiter">
-	<div class="section-pattern-category section-pattern-category-blue section-intro-categories-list">
-		<!-- tenemos que enlistar todas las categorías -->
-		<div class="categories-list">
-			<ul class="list-content">
-			{% for item in header.list_content %}
-			    <li><a class="underline" href="{{base_url}}{{item.categorie_page}}">{{item.content_categorie}}</a></li>
-			{% endfor %}
-			</ul>
-			<div class="btn-categories">
-				<a href="{{base_url}}/landing-de-categorias" class="button button-border-white">Ver todas las categorías</a>
-			</div>
-		</div>
-	</div>
-</div>	
+  <div class="section-pattern-category section-pattern-category-blue section-intro-categories-list">
+    <div class="categories-list">
+      <ul class="list-content">
+        {% for item in header.list_content %}
+            <li><a class="underline" href="{{base_url}}{{item.categorie_page}}">{{item.content_categorie}}</a></li>
+        {% endfor %}
+      </ul>
+      <div class="btn-categories">
+        <a href="{{base_url}}/landing-de-categorias" class="button button-border-white">Ver todas las categorías</a>
+      </div>
+    </div>
+  </div>
+</div>  

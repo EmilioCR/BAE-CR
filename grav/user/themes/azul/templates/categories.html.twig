@@ -1,28 +1,21 @@
 {% if truncate %}
-<!-- se muestra si es la lista de categorías -->
 
 <div class="list-item {{page.header.commitee_type}} ">
-
 	{% set image_parts = pathinfo(page.header.logo_image) %}
 	{% set image_basename = image_parts.basename %}
 	{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-
 	<a href="{{ page.url }}"> {{ image_page.media[image_basename].resize(130, 140).html() }}</a> 
-
 	{{ page.summary(100) }}
 	<p><a class="button button-blue" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
-
 </div>
 
 {% else %}
-<!-- se muestra si es el detalle de la categoría -->
 
 	{% embed 'partials/base.html.twig' %}
 
 	{% block content %}
 
 	<div class="category-item">
-
 		<div class="section-pattern section-pattern-lightgray-repeat info-category">
 			<div class="limiter">
 				<div class=" category-content">
@@ -30,14 +23,12 @@
 						{% set image_parts = pathinfo(header.logo_image) %}
 						{% set image_basename = image_parts.basename %}
 						{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-	
 						{{ image_page.media[image_basename].resize(200).html() }}
 					</div>
 					<div class="item-category-content">
 						<div class="category-description">
 							{{ page.content }}
 						</div>
-						
 						<div class="category-require-list">
 							{% if header.require_list %}
 								<h3>Requisitos</h3>
@@ -50,13 +41,10 @@
 						</div>
 					</div>
 				</div>
-
-
 				<div class="coordinator">
 					{% set image_parts = pathinfo(header.coordinator_picture) %}
 					{% set image_basename = image_parts.basename %}
 					{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-	
 					{{ image_page.media[image_basename].resize(150, 170).html() }}
 					<h3>{{header.coordinator_name}}</h3>
 					<p>{{header.coordinator_org}}</p>
@@ -70,25 +58,20 @@
 				<div class="container-steps">
 					{% set sum = 1 %}
 					{% if header.steps_signup_enable == 1 %}
-	
 						<div class="step-item">
 							<span class="step-number">{{sum}}</span>
 							<h3>{{header.steps_signup_title}}</h3>
 							<p class="step-dates"> {{header.steps_signup_date_start}} <br>
 							{{header.steps_signup_date_end}} </p>
-							<div>
-								
+							<div>	
 								<p>{{header.steps_signup_description}}</p>
-			
 								{% if header.steps_signup_file %}
 									<a href="{{(header.steps_signup_file|first).path}}" download="" class="button button-blue">Descargar</a>	
 								{% endif %}
-			
 							</div>
 							{% set sum = sum + 1 %}
 						</div>
 					{% endif %}
-	
 					{% if header.steps_diagnose_enable == 1 %}
 						<div class="step-item">
 							<span class="step-number">{{sum}}</span>
@@ -96,18 +79,14 @@
 							<p class="step-dates">{{header.steps_diagnose_date_start}} <br>
 							{{header.steps_diagnose_date_end}}</p>		
 							<div>
-								
 								<p> {{header.steps_diagnose_description}} </p>
-			
 								{% if header.steps_diagnose_file %}
 									<a href="{{(header.steps_diagnose_file|first).path}}" download="" class="button button-blue">Descargar</a>
-								{% endif %}
-								    
+								{% endif %} 
 							</div>
 							{% set sum = sum + 1 %}
 						</div>
 					{% endif %}
-	
 					{% if header.steps_plan_enable == 1 %}
 						<div class="step-item">
 							<span class="step-number">{{sum}}</span>
@@ -115,18 +94,14 @@
 							<p class="step-dates">{{header.steps_plan_date_start}} <br>
 							{{header.steps_plan_date_end}}</p>
 							<div>
-								
 								<p>{{header.steps_plan_description}}</p>
-			
 								{% if header.steps_plan_file %}
 									<a href="{{(header.steps_plan_file|first).path}}" download="" class="button button-blue">Descargar</a>
 								{% endif %}
-			
 							</div>
 							{% set sum = sum + 1 %}
 						</div>
 					{% endif %}
-	
 					{% if header.steps_report_enable == 1 %}
 						<div class="step-item">
 							<span class="step-number">{{sum}}</span>
@@ -134,7 +109,6 @@
 							<p class="step-dates">{{header.steps_report_date_start}} <br>
 							{{header.steps_report_date_end}}</p>
 							<div>
-								
 								<p>{{header.steps_report_description}}</p>
 								{% if header.steps_report_file %}
 									<a href="{{(header.steps_report_file|first).path}}" download="" class="button button-blue">Descargar</a>
@@ -153,21 +127,18 @@
 				<div class="resources-item">
 					<h4>{{resource.resource_title}}</h4>
 					<p>{{resource.resource_description}}</p>
-	
 					{% if resource.resource_url %}
 						<a href="{{resource.resource_url}}" class="button button-blue">Ver recurso</a>
 					{% endif %}
-	
 					{% if resource.resource_file_upload %}
 						<a href="{{(resource.resource_file_upload|first).path}}" download="" class="button button-blue">Descargar recurso relacionado</a>
 					{% endif %}
-	
 				</div>
 				{% endfor %}
 			</div>
 		</div>
-
 	</div>
+	
 	{% endblock %}
 
 	{% endembed %}

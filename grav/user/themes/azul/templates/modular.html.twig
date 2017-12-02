@@ -4,32 +4,32 @@
 {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
 {% block javascripts %}
-    {% if show_onpage_menu %}
-        {% do assets.add('theme://js/singlePageNav.min.js') %}
-    {% endif %}
-    {{ parent() }}
+  {% if show_onpage_menu %}
+    {% do assets.add('theme://js/singlePageNav.min.js') %}
+  {% endif %}
+  {{ parent() }}
 {% endblock %}
 
 
 {% block bottom %}
-    {{ parent() }}
-    {% if show_onpage_menu %}
-        <script>
-        // singlePageNav initialization & configuration
-        $('#navbar').singlePageNav({
-            offset: $('#header').outerHeight(),
-            filter: ':not(.external)',
-            updateHash: true,
-            currentClass: 'active'
-        });
-        </script>
-    {% endif %}
+  {{ parent() }}
+  {% if show_onpage_menu %}
+    <script>
+      // singlePageNav initialization & configuration
+      $('#navbar').singlePageNav({
+        offset: $('#header').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+        currentClass: 'active'
+      });
+    </script>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
-    {{ page.content }}
-    {% for module in page.collection() %}
-        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
-        {{ module.content }}
-    {% endfor %}
+  {{ page.content }}
+  {% for module in page.collection() %}
+    <div id="{{ _self.pageLinkName(module.menu) }}"></div>
+    {{ module.content }}
+  {% endfor %}
 {% endblock %}

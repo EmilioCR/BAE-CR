@@ -1,24 +1,27 @@
 .success-story {
-    background: url(../img/pattern-lightgray-right.svg) no-repeat right;
-    background-size: contain;
-    h1 {
-        color: $c-blue;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 8%; 
-    }
+  background: url(../img/pattern-lightgray-right.svg) no-repeat right;
+  background-size: contain;
+
+  h1 {
+    color: $c-blue;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8%; 
+  }
+
 }
 
 .container-success {
-    margin: 7% 0;
-    display: flex;
-    justify-content: space-between;
+  margin: 7% 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-success {
-    width: 50%;
+  width: 50%;
 
-    h2 {
-        margin-bottom: 2%;
-    }
+  h2 {
+    margin-bottom: 2%;
+  }
+
 }

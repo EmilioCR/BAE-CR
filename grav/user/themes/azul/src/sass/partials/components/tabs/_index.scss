@@ -9,60 +9,62 @@
 
 .tabs {
     
-    ul:first-of-type {
-        display: flex;
-        background: $c-lightgray;
-        border-bottom: 4px solid #FAC917;
+  ul:first-of-type {
+    display: flex;
+    background: $c-lightgray;
+    border-bottom: 4px solid #FAC917;
 
-        li {
-            flex: 1;
-            cursor: pointer;
-            display: block;
-            float: left;
-            height: 50px;
-            background: $c-lightgray;
-            color: #768291;
-            font-family: $headings-font;
-            font-weight: 700;
-            line-height: 50px;
-            text-align: center;
-            text-transform: uppercase;
-            
+    li {
+      flex: 1;
+      cursor: pointer;
+      display: block;
+      float: left;
+      height: 50px;
+      background: $c-lightgray;
+      color: #768291;
+      font-family: $headings-font;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      
+  
+      &.active {
+        background: $c-lightblue;
+        color: #2F80ED;
+        border-bottom: 4px solid $c-lightblue;
+      }
+
+      &.icon{
+        background: url(../../../img/star.svg);
+      }
+
+    }
+
+  }
     
-            &.active {
-                background: $c-lightblue;
-                color: #2F80ED;
-                border-bottom: 4px solid $c-lightblue;
-            }
-            &.icon{
-                background: url(../../../img/star.svg);
-            }
+  p{
+    font: 700 18px $body-font;
+    color: #768291;
+    margin: 5%;
+  }
 
-        }
-    }
-    
-    p{
-        font: 700 18px $body-font;
-        color: #768291;
-        margin: 5%;
-    }
+  h2 {
+    font-size: 2.8rem;
+    color:#0984e3;
+    padding: 0 0 40px 0;
+    text-align: center;
+  }
 
-    h2 {
-        font-size: 2.8rem;
-        color:#0984e3;
-        padding: 0 0 40px 0;
-        text-align: center;
-    }
 }
 
 .tabs-content {
-    background:$c-lightblue;
-
+  background:$c-lightblue;
 }
 
 article {
-    padding: 30px;
-    width: 100%;
-    display: flex;
-    max-width: 1280px;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  max-width: 1280px;
 }
