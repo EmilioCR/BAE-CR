@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 8% 0;
+
+  @media screen and (max-width: $medium) {
+    display: block;
+    text-align: center;
+  }
+
 }
 
 .intro-home-description {
@@ -17,15 +23,23 @@
     color: $c-blue;
   }
 
+  @media screen and (max-width: $large) {
+    width: 50%;
+  }
+  
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+
 }
 
 .intro-home-buttons {
   display: inline-block;
-  margin-right: 5.5%;
   width: 40%;
 
   ul {
     list-style: none;
+    padding: 0 10px;
   }
 
   li {
@@ -36,12 +50,41 @@
     display: block;
     padding: 20px;
   }
+  
+  @media screen and (max-width: $large) {
+    width: 50%;
 
+    li {
+      margin-top: 10px;
+    }
+
+    a {
+      padding: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
 }
 
 .photo-intro-bae {
-  margin-top: 10%;
-  width: 25%;
+  margin-top: 250px;
+  width: 400px;
   position: absolute;
-  
+
+  @media screen and (max-width: $x-large) {
+    width: 350px;
+    margin-top: 200px;
+  }
+
+  @media screen and (max-width: $large) {
+    position: relative;
+    margin-top: 50px;
+    width: 300px;
+  }
+
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
 }
