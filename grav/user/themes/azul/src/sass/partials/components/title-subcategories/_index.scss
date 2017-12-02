@@ -2,6 +2,10 @@
   width: 50%;
   float: right;
   margin: 5% 0;
+  @media screen and(max-width:$large ) {
+      width: 100%;
+      text-align: center;
+  }
 
   h2 {
     color: $c-blue;
