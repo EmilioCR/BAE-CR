@@ -2,7 +2,7 @@
 // Section Patterns
 //
 // Markup: section-pattern.html
-// 
+//
 // .section-pattern-lightblue - Section Lightblue
 // .section-pattern-blue - Section Blue
 // .section-pattern-lightgray - Section Lightgray
@@ -15,10 +15,11 @@
 // .section-pattern-lightgray-squard - Section Lightgray Squard
 // .section-pattern-lightgray-right - Section Lightgray Right
 // .section-pattern-lightblue-top - Section Lightblue Top
+// .section-pattern-olas - Section olas
 // .section-pattern-category - Section Pattern Category List
-// 
+//
 // styleguide Components.section-pattern
-// 
+//
 
 .section-pattern {
   border-left: 30px solid $c-yellow;
@@ -67,7 +68,7 @@
 
 .section-pattern-lightblue-squard {
   background: url(../img/pattern-white-left.svg) no-repeat left top $c-lightblue;
-  border-left: 0; 
+  border-left: 0;
 }
 
 .section-pattern-lightgray-squard {
@@ -85,7 +86,11 @@
   border-left: 0;
   border-left: 30px solid $c-yellow;
 }
-
+.section-pattern-olas {
+    background-size: cover;
+    background: url(../img/pattern-olas.svg);
+    border-left: 0;
+}
 .section-pattern-category-blue {
   background: url(../img/pattern-top-white.svg) no-repeat right, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-blue;
   border-left: 30px solid $c-yellow;

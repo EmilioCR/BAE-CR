@@ -2,27 +2,86 @@
 // team
 //
 // Markup: team.html
-// 
+//
 // .team - Team
-// 
+//
 // styleguide Components.team
 
 .team {
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
 .team-info {
-  h3 {
-    color: $c-blue;
-    font: 700 25px $headings-font;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  p {
-    color: #333;
-    text-align: center;
-    padding: 0 90px 0 90px;
-  }
-
+    h3 {
+        color: $c-blue;
+        font: 700 25px $headings-font;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p{
+        color: #333;
+        text-align: center;
+        padding: 0 90px 36px 90px;
+    }
+}
+.team-cards{
+    display: flex;
+    img {
+        border: 4px solid #DEDEDE;
+    }
+    h4{
+        color: $c-blue;
+        padding-bottom: 10px;
+    }
+    p {
+        font: 14px $body-font;
+    }
+}
+.team-content, .director-content{
+    padding-left: 10px;
+}
+.team-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    @media screen and (min-width: 1300px) {
+      padding: 0;
+    }
+}
+.team-item {
+    display: flex;
+    padding-bottom: 20px;
+    @media screen and (min-width: $medium) {
+      width: calc(100% * (1/2));
+    }
+    @media screen and (min-width: $large) {
+      width: calc(100% * (1/3));
+    }
+}
+.director {
+    display: flex;
+    padding: 26px 20px;
+    @media screen and (min-width: $medium) {
+      justify-content: center;
+      padding: 26px 0;
+    }
+    img {
+        border: 4px solid #DEDEDE;
+    }
+    h4 {
+        color: $c-blue;
+    }
+    p {
+        font: 14px $body-font;
+    }
+}
+@media screen and (max-width: $medium) {
+    .team-card {
+       flex-direction: column;
+    }
+    .team-info {
+        p{
+            padding: 0px 40px 39px 39px;
+        }
+    }
 }
