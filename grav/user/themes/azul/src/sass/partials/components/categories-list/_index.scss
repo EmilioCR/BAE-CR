@@ -28,6 +28,13 @@
     margin-bottom: 10px;
   }
 
+  @media screen and (max-width: $small) {
+    display: block;
+
+    li{
+      width: 100%;
+    }
+  }
 }
 
 .underline {
@@ -40,7 +47,7 @@
     font-size: 17px;
   }
   @media screen and (max-width: $small) {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -48,4 +55,7 @@
   margin-top:40px;
   text-align: center;
   width: 100%;
+  @media screen and (max-width: $small) {
+    margin-top: 20px;
+  }
 }
