@@ -9,16 +9,17 @@
 }
 
 .list-content {
-	list-style: none;
-	text-align: center;
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-	li {
-		width: 338px;
-		margin-bottom: 30px;
-	}
+  li {
+    width: 33%;
+    margin-bottom: 2%;
+  }
 
 }
 
