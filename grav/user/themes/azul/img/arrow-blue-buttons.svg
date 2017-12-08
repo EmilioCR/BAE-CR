@@ -1,0 +1,12 @@
+<svg width="15" height="26" viewBox="0 0 15 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Rectangle 5.1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2760 -1224)">
+<g id="Rectangle 5.1">
+<use xlink:href="#path0_stroke" transform="matrix(0.635707 0.77193 -0.635707 0.77193 2762 1226)" fill="#0984E3"/>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 14.1575 0L 16.6575 0L 16.6575 -2.5L 14.1575 -2.5L 14.1575 0ZM 0 2.5L 14.1575 2.5L 14.1575 -2.5L 0 -2.5L 0 2.5ZM 11.6575 0L 11.6575 14.1575L 16.6575 14.1575L 16.6575 0L 11.6575 0Z"/>
+</defs>
+</svg>

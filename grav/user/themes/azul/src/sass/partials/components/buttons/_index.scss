@@ -20,68 +20,67 @@
   font-size: 1.4rem;
   padding: 10px 50px;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .button-white {
-  background-color: #fff;
-  border-radius: 4px;
   color: $c-green;
+  border: solid 4px $c-green;
+  background: url(../img/arrow-green-buttons.svg) no-repeat right 20px center #fff;
+
 }
 
 .button-orange {
-  background-color: $c-orange;
   color: #fff;
+  border: solid 4px $c-orange;
+  background: url(../img/arrow-white-buttons.svg) no-repeat right 20px center $c-orange;
 }
 
 .button-blue {
-  background-color: $c-blue;
-  border: solid 2px $c-blue;
-  border-radius: 4px;
+  border: solid 4px $c-blue;
   color: #fff;
-
+  background: url(../img/arrow-white-buttons.svg) no-repeat right 20px center $c-blue;
   &:hover {
-    background-color: $c-orange;
-    border: solid 2px $c-orange;
-    border-radius: 4px;
+    border: solid 4px $c-orange;
     color: #fff;
+    background-color: $c-orange;
   }
 
 }
 
 .button-green {
   background-color: $c-green;
-  border: solid 2px $c-green;
-  border-radius: 4px;
+  border: solid 4px $c-green;
   color: #fff;
-
+  
   &:hover {
     background-color: $c-orange;
-    border: solid 2px $c-orange;
-    border-radius: 4px;
+    border: solid 4px $c-orange;
     color: #fff;
   }
 }
 
 .button-border-blue {
   background: transparent;
-  border: solid 2px $c-blue;
+  border: solid 4px $c-blue;
   color: $c-blue;
+  background: url(../img/arrow-blue-buttons.svg) no-repeat right 20px center;
 
   &:hover {
-    background-color: $c-orange;
-    border: solid 2px $c-orange;
+    border: solid 4px $c-orange;
     color: #fff;
+    background: url(../img/arrow-white-buttons.svg) no-repeat right 20px center $c-orange;
   }
 }
 
 .button-border-white {
   background: transparent;
-  border: solid 2px #fff;
+  border: solid 4px #fff;
   color: #fff;
 
   &:hover {
     background-color: #fff;
-    border: solid 2px #fff;
+    border: solid 4px #fff;
     color: $c-blue;
   }
 
