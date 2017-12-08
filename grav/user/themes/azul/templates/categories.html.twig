@@ -5,7 +5,7 @@
 	{% set image_basename = image_parts.basename %}
 	{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
 	<a href="{{ page.url }}"> {{ image_page.media[image_basename].resize(130, 140).html() }}</a> 
-	{{ page.summary(100) }}
+	<p>{{ page.summary(100) }}</p>
 	<p><a class="button button-blue" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
 </div>
 
@@ -27,6 +27,10 @@
 					</div>
 					<div class="item-category-content">
 						<div class="category-description">
+							<p>{{ page.header.description_category }}</p>
+						</div>
+						<div class="organizations-list">
+							<h3>Organizaciones que pueden conformar la categoría</h3>
 							{{ page.content }}
 						</div>
 						<div class="category-require-list">
