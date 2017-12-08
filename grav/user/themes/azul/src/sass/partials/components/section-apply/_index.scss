@@ -92,14 +92,34 @@
   padding: 7% 0;
   display: flex;
   justify-content: space-between;
+   @media screen and (max-width: $large) {
+       padding: 10% 0;
+    }
+    @media screen and (max-width: $small) {
+       padding: 6%;
+       flex-direction: column;
+    }
 
   h3 {
     color: #fff;
     font-size: 36px;
+     @media screen and (max-width: $large) {
+       font-size: 26px;
+      }
+      @media screen and (max-width: $small) {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
   }
 
   a {
     font: 20px $headings-font;
+    @media screen and (max-width: $large) {
+       font-size: 12px;
+    }
+    @media screen and (max-width: $small) {
+      font-size: 18px;
+    }
   }
   
 }
