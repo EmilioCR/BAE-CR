@@ -5,7 +5,7 @@
 	{% set image_basename = image_parts.basename %}
 	{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
 	<a href="{{ page.url }}"> {{ image_page.media[image_basename].resize(130, 140).html() }}</a> 
-	<p>{{ page.summary(100) }}</p>
+	{{ page.summary(100) }}
 	<p><a class="button button-blue" href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
 </div>
 
