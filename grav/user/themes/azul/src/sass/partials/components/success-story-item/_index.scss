@@ -25,15 +25,19 @@
 .card-succes {
   background-color: #fff;
   border-top: 7px solid $c-orange;
-  padding: 2% 5%;
-  margin-bottom: 5%;
+  padding: 20px 50px;
 
-  h2 {
+  h3 {
+    margin:20px 0;
     color: $c-blue;
   }
 
-  h2, p {
-    margin-bottom: 5%;
+  p{
+    margin-bottom: 30px;
+  }
+  a{
+    font: 700 14px $headings-font;
+    margin-bottom: 20px;
   }
   
 }
@@ -42,8 +46,7 @@
   border-top: 7px solid $c-orange;
   background-color: #fff;
   text-align:center;
-  padding: 2% 5%;
-  margin-bottom: 5%;
+  padding: 20px 0;
 }
 
 

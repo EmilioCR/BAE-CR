@@ -8,23 +8,23 @@
 // 
 // styleguide Components.goals
 .section-goal-container {
-  padding: 10% 0;
+  padding: 90px 0;
 
   h2{
     color: $c-blue;
-    font: 700 25px $headings-font;
     text-align: center;
     width: 100%;
   }
 
   p{
-    font: 16px $body-font;
+    font: 17px $body-font;
     color: #333333;   
-    margin: 5% 0 0 10%;
+    margin: 13px 0 0 10px;
+    line-height: 26px;
   }
 }
 
 .section-goal{
-  margin: 2% 0;
+  margin: 46px 0;
   display: flex;
 }
