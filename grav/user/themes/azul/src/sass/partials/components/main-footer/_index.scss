@@ -12,26 +12,71 @@
 }
 
 .content-footer {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  @media screen and (min-width: $large) {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+ 
   p {
     color: #fff;
-    font:16px $body-font;
+    font: 10px $body-font;
     text-align: center;
-    display: inline-block;
+    order: 2;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media screen and (min-width: $large) {
+      order: 0;
+      font: 12px $body-font;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 16px;
+    }
   }
 
   h6 {
-    font:16px $body-font;
+    font: 12px $body-font;
+    margin-bottom: 5px; 
+    @media screen and (min-width: $x-large) {
+      font: 16px $body-font;
+      margin-right: 20px;   
+    } 
   }
 
-  li{
+  li {
     display: inline-block;
+    margin-right: 10px;
   }
 
 }
 .social-media-footer {
-  display: inline-flex;
+  margin-bottom: 36px;  
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+    font-size: 16px;
+  }    
+  @media screen and (min-width: $x-large) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.logo-footer {
+  width: 50%;
+  margin-bottom: 36px; 
+  @media screen and (min-width: $large) {
+      width: 30%;
+    }
+  @media screen and (min-width: $x-large) {
+      width: 15%;
+  }
 }
