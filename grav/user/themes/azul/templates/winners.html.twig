@@ -9,11 +9,11 @@
 					<h1>{{ header.title }}</h1>
 					<h2>{{ header.summary_winners }}</h2>
 					<h2>{{ header.summary_time_winners }}</h2>
-					<img class="header-winners-image"src='{{ (header.winners_image|first).path }}'>	
+					<img class="header-winners-image"src='{{ (header.winners_image|first).path }}'>
 				</div>
 				<div class="intro-winners-info">
 					{{ page.content }}
-					<a class= "button button-white" href="{{ page.media[header.winners_file_select].cache.url }}">Ver lista de galardonados</a>
+					<a class= "button button-blue" href="{{ page.media[header.winners_file_select].cache.url }}">Ver lista de galardonados</a>
 				</div>
 			</div>
 		</div>
@@ -25,6 +25,7 @@
 				<p>{{header.description_indicators}}</p>	
 			</div>
 			<div class="indicators">
+
 				<div class="square-indicadores">
 					<div class="square-indicadores-item">
 						{{ header.kpi_first }}
@@ -62,6 +63,7 @@
 			<div class="know-how-to-apply-section">
 				<h2>Sea parte del cambio <br> con Bandera Azul Ecológica Costa Rica</h2>
 				<a class="button button-white" href="#">Conozca como aplicar</a>
+
 			</div>
 		</div>
 	</div>

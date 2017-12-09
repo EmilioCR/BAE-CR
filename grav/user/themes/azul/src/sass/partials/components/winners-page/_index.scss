@@ -9,7 +9,7 @@
 
   h1 {
     color: $c-blue; 
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
   }
     
 } 
@@ -47,7 +47,7 @@
     color: $c-blue; 
     padding-bottom: 30px;
   }
-    
+
 }
 
 .indicators {
@@ -56,7 +56,6 @@
   @media screen and (min-width: $medium) {
     display: flex;
   }
-
   ul {
     padding: 0;
   }
@@ -133,6 +132,7 @@
 }
 .know-how-to-apply-section {
   color: #fff;
+
   padding: 70px 0;
   margin-top: 90px;
   display: flex;
@@ -146,6 +146,13 @@
 
 
 
-
-
-
+.button {
+  font-size: 17px;
+  padding: 10px 44px 10px 25px;
+  font-weight: bold;
+  white-space: nowrap;
+  @media screen and (min-width: $medium) {
+    font-size: 20px;
+    padding: 13px 50px;
+  }
+}
