@@ -91,17 +91,47 @@
 }
 
 .section-go-category {
-  padding: 7% 0;
-  display: flex;
-  justify-content: space-between;
+  color: #fff;
+  margin-top: 9%;
+  padding: 20px;
+  @media screen and (min-width: $large) {
+    padding: 7% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: $large) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $x-large) {
+    max-width: 950px;
+  }
 
   h3 {
+    font-size: 20px;
     color: #fff;
-    font-size: 36px;
+    margin-bottom: 10px;;
+    @media screen and (min-width: $large) {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $large) {
+      padding-right: 20px;
+    }
   }
 
   a {
-    font: 20px $headings-font;
+    font-size: 17px;
+    padding: 10px 44px 10px 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    @media screen and (min-width: $medium) {
+      font-size: 20px;
+      padding: 13px 50px;
+    }
   }
   
 }
