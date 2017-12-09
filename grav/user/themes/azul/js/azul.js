@@ -76,11 +76,11 @@ jQuery(document).ready(function($){
 
             if(settings.inlineStyles === true) {
 
-                tabsContent.css({
-                    'position': 'relative',
-                    'overflow': 'hidden',
-                    'width': '100%'
-                });
+                // tabsContent.css({
+                //     'position': 'relative',
+                //     'overflow': 'hidden',
+                //     'width': '100%'
+                // });
 
                 tabsSections.css({
                     'position': 'absolute',
@@ -135,17 +135,9 @@ jQuery(document).ready(function($){
                 // Get height of new tab
                 var newSection = tabsSections.eq($(this).index()),
                     newHeight = newSection.outerHeight();
+                    newSection.css({opacity : 1})
+                    newSection.addClass('active');
 
-                // Animate height of tab content and show new tab
-                tabsContent.animate({
-                    height: newHeight
-                },300, function(){
-                    if(settings.inlineStyles === true) {
-                        newSection.animate({opacity: 1});
-                    } else {
-                        newSection.addClass('active');
-                    }
-                });
 
             });
 

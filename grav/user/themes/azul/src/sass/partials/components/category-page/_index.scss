@@ -14,7 +14,7 @@
 }
 
 .list-categories {
-  padding: 2% 0;
+  padding: 20px 0;
   border-bottom: 5px solid $c-orange;
 
   h5 {
@@ -43,6 +43,7 @@
   a {
     text-decoration: none;
     color: $c-blue;
+    font: 700 14px $headings-font;
   }
 
 }
