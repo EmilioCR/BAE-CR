@@ -55,12 +55,23 @@
   padding: 53px 0;
   @media screen and (min-width: $medium) {
     display: flex;
+    justify-content: space-around;
   }
   ul {
     padding: 0;
   }
 }
-.square-indicadores {
+.square-indicadores{
+  text-align: center;
+
+  @media screen and (min-width: $medium) {
+    margin-left: 40px;
+  }
+}
+.square-indicadores-list {
+  font-size: 16px;
+}
+.square-indicadores-item {
   margin: 0 auto;
   background-color: $c-green;
   border: 8px solid #AEE8AD;     
@@ -68,68 +79,21 @@
   width: 61%;
   padding: 60px 0;
   margin-bottom: 80px;
-  
-  @media screen and (min-width: $small) {
-    margin-bottom: 93px;
-  }
-  @media screen and (min-width: $medium){
-    position: relative;
-    margin: 10px;
-    padding: 19px;
-  }
-  @media screen and (min-width: $large) {
-    padding: 36px;
-  }
-  @media screen and (min-width: $x-large) {
-    padding: 52px;
-  }
+  font: 700 42px $headings-font;
 
-  p {
-    position: absolute;
-    margin-top: 84px;
-    font: 700 16px $body-font;
-    width: 130px;
-
-    @media screen and (min-width: $small) {
-      font-size: 18px;
-      width: 141px;
-    }
-    @media screen and (min-width: $medium) {
-      bottom: -60px;
-    }
-  }
-
-  li{
-    font: bold 16px $headings-font;
-
-    @media screen and (min-width: $small) {
-      font-size: 22px;
-    }
-    @media screen and (min-width: $medium) {
-      font-size: 17px;
-    }
-    @media screen and (min-width: $large) {
-      font-size: 20px
-    }
-  }
-
-  span{
-    display: block;
-    text-align: center;
-    font: bold 35px $headings-font;
-
-    @media screen and (min-width: $small){
-      font-size: 55px;
-    }
-    @media screen and (min-width: $medium) {
-      font-size: 33px;
-    }
-    @media screen and (min-width: $large) {
-      font-size: 50px;
-    }
+  @media screen and (min-width: $medium) {
+    width: 115%;
   }
   
 }
+.square-indicadores-label {
+  position: relative;
+  bottom: 60px;
+  width: 143px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
 .know-how-to-apply-section {
   color: #fff;
 
