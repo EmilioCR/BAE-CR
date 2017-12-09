@@ -7,25 +7,17 @@
 // 
 // styleguide Components.tabs
 
-article {
-  padding: 30px;
-  width: 100%;
-  display: flex;
-  max-width: 1280px;
-}
-// 
 .container-tabs {
   background: $c-lightgray;
-  border-bottom: 4px solid #FAC917;
-  @media screen and (min-width: $medium) {
-    display: flex;
+  @media screen and (min-width: $large) {
+    border-bottom: 4px solid #FAC917;
   }
 }
 
 .tabs {
-  ul {
+  .container-achieve-list {
     display: block;
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $large) {
       display: flex;
     }
   }
@@ -37,17 +29,18 @@ article {
     background: $c-lightgray;
     color: #768291;
     font-family: $headings-font;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 12px;
-    @media screen and (min-width: $medium) {
+    font-size: 10px;
+
+    @media screen and (min-width: $small) {
       flex: 1;
-      float: left;
       height: 50px;
       line-height: normal;
       padding-top: 13px;
+      font-size: 14px;
     }
     &.active {
       padding-bottom: 0;
@@ -55,13 +48,13 @@ article {
       background: $c-lightblue;
       color: #2F80ED;
       border-bottom: 4px solid $c-yellow;
-      @media screen and (min-width: $medium) {
+      @media screen and (min-width: $large) {
         border-bottom: 0;
       }
 
       &::before {
         content: ' ';
-        @media screen and (min-width: $medium) {
+        @media screen and (min-width: $large) {
           background: url('../img/star.svg') no-repeat center $c-lightblue;
           background-size: 30px;
           display: block;
@@ -96,6 +89,10 @@ article {
       margin: 15px;
       width: 250px;
     }
+    @media screen and (min-width: $large) {
+      width: 500px;
+      margin: 100px 0 0 30px;
+    }
   }
 
   h2 {
@@ -110,8 +107,17 @@ article {
 .tabs-content {
   height: 500px !important;
   background:$c-lightblue;
+  @media screen and (min-width: $medium) {
+    height: 350px !important;
+  }
   img {
-    width: 100%;    
+    width: 100%;
+    @media screen and (min-width: $medium) {
+      width: 300px;
+    }
+    @media screen and (min-width: $large) {
+      width: 400px;
+    } 
   }
 
 }
@@ -119,10 +125,8 @@ article {
 article {
   display: block;
   padding: 0;
-  width: 100%;
   @media screen and (min-width: $medium) {
-    padding: 30px;
+    padding: 30px 0;
     display: flex;
-    max-width: 1280px;
   }
 }
