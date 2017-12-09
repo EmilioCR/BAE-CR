@@ -12,11 +12,13 @@
     padding-bottom: 30px;
   }
     
-} 
+}
+
 .indicadores-info{
   width: 300px;
   margin-left: 33px;
 }
+
 .intro-winners-info {
   font-family: $body-font;
   width: 40%;
@@ -61,31 +63,32 @@
     padding: 0;
   }
 }
+
 .square-indicadores{
   text-align: center;
-
-  @media screen and (min-width: $medium) {
-    margin-left: 40px;
-  }
 }
+
 .square-indicadores-list {
   font-size: 16px;
 }
+
 .square-indicadores-item {
   margin: 0 auto;
   background-color: $c-green;
   border: 8px solid #AEE8AD;     
   color: white;
-  width: 61%;
+  width: 190px;
   padding: 60px 0;
   margin-bottom: 80px;
   font: 700 42px $headings-font;
 
   @media screen and (min-width: $medium) {
-    width: 115%;
+    width: 200px;
+    margin-left: 20px;
   }
   
 }
+
 .square-indicadores-label {
   position: relative;
   bottom: 60px;
@@ -96,7 +99,6 @@
 
 .know-how-to-apply-section {
   color: #fff;
-
   padding: 70px 0;
   margin-top: 90px;
   display: flex;
@@ -107,8 +109,6 @@
     color: #fff;
   }
 }
-
-
 
 .button {
   font-size: 17px;
