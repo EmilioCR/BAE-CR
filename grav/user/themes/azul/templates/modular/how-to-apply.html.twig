@@ -1,7 +1,7 @@
 <section class="section-pattern section-pattern-lightgray-vertical">
   <div class="limiter">
     <div class="info-apply">
-      <h1>{{ header.title }}</h1>
+      <h1>{{ header.title }}</h1> 
       <p>{{ header.description }}</p>
     </div>    
   </div>
@@ -15,14 +15,18 @@
     </div>
     <div class="pre-apply">
       <div class="section-pattern section-pattern-lightblue-squard pre-apply-step">
-        <h4>1</h4>
-        <h5>{{header.pre_apply_category_title}}</h3> 
+        <div class="number">
+          <h4>1</h4>
+        </div>
+        <h2>{{header.pre_apply_category_title}}</h2> 
         <p>{{header.pre_apply_category_content}}</p> 
         <a class="button button-border-blue" href="{{base_url}}{{header.pre_apply_category_go_category}}">Conocer categorías</a>
       </div>
       <div class="section-pattern section-pattern-lightgray-squard pre-apply-step">
-        <h4>2</h4>
-        <h5>{{header.pre_apply_committee_title}}</h3> 
+        <div class="number">
+          <h4>2</h4>
+        </div>
+        <h2>{{header.pre_apply_committee_title}}</h2> 
         <p>{{header.pre_apply_committee_content}}</p> 
         <a class="button button-border-blue" href="{{(header.pre_apply_file|first).path}}" download="">Conformación del comité</a>
       </div>
@@ -32,13 +36,17 @@
     </div>
     <div class="apply">
       <div class="section-pattern section-pattern-lightgray-squard apply-step">
-        <h4>3</h4>
-        <h5>{{header.apply_signup_title}}</h3> 
+        <div class="number">
+          <h4>3</h4>
+        </div>
+        <h2>{{header.apply_signup_title}}</h2> 
         <p>{{header.apply_signup_content}}</p> 
       </div>
       <div class="section-pattern section-pattern-lightblue-squard apply-step">
-        <h4>4</h4>
-        <h5>{{header.apply_report_title}}</h3> 
+        <div class="number">
+          <h4>4</h4>
+        </div>
+        <h2>{{header.apply_report_title}}</h2> 
         <p>{{header.apply_report_content}}</p> 
       </div>
     </div>

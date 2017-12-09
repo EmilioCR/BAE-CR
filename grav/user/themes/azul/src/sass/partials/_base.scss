@@ -19,6 +19,7 @@ $x-large: 1280px;
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -60,6 +61,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font;
 }
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
 
 //
 // Parragraph
@@ -70,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 // styleguide Base.parragraphs
 
 p {
-  font-size: 1.6rem;
+  font: 17px $body-font;
+  line-height: 26px;
   color: #333;
 }
 
