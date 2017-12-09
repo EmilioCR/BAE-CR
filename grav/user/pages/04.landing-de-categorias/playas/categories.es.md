@@ -1,5 +1,6 @@
 ---
 title: Playas
+description_category: 'Establecer un incentivo para promover la organización de comités locales que involucren la participación de líderes de la sociedad civil (hoteleros, cámaras locales de turismo, asociaciones de desarrollo, representantes de la iglesia, operadores de acueductos rurales y otros), con el afán de desarrollar sus zonas en concordancia con la protección de las playas.'
 logo_image: logo_playas.png
 commitee_type: community
 require_list:
@@ -69,4 +70,4 @@ steps_report_file:
         path: user/pages/04.landing-de-categorias/playas/FORMATO-INFORME-FINAL-PLAYAS.doc
 ---
 
-Establecer un incentivo para promover la organización de comités locales que involucren la participación de líderes de la sociedad civil (hoteleros, cámaras locales de turismo, asociaciones de desarrollo, representantes de la iglesia, operadores de acueductos rurales y otros), con el afán de desarrollar sus zonas en concordancia con la protección de las playas.
+Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas
