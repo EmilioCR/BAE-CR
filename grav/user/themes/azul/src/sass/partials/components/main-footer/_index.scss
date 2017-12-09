@@ -34,9 +34,12 @@
     order: 2;
     flex-wrap: wrap;
     margin: 0 auto;
+    @media screen and (min-width: $medium) {
+      font: 16px $body-font;
+    }
     @media screen and (min-width: $large) {
       order: 0;
-      font: 12px $body-font;
+      font: 16px $body-font;
     }
     @media screen and (min-width: $x-large) {
       font-size: 16px;
