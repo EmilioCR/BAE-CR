@@ -97,17 +97,17 @@ a {
 .limiter {
   max-width: 1280px;
   margin: 0 auto;
-  @media screen and (max-width: $x-large) {
-    max-width: $large;
-  }
-  @media screen and (max-width: $large) {
-    max-width: $medium;
-  }
-  @media screen and (max-width: $medium) {
+  @media screen and (min-width: $small) {
     max-width: $small;
   }
-  @media screen and (max-width: $small) {
-    max-width: 100%;
+  @media screen and (min-width: $medium) {
+    max-width: $medium;
+  }
+  @media screen and (min-width: $large) {
+    max-width: $large;
+  }
+  @media screen and (min-width: $x-large) {
+    max-width: $x-large;
   }
 }
 
