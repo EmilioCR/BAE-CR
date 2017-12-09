@@ -7,46 +7,92 @@
 // 
 // styleguide Components.tabs
 
-.tabs {
-    
-  ul:first-of-type {
-    display: flex;
-    background: $c-lightgray;
+.container-tabs {
+  background: $c-lightgray;
+  @media screen and (min-width: $large) {
     border-bottom: 4px solid #FAC917;
+  }
+}
 
-    li {
+.tabs {
+  .container-achieve-list {
+    display: block;
+    @media screen and (min-width: $large) {
+      display: flex;
+    }
+  }
+
+  .container-achieve-list li {
+    width: 50%;
+    cursor: pointer;
+    display: inline-block;
+    background: $c-lightgray;
+    color: #768291;
+    font-family: $headings-font;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+
+    @media screen and (min-width: $small) {
       flex: 1;
-      cursor: pointer;
-      display: block;
-      float: left;
       height: 50px;
-      background: $c-lightgray;
-      color: #768291;
-      font-family: $headings-font;
-      font-weight: 700;
-      line-height: 50px;
-      text-align: center;
-      text-transform: uppercase;
-      
-  
-      &.active {
-        background: $c-lightblue;
-        color: #2F80ED;
-        border-bottom: 4px solid $c-lightblue;
+      line-height: normal;
+      padding-top: 13px;
+      font-size: 14px;
+    }
+    &.active {
+      padding-bottom: 0;
+      position: relative;
+      background: $c-lightblue;
+      color: #2F80ED;
+      border-bottom: 4px solid $c-yellow;
+      @media screen and (min-width: $large) {
+        border-bottom: 0;
       }
 
-      &.icon{
-        background: url(../../../img/star.svg);
+      &::before {
+        content: ' ';
+        @media screen and (min-width: $large) {
+          background: url('../img/star.svg') no-repeat center $c-lightblue;
+          background-size: 30px;
+          display: block;
+          position: absolute;
+          content: ' ';
+          top: -35px;
+          width: 100%;
+          height: 40px; 
+          padding-top: 10px;
+        }
+      }
+
+      &::after {
+        content: ' ';
+        width: 100%;
+        background-color: $c-lightblue;
+        height: 10px;
+        padding-top: 10px;
+        display: none;
       }
 
     }
 
   }
-    
+
   p{
-    font: 700 18px $body-font;
-    color: #768291;
-    margin: 5%;
+    font: 500 18px $body-font;
+    color: #4F4F4F;
+    margin: 25px 25px;
+    @media screen and (min-width: $medium) {
+      font: 700 18px $body-font;
+      margin: 15px;
+      width: 250px;
+    }
+    @media screen and (min-width: $large) {
+      width: 500px;
+      margin: 100px 0 0 30px;
+    }
   }
 
   h2 {
@@ -59,12 +105,28 @@
 }
 
 .tabs-content {
+  height: 500px !important;
   background:$c-lightblue;
+  @media screen and (min-width: $medium) {
+    height: 350px !important;
+  }
+  img {
+    width: 100%;
+    @media screen and (min-width: $medium) {
+      width: 300px;
+    }
+    @media screen and (min-width: $large) {
+      width: 400px;
+    } 
+  }
+
 }
 
 article {
-  padding: 30px;
-  width: 100%;
-  display: flex;
-  max-width: 1280px;
+  display: block;
+  padding: 0;
+  @media screen and (min-width: $medium) {
+    padding: 30px 0;
+    display: flex;
+  }
 }
