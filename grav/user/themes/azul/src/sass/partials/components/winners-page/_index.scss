@@ -1,5 +1,5 @@
 .all-info-winners {
-  padding: 8% 0 17%;
+  padding: 80px 0 170px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -8,10 +8,15 @@
   width: 50%;
 
   h1 {
-    color: $c-blue;
-    padding-bottom: 3%;
+    color: $c-blue; 
+    padding-bottom: 30px;
   }
+    
+}
 
+.indicadores-info{
+  width: 300px;
+  margin-left: 33px;
 }
 
 .intro-winners-info {
@@ -19,116 +24,99 @@
   width: 40%;
 
   a {
-    margin-top: 120px;
-    font-size: 20px;
+    margin-top: 55px; 
+    font-size: 20px; 
+    background-color: $c-blue;
+    color: #fff;      
   }
 
 }
 
 .header-winners-image {
-  margin-top: 5%;
+  margin-top: 50px;
   position: absolute;
 }
 
 .section-indicators {
-  margin-top: 15%;
-  padding: 7% 0;
+  margin-top: 205px;
+  padding: 70px 0;
   width: 100%;
   background: url(../img/pattern-white.svg) $c-lightgray;
   font-weight: 700;
   background-size: cover;
 
   h1 {
-    color: $c-blue;
-    padding-bottom: 3%;
+    color: $c-blue; 
+    padding-bottom: 30px;
   }
 
 }
 
 .indicators {
   margin: 0 auto;
-  padding: 10% 0;
-  display: flex;
-  justify-content: flex-end;
-
+  padding: 53px 0;
+  @media screen and (min-width: $medium) {
+    display: flex;
+    justify-content: space-around;
+  }
   ul {
     padding: 0;
   }
+}
 
-  div {
-    display: flex;
-    margin-left: 10%;
-    background-color: $c-green;
-    border: 8px solid #AEE8AD;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    padding: 5% 0;
+.square-indicadores{
+  text-align: center;
+}
 
-    p {
-      position: absolute;
-      margin-top: 10%;
-      font-family: $body-font;
-      font-weight: 700;
-    }
+.square-indicadores-list {
+  font-size: 16px;
+}
 
+.square-indicadores-item {
+  margin: 0 auto;
+  background-color: $c-green;
+  border: 8px solid #AEE8AD;     
+  color: white;
+  width: 190px;
+  padding: 60px 0;
+  margin-bottom: 80px;
+  font: 700 42px $headings-font;
+
+  @media screen and (min-width: $medium) {
+    width: 200px;
+    margin-left: 20px;
   }
-
+  
 }
 
-.circle-indicator {
-  border-radius: 50%;
-  font-size: 50px;
-}
-
-.category-indicator {
-  border-radius: 0;
-  font-size: 23px;
+.square-indicadores-label {
+  position: relative;
+  bottom: 60px;
+  width: 143px;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 .know-how-to-apply-section {
   color: #fff;
-  margin-top: 9%;
-  padding: 20px;
-  @media screen and (min-width: $large) {
-    padding: 7% 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @media screen and (min-width: $large) {
-    max-width: 90%;
-    margin: 0 auto;
-  }
+  padding: 70px 0;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  @media screen and (min-width: $x-large) {
-    max-width: 950px;
-  }
-
-  p {
-    font-size: 20px;
+  h2 {
     color: #fff;
-    margin-bottom: 10px;;
-    @media screen and (min-width: $large) {
-      font-size: 25px;
-      margin-bottom: 0;
-    }
-    @media screen and (min-width: $large) {
-      padding-right: 20px;
-    }
   }
+}
 
-  .button {
-    font-size: 17px;
-    padding: 10px 44px 10px 25px;
-    font-weight: bold;
-    white-space: nowrap;
-    @media screen and (min-width: $medium) {
-      font-size: 20px;
-      padding: 13px 50px;
-    }
+.button {
+  font-size: 17px;
+  padding: 10px 44px 10px 25px;
+  font-weight: bold;
+  white-space: nowrap;
+  @media screen and (min-width: $medium) {
+    font-size: 20px;
+    padding: 13px 50px;
   }
-
 }

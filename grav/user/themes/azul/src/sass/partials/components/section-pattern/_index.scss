@@ -24,6 +24,9 @@
 .section-pattern {
   border-left: 30px solid $c-yellow;
   width: 100%;
+  @media screen and (min-width: $x-large) {
+    padding-left: 20px;
+  }
 }
 
 .section-pattern-lightblue {
