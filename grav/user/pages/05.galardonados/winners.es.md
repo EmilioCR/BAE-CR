@@ -6,10 +6,13 @@ winners_file_select: remora_pres.pdf
 title_indicators: Impacto
 description_indicators: 'Bandera Azul Ecológica ha logrado mejorar la calidad de blablabla'
 kpi_first: 20%
+kpi_first_description: 'Aumento de participantes'
 kpi_second: '300'
+kpi_second_description: 'Aumento de ganadores'
 firstCategory: 'Cambio climático '
 secondCategory: 'Centros Educativos '
 thirdCategory: 'Hogares Sostenibles'
+kpi_third_description: 'Categorias con mas galardones'
 winners_image:
     'user/pages/05.galardonados/image 3.jpg':
         name: 'image 3.jpg'
