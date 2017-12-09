@@ -26,25 +26,33 @@
 			</div>
 			<div class="indicators">
 				<div class="square-indicadores">
-					<span>{{ header.kpi_first }}</span>
-					<p>{{header.kpi_first_description}}</p>
-				
+					<div class="square-indicadores-item">
+						{{ header.kpi_first }}
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_first_description}}
+					</div>
 				</div> 
+
 				<div class="square-indicadores">
-					<span>{{ header.kpi_second }}</span>
-					<p>{{header.kpi_second_description}}</p>
-						
+					<div class="square-indicadores-item">
+						{{ header.kpi_second }}
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_second_description}}
+					</div>	
 				</div>
 				<div class="square-indicadores">
-					<span>
+					<div class="square-indicadores-item">
 						<ul>
 							<li>{{ header.firstCategory }}</li>
 							<li>{{ header.secondCategory }}</li>
 							<li>{{ header.thirdCategory }}</li>
 						</ul>
-					</span>
-					<p>{{header.kpi_third_description}}</p>	
-					
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_third_description}}
+					</div>
 				</div>						
 			</div>	
 		</div>
