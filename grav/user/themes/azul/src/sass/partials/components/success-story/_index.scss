@@ -14,11 +14,12 @@
   width: 275px;
   display: block;
   margin: 0 auto;
-  @media screen and (min-width: $small) {
-    width: 339px
-  }
   @media screen and (min-width: $large) {
-    width: 1630px;
+    width: 339px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 560px;
+    height: 315px;
   }
 }
 .main_successStory_video {
