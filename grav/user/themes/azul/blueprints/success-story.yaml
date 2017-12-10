@@ -21,6 +21,32 @@ form:
           type: tab
           title: Casos de Exito
           fields:
+
+            header.main_successStory:
+              name: Caso de Exito Principal
+              type: section
+              title: Casos de Exito Principal
+
+            header.main_successStory_title:
+              type: text
+              label: Titulo
+            header.main_successStory_description:
+              type: textarea
+              label: Descripción
+            choose_imageOrvideo_main:
+              type: section
+              title: Puede poner un video o una image, pero NO  las dos
+            header.main_successStory_image:
+              type: file
+              label: Subir una imagen
+              destination: 'self@'
+              accept:
+                - .png
+                - .jpg
+            header.main_successStory_video:
+              type: text
+              label: Poner id del video
+
             header.success:
               name: Casos de Exito
               type: list
@@ -47,6 +73,7 @@ form:
                 .successStory_video:
                   type: text
                   label: Poner id del video
+
 
 
 
