@@ -46,6 +46,11 @@ jQuery(document).ready(function($){
         $menuToggle.toggleClass('menu-toggle-active');
         $navigation.toggle()
     });
+
+    var $menuTitle = $('.menu-title');
+    $menuTitle.click(function () {
+        $navigation.toggleClass('navigation-show');
+    })
 });
 
 (function($) {
