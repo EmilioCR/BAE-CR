@@ -54,6 +54,11 @@
 
 }
 
+.space {
+  @media screen and (min-width: $large) {
+    margin-right: 40px;
+  }
+}
 .apply {
   margin-bottom: 20px;;
 }
@@ -122,11 +127,6 @@
   }
 }
 
-.exception-space {
-  @media screen and (min-width: $large) {
-    margin-right: 40px;
-  }
-}
 
 .section-go-category {
   color: #fff;
