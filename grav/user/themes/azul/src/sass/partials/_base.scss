@@ -19,6 +19,7 @@ $x-large: 1280px;
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -60,6 +61,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font;
 }
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
 
 //
 // Parragraph
@@ -70,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 // styleguide Base.parragraphs
 
 p {
-  font-size: 1.6rem;
+  font: 17px $body-font;
+  line-height: 26px;
   color: #333;
 }
 
@@ -81,7 +92,11 @@ li {
 a {
   text-decoration: none;
 }
-
+// img {
+//   width: inherit;
+//   max-width: 100%;
+//   height: auto;
+// }
 //
 // Footer
 //
@@ -97,4 +112,18 @@ a {
 .limiter {
   max-width: 1280px;
   margin: 0 auto;
+  @media screen and (min-width: $small) {
+    max-width: $small;
+  }
+  @media screen and (min-width: $medium) {
+    max-width: $medium;
+  }
+  @media screen and (min-width: $large) {
+    max-width: $large;
+  }
+  @media screen and (min-width: $x-large) {
+    max-width: $x-large;
+  }
 }
+
+

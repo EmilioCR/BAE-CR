@@ -7,60 +7,203 @@
 
 .global-header {
   background: $c-blue;
-  border-top: solid 5px $c-yellow;
+  border-top: solid 8px $c-yellow;
   color: #fff;
-  padding: 10px;
-  position: relative;
-  z-index: 5;
   -webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
   -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
   box-shadow: 0px 8px 15px -5px #a19d9d;
-
+  z-index: 5;
+  position: relative;
+  padding: 0;
+  
   .limiter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 94px;
+    min-width: 100%;
+
+    @media screen and (min-width: $medium) {
+      min-width: $medium;
+    }
+
+    @media screen and (min-width: $large) {
+      min-width: $large;
+    }
+
+    @media screen and (min-width: $x-large) {
+      min-width: $x-large;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: $medium ) {
+    padding: 10px;
   }
 
 }
 
-.global-logo {
-  background: red;
+.logo-header {
+  -webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
+  -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
+  box-shadow: 0px 8px 15px -5px #a19d9d;
+  z-index: 5;
+  position: relative;
+  @media screen and (min-width: $medium) {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+  }
+}
+
+.main-nav {
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+    text-align: right;
+  }
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @media screen and (min-width: $medium) {
+    display: none;
+  }
+}
+
+.menu-title {
+  display: none;
+
+  @media screen and (min-width: $medium) {
+    display: block;
+    text-align: right;
+    z-index: 99;
+  }
+
+  @media screen and (min-width: $x-large) {
+    display: none;
+  }
+}
+
+.first-menu-line, .second-menu-line, .third-menu-line{
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.menu-toggle-active {
+  .first-menu-line {
+    transform: translate3d(0, 7px, 0) rotate(45deg);
+  }
+
+  .second-menu-line {
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+
+  .third-menu-line {
+    transform: translate3d(0, -15px, 0) rotate(-45deg);
+  }
 }
 
 .navigation {
-  margin: 0;
-  padding: 0;
-  display: flex;
+  background-color: #e0e0e0;
+  padding: 20px 0;
+  text-align: center;
+  display: none;
 
   a {
-    border-radius: 3px;
     font-family: $headings-font;
     font-size: 1.7rem;
-    color: #fff;
+    font-weight: 600;
+    color: $c-blue;
     text-decoration: none;
-    padding: 5px 10px;
 
-    &:hover {
-      background: #fff;
-      color: $c-blue;
+    @media screen and (min-width: $medium) {
+      border-radius: 3px;
+      color: #fff;
+      padding: 5px 5px;
+      font-size: 12px;
+      width: 25%;
+      &:hover {
+        background: #fff;
+        color: $c-blue;
+      }
     }
-    
-  }
 
+    @media screen and (min-width: $large) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $x-large) {
+      font-size: 17px;
+    }
+
+  }
+  
   li {
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
+
+    @media screen and (min-width: $medium) {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (min-width: $medium) {
+    margin: 0;
+    padding-top: 10px ;
+    display: none;
+    background-color: transparent;
+    border-top: 2px solid #fff;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $x-large) {
+    display: block !important;
+    border-top: 0;
   }
 
 }
 
-.active {
+.active-header {
+  background-color: $c-blue;
+  width: 100%;
+
   a {
-    background: #fff;
-    color: $c-blue;
+    color: #fff;
+    @media screen and (min-width: $medium) {
+      border-radius: 3px;
+      padding: 5px 5px;
+      font-size: 12px;
+      background: #fff;
+      color: $c-blue;
+      width: initial;
+    }
+
+    @media screen and (min-width: $large) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $x-large) {
+      font-size: 17px;
+    }
   }
-  
+
+  @media screen and (min-width: $medium) {
+    color: $c-blue;
+    width: initial;
+  }
 }

@@ -35,10 +35,23 @@ jQuery(document).ready(function($){
         // call quicksand and assign transition parameters
         $holder.quicksand($filteredData, {
             duration: 800,
-            easing: 'easeInOutQuad'
+            easing: 'easeInOutQuad',
+            adjustHeight: 'auto'
         });
         return false;
     });
+
+    var $menuToggle = $('#menu-toggle');
+    var $navigation = $('.navigation');
+    $menuToggle.click(function () {
+        $menuToggle.toggleClass('menu-toggle-active');
+        $navigation.toggle()
+    });
+
+    var $menuTitle = $('.menu-title');
+    $menuTitle.click(function () {
+        $navigation.toggle()
+    })
 });
 
 (function($) {
@@ -64,35 +77,35 @@ jQuery(document).ready(function($){
                 tabsSectionsFirst = tabsSections.first();
 
             // Add active class to first items
-            if(!tabsList.find('.active').length) {
-                tabsListItemsFirst.addClass('active');
+            if(!tabsList.find('.active-tab').length) {
+                tabsListItemsFirst.addClass('active-tab');
             }
 
-            if(!tabsContent.find('.active').length) {
-                tabsSectionsFirst.addClass('active');
+            if(!tabsContent.find('.active-tab').length) {
+                tabsSectionsFirst.addClass('active-tab');
             }
 
             
 
             if(settings.inlineStyles === true) {
 
-                tabsContent.css({
-                    'position': 'relative',
-                    'overflow': 'hidden',
-                    'width': '100%'
-                });
+                // tabsContent.css({
+                //     'position': 'relative',
+                //     'overflow': 'hidden',
+                //     'width': '100%'
+                // });
 
                 tabsSections.css({
                     'position': 'absolute',
                     'opacity': 0
                 });
 
-                if(!tabsContent.find('.active').length) {
+                if(!tabsContent.find('.active-tab').length) {
                     tabsSectionsFirst.css({
                         'opacity': 1
                     });
                 } else {
-                    tabsContent.find('.active').css({
+                    tabsContent.find('.active-tab').css({
                         'opacity': 1
                     });
                 }
@@ -102,7 +115,7 @@ jQuery(document).ready(function($){
             $(window).resize(function() {
 
                 // Retrieve height of active section
-                var activeHeight = tabsContent.find('.active').outerHeight();
+                var activeHeight = tabsContent.find('.active-tab').outerHeight();
 
                 // Set height of container based on active section
                 tabsContent.css({height: activeHeight});
@@ -117,35 +130,27 @@ jQuery(document).ready(function($){
             tabsListItems.click(function(){
 
                 // If active tab clicked, do nothing
-                if($(this).hasClass('active')){
+                if($(this).hasClass('active-tab')){
                     return;
                 };
 
                 // Remove active class from current item
-                tabsListItems.removeClass('active');
-                tabsSections.removeClass('active');
+                tabsListItems.removeClass('active-tab');
+                tabsSections.removeClass('active-tab');
 
                 if(settings.inlineStyles === true) {
                     tabsSections.css({'opacity': 0});
                 }
 
                 // Add active class to tab item
-                $(this).addClass('active');
+                $(this).addClass('active-tab');
 
                 // Get height of new tab
                 var newSection = tabsSections.eq($(this).index()),
                     newHeight = newSection.outerHeight();
+                    newSection.css({opacity : 1})
+                    newSection.addClass('active-tab');
 
-                // Animate height of tab content and show new tab
-                tabsContent.animate({
-                    height: newHeight
-                },300, function(){
-                    if(settings.inlineStyles === true) {
-                        newSection.animate({opacity: 1});
-                    } else {
-                        newSection.addClass('active');
-                    }
-                });
 
             });
 

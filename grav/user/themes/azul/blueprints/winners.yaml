@@ -93,6 +93,9 @@ form:
               style: vertical
               label: Primer indicador
               default: 300
+            header.kpi_first_description:
+              type: text
+              label: Descripción del indicador
 
             header.kpi_second:
               type: text
@@ -100,6 +103,9 @@ form:
               style: vertical
               label: Segundo indicador
               default: 20
+            header.kpi_second_description:
+              type: text
+              label: Descripción del indicador
 
             header.kpi_third:
               type: section
@@ -119,6 +125,9 @@ form:
             header.thirdCategory:
               type: text
               label: Tercer Categoria con mas galadornados
+            header.kpi_third_description:
+              type: text
+              label: Descripción del indicador
 
 
         options:

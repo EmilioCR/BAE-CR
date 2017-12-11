@@ -2,9 +2,21 @@
   width: 50%;
   float: right;
   margin: 5% 0;
-
+  p {
+    @media screen and (min-width: $x-large) {
+      max-width: 60%;
+    }
+  }
   h2 {
     color: $c-blue;
+    margin-bottom: 10px;;
   }
-  
+  @media screen and(max-width:$large ) {
+      width: 100%;
+      text-align: center;
+  }
+  @media screen and (max-width: $small) {
+    margin: 0;
+    padding: 20px;
+  }
 }
