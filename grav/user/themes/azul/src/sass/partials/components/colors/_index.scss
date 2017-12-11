@@ -10,7 +10,7 @@
 // .c-green - Green color
 // .c-yellow - Blue color
 // .c-orange - Orange color
-//
+// .c-darkgray - Dark Gray color
 //
 // styleguide Components.colors
 
@@ -21,6 +21,7 @@ $c-lightgray: #fafafa;
 $c-green: #21C465;
 $c-yellow: #ffc300;
 $c-orange: #ff6a00;
+$c-darkgray: #7A7A7A;
 
 .color-card {
   width: 100px;
@@ -53,4 +54,8 @@ $c-orange: #ff6a00;
 
 .c-orange {
   background-color: $c-orange;
+}
+
+.c-darkgray {
+  background-color: $c-darkgray;
 }
