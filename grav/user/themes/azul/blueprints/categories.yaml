@@ -28,9 +28,12 @@ form:
               label: Nombre de categoría
 
             content:
-                type: markdown
-                validate:
-                  type: textarea
+                type: title
+                label: Organizaciones que la conforman
+
+            header.description_category:
+              type: markdown
+              label: Objetivo principal de la categoria
 
             multimedia:
               type: section

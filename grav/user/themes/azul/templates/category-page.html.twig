@@ -25,18 +25,18 @@
 			</div>
 		</div>
 		<div class="wrapper-categories">
-			<div id="listing">
-				<div class="limiter">
+			<div class="limiter">
+				<div id="listing">
 					<ul class="holder">
 						{% set sum = 1 %} 
 						{% for child in collection %}
 							<li data-type="{{child.header.commitee_type}}" data-id ="{{sum}}" class="card-categories">
-			    	    		{% include 'categories.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
-			    	    		{% set sum = sum + 1 %}
-			    			</li>
-			  			{% endfor %}
-			  		</ul>
-			  	</div>
+				   	    {% include 'categories.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+				   	    {% set sum = sum + 1 %}
+				   		</li>
+				  	{% endfor %}
+				  </ul>
+				</div>
 			</div>
 		</div>
 	{% endblock %}
