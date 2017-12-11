@@ -8,10 +8,11 @@
 // 
 // styleguide Components.goals
 .section-goal-container {
-  margin: 70px 0 70px 0; 
+  margin: 20px; 
   padding: 60px 10px 60px 0;
 
   h2 {
+    font-size: 2.8rem;
     color: $c-blue;
     display: inline-block;
     text-align: center;
@@ -23,6 +24,10 @@
     font: 16px $body-font;
     margin: 10px 15px 0 15px;
     text-align: justify;
+
+    @media screen and (min-width: $small) {
+      margin: 10px;
+    }
   }
 }
 
@@ -57,18 +62,18 @@
 .columm-paragraph {
   align-self: flex-start;
 
-    @media screen and (min-width: $medium) {
+  @media screen and (min-width: $medium) {
     width: 550px;
-    }
+  }
 
-    @media screen and (min-width: $large) {
+  @media screen and (min-width: $large) {
     width: 550px;
-    }
+  }
 
-    @media screen and (min-width: $x-large) {
+  @media screen and (min-width: $x-large) {
     width: 550px;
 
-    }
+  }
 }
 
 .columm-img {

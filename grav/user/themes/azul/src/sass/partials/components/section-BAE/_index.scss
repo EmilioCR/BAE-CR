@@ -9,7 +9,7 @@
 
 .section-what-is-BAE {
   padding: 60px 10px 0 0;
-  
+
   @media screen and (min-width: $small) {
     display: flex;
     flex-direction: column;
@@ -38,34 +38,31 @@
   p {
     font: 16px $body-font;
     margin-top: 25px;
-    text-align: justify;
   }
 }
 
 .col-txt {
-    align-self: flex-start;
-    margin: 0 0 35px 20px;
-    
+  align-self: flex-start;
+  margin: 0 0 35px 20px;
 
-    @media screen and (min-width: $medium) {
-        width: 550px;
-    }
+  @media screen and (min-width: $medium) {
+    width: 550px;
+  }
 
-    @media screen and (min-width: $large) {
-        width: 550px;
-    }
+  @media screen and (min-width: $large) {
+    width: 550px;
+  }
 
-    @media screen and (min-width: $x-large) {
-        width: 550px;
-    }
+  @media screen and (min-width: $x-large) {
+    width: 550px;
+  }
 }
 
 .col-img {
-    align-self: flex-start;
+  align-self: flex-start;
     
-    img {
-      width: 100%;
-      margin-bottom: 50px;
+  img {
+    width: 100%;
 
     @media screen and (min-width: $small) {
       margin-bottom: 50px;
