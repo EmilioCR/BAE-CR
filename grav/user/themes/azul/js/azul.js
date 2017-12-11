@@ -39,6 +39,18 @@ jQuery(document).ready(function($){
         });
         return false;
     });
+
+    var $menuToggle = $('#menu-toggle');
+    var $navigation = $('.navigation');
+    $menuToggle.click(function () {
+        $menuToggle.toggleClass('menu-toggle-active');
+        $navigation.toggle()
+    });
+
+    var $menuTitle = $('.menu-title');
+    $menuTitle.click(function () {
+        $navigation.toggle()
+    })
 });
 
 (function($) {
