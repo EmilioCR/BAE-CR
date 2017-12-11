@@ -28,7 +28,6 @@
   }
   
   .button {
-
     position: absolute;
     bottom: 0;
     display: block;
@@ -36,36 +35,33 @@
     padding: 5px 20px;
     background-size: 10px;
     background-position: right;
-    margin: 20px 60px;
-
-    @media screen and (min-width: $large) {
-      margin: 20px 55px;
-    }
+    margin: 20px 55px;
 
   }
 
   @media screen and (min-width: $large) {
     width: 240px;
+    height: 380px;
     padding: 50px 10px;
     display: inline-block;
     margin: 20px 10px;
   }
 }
 
+.wrapper-categories {
+  padding: 40px 0;
+  @media screen and (min-width: $medium) {
+    padding: 100px 0;
+  }
+}
 
 .holder {
-  padding: 40px 0 40px 0;
   margin: 0;
-
   @media screen and (min-width: $medium) {
-    padding: 0;
-    margin: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
+    justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
   }
-  
 }
 
