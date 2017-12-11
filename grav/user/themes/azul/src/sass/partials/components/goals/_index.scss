@@ -14,7 +14,6 @@
   h2 {
     font-size: 2.8rem;
     color: $c-blue;
-    display: inline-block;
     text-align: center;
     width: 100%;
   }
@@ -23,6 +22,7 @@
     color: #333333; 
     font: 16px $body-font;
     margin: 10px 15px 0 15px;
+    line-height: 26px;
     text-align: justify;
 
     @media screen and (min-width: $small) {

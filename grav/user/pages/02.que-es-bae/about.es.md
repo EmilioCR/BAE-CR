@@ -1,9 +1,9 @@
 ---
-about_title: '¿Qué es Bandera Azul Ecológica?'
+about_title: '¿ Qué es el Programa Bandera Azul Ecológica ?'
 about_text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica."
 about_image: flag.png
-goal_title: '¿Qué pretende Bandera Azul Ecológica? '
-goal_content: "Establecer un incentivo para promover la organización\r\nde comités locales y la integralidad de los mismos,\r\ncon el propósitode buscar la conservación y desarrollo,en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones\r\npara enfrentar\r\nel cambio climático, la búsqueda de mejores condiciones\r\nhigiénico-sanitariasy la mejoríade la salud pública de los\r\nhabitantes de Costa Rica."
+goal_title: '¿ Qué pretende el Programa Bandera Azul Ecológica ? '
+goal_content: "Establecer un incentivo para promover la organización\r\nde comités locales y la integralidad de los mismos,\r\ncon el propósitode buscar la conservación y desarrollo,en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones\r\npara enfrentar\r\nel cambio climático, la búsqueda de mejores condiciones\r\nhigiénico-sanitarias y la mejoría de la salud pública de los\r\nhabitantes de Costa Rica."
 goal_image: image.jpg
 team_title: 'Nuestro equipo Bandera Azul Ecológica'
 team_content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'

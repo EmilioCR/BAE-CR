@@ -31,13 +31,14 @@
   }
   
   h1 {
-    font: 700 30px $headings-font;
     color: $c-blue;
+    font: 700 30px $headings-font;
   }
 
   p {
     font: 16px $body-font;
     margin-top: 25px;
+    line-height: 26px;
   }
 }
 
@@ -46,27 +47,23 @@
   margin: 0 0 35px 20px;
 
   @media screen and (min-width: $medium) {
-    width: 550px;
+    width: 590px;
   }
 
   @media screen and (min-width: $large) {
-    width: 550px;
+    width: 590px;
   }
 
   @media screen and (min-width: $x-large) {
-    width: 550px;
+    width: 590px;
   }
 }
 
 .col-img {
   align-self: flex-start;
-    
   img {
+    margin-bottom: 50px;
     width: 100%;
-
-    @media screen and (min-width: $small) {
-      margin-bottom: 50px;
-    }
   }
 }
 
