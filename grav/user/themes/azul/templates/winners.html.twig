@@ -9,7 +9,7 @@
 					<h1>{{ header.title }}</h1>
 					<h2>{{ header.summary_winners }}</h2>
 					<h2>{{ header.summary_time_winners }}</h2>
-					<img class="header-winners-image"src='{{ (header.winners_image|first).path }}'>	
+					<img class="header-winners-image"src='{{ (header.winners_image|first).path }}'>
 				</div>
 				<div class="intro-winners-info">
 					{{ page.content }}
@@ -20,26 +20,40 @@
 	</div>
 	<div class="section-indicators">
 		<div class="limiter">
-			<h1>{{ header.title_indicators }}</h1>
-			<p>{{header.description_indicators}}</p>
+			<div class="indicadores-info">
+				<h1>{{ header.title_indicators }}</h1>
+				<p>{{header.description_indicators}}</p>	
+			</div>
 			<div class="indicators">
-				<div class="circle-indicator">
-					<span>{{ header.kpi_first }}</span>
-					<p>Aumento de participantes</p>
+
+				<div class="square-indicadores">
+					<div class="square-indicadores-item">
+						{{ header.kpi_first }}
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_first_description}}
+					</div>
 				</div> 
-				<div class="circle-indicator">
-					<span>{{ header.kpi_second }}</span>
-					<p>Aumento de ganadores</p>
+
+				<div class="square-indicadores">
+					<div class="square-indicadores-item">
+						{{ header.kpi_second }}
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_second_description}}
+					</div>	
 				</div>
-				<div class= "category-indicator">
-					<span>
-						<ul>
+				<div class="square-indicadores">
+					<div class="square-indicadores-item">
+						<ul class="square-indicadores-list">
 							<li>{{ header.firstCategory }}</li>
 							<li>{{ header.secondCategory }}</li>
 							<li>{{ header.thirdCategory }}</li>
 						</ul>
-					</span>
-					<p>Categorías con más galardones</p>	
+					</div>
+					<div class="square-indicadores-label">
+						{{header.kpi_third_description}}
+					</div>
 				</div>						
 			</div>	
 		</div>
@@ -47,8 +61,9 @@
 	<div class="section-pattern section-pattern-green">
 		<div class="limiter">
 			<div class="know-how-to-apply-section">
-				<p><b> Sea parte del cambio <br> con Bandera Azul Ecológica Costa Rica</b></p>
-				<a class="button button-white" href="#"><b>Conozca como aplicar</b></a>
+				<h2>Sea parte del cambio <br> con Bandera Azul Ecológica Costa Rica</h2>
+				<a class="button button-white" href="#">Conozca como aplicar</a>
+
 			</div>
 		</div>
 	</div>

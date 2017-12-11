@@ -16,7 +16,7 @@
   width: 45%;
 
   p { 
-    margin-top: 2%;
+    margin-top: 20px;
   }
 
   h1 {
@@ -47,6 +47,7 @@
   }
 
   a {
+    font: 700 17px $headings-font;
     display: block;
     padding: 20px;
   }

@@ -1,5 +1,5 @@
 .all-info-winners {
-  padding: 8% 0 17%;
+  padding: 80px 0 170px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -9,30 +9,37 @@
 
   h1 {
     color: $c-blue; 
-    padding-bottom: 3%;
+    padding-bottom: 30px;
   }
     
-} 
+}
+
+.indicadores-info{
+  width: 300px;
+  margin-left: 33px;
+}
 
 .intro-winners-info {
   font-family: $body-font;
   width: 40%;
 
   a {
-    margin-top: 120px;
-    font-size: 20px;
+    margin-top: 55px; 
+    font-size: 20px; 
+    background-color: $c-blue;
+    color: #fff;      
   }
 
 }
 
 .header-winners-image {
-  margin-top: 5%;
+  margin-top: 50px;
   position: absolute;
 }
 
 .section-indicators {
-  margin-top: 15%;
-  padding: 7% 0;
+  margin-top: 205px;
+  padding: 70px 0;
   width: 100%;
   background: url(../img/pattern-white.svg) $c-lightgray;
   font-weight: 700;
@@ -40,76 +47,76 @@
 
   h1 {
     color: $c-blue; 
-    padding-bottom: 3%;
+    padding-bottom: 30px;
   }
-    
+
 }
 
 .indicators {
   margin: 0 auto;
-  padding: 10% 0;
-  display: flex;
-  justify-content: flex-end;
-  
+  padding: 53px 0;
+  @media screen and (min-width: $medium) {
+    display: flex;
+    justify-content: space-around;
+  }
   ul {
     padding: 0;
   }
+}
 
-  div {
-    display: flex;
-    margin-left: 10%;
-    background-color: $c-green;
-    border: 8px solid #AEE8AD;     
-    color: white;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    padding: 5% 0;
-  
-    p {
-      position: absolute;
-      margin-top: 10%;
-      font-family: $body-font;
-      font-weight: 700;
-    }
+.square-indicadores{
+  text-align: center;
+}
 
+.square-indicadores-list {
+  font-size: 16px;
+}
+
+.square-indicadores-item {
+  margin: 0 auto;
+  background-color: $c-green;
+  border: 8px solid #AEE8AD;     
+  color: white;
+  width: 190px;
+  padding: 60px 0;
+  margin-bottom: 80px;
+  font: 700 42px $headings-font;
+
+  @media screen and (min-width: $medium) {
+    width: 200px;
+    margin-left: 20px;
   }
-
+  
 }
 
-.circle-indicator {
-  border-radius: 50%;
-  font-size: 50px;
-}
-
-.category-indicator {
-  border-radius: 0;
-  font-size: 23px;
+.square-indicadores-label {
+  position: relative;
+  bottom: 60px;
+  width: 143px;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
 .know-how-to-apply-section {
   color: #fff;
-  padding: 7% 0;
-  margin-top: 9%;
+  padding: 70px 0;
+  margin-top: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  p {
-    font-size: 25px;
+  h2 {
     color: #fff;
   }
-
-  a {
-    font-size: 20px;
-  }
-  
 }
 
-
-
-
-
-
-
-
+.button {
+  font-size: 17px;
+  padding: 10px 44px 10px 25px;
+  font-weight: bold;
+  white-space: nowrap;
+  @media screen and (min-width: $medium) {
+    font-size: 20px;
+    padding: 13px 50px;
+  }
+}
