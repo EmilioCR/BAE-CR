@@ -1,23 +1,34 @@
 .section-stories {
   background-color: $c-lightgray;
-  padding-top: 10%;
+  padding-top: 10px;
 }
 
 .content-intro-stories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding-bottom: 32px;
+  @media screen and (min-width: $large) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-
+.success-stories-image {
+  width: 100%;
+  @media screen and (min-width: $x-large) {
+    width: 400px;
+  }
+}
 .success-title {
   color: $c-orange;
 }
 
 .item-section-stories {
-  width: 40%;
-  
+
   h2 {
     color: $c-orange;
+    text-align: center;
+    margin-top: 30px;
+    @media screen and (min-width: $large) {
+      text-align: left;
+    }
   }
 
 }
@@ -25,7 +36,16 @@
 .card-succes {
   background-color: #fff;
   border-top: 7px solid $c-orange;
-  padding: 20px 50px;
+  padding: 20px 17px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: $large) {
+    width: 300px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 440px;
+  }
 
   h3 {
     margin:20px 0;
@@ -46,7 +66,16 @@
   border-top: 7px solid $c-orange;
   background-color: #fff;
   text-align:center;
-  padding: 20px 0;
+  padding: 20px 17px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: $large) {
+    width: 300px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 440px;
+  }
 }
 
 

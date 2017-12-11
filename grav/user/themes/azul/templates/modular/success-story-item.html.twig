@@ -5,20 +5,21 @@
 				<h2 class="success-title ">Casos de exito</h2>
 				<div class="card-succes">
 					<div class="success-stories">
-						<img src="{{(header.image|first).path}}" alt="{{header.title}}">
+						<img class="success-stories-image" src="{{(header.image|first).path}}" alt="{{header.title}}">
 						<h3>{{header.title}}</h3>
 						<p>{{header.description}}</p>
 						<a class="button button-border-blue" href="{{base_url}}/casos-de-exito">Ver todos</a>
 					</div>
 				</div>
 			</div>
-			<div class="item-section-stories">
+			<div class="item-section-stories ">
 				<h2 class="success-title">Siguenos en:</h2>
-				<div class="card-facebook-block">
+				<div class="card-facebook-block card-succes">
 					
 					<div class="facebook-block">
-						<div class="fb-page" data-href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" data-tabs="timeline" data-width="300px" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">Programa Bandera Azul Ecologica(Costa Rica)</a></blockquote></div>
-						<div id="fb-root"></div>
+						{#<div class="fb-page" data-href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" data-tabs="timeline" data-width="300px"data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">Programa Bandera Azul Ecologica(Costa Rica)</a></blockquote></div>#}
+						<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">Programa Bandera Azul Ecologica(Costa Rica)</a></blockquote></div>
+						{#<div id="fb-root"></div>
 							<script>
 								(function(d, s, id) {
 								  var js, fjs = d.getElementsByTagName(s)[0];
@@ -27,7 +28,15 @@
 								  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10&appId=195932157209239';
 								  fjs.parentNode.insertBefore(js, fjs);
 								}(document, 'script', 'facebook-jssdk'));
-							</script>
+							</script>#}
+						<div id="fb-root"></div>
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.11';
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
 			
 					</div>
 				</div>
