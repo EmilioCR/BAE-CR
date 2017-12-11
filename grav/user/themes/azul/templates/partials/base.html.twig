@@ -31,11 +31,17 @@
     {% block header %}
       <header class="global-header">
         <div class="limiter">
-          <div>
+          <div class="logo-header">
             <a href="{{ base_url == '' ? '/' : base_url }}">
               <img src="{{ url('theme://img/logo_PBAE.png')}}" alt="Logo Bae">
             </a>
+            <div class="menu-toggle" id="menu-toggle">
+              <div class="first-menu-line"></div>
+              <div class="second-menu-line"></div>
+              <div class="third-menu-line"></div>
+            </div>
           </div>
+          <h3 class="menu-title">Menu</h3>
           <div class="main-nav">
             {% block header_extra %}{% endblock %}
             {% block header_navigation %}
@@ -44,6 +50,7 @@
             <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
           </div>
         </div>
+        
       </header>
     {% endblock %}
     {% block showcase %}{% endblock %}
@@ -56,13 +63,13 @@
         <footer class="global-footer">
           <div class="limiter">  
             <div class="content-footer">
-              <img src="{{ url('theme://img/logo_PBAE.png')}}" alt="Logo Bandera Azul">
-              <p>© 2017 Diseño y Desarrollo por estudiantes del CETAV</p>
+              <img  class="logo-footer" src="{{ url('theme://img/logo_PBAE.png')}}" alt="Logo Bandera Azul">
+              <p>© 2017 Diseño y Desarrollo por estudiantes del Parque La Libertad</p>
               <div class="social-media-footer">
                 <h6>Siguenos en:</h6>
                 <ul>
-                  <li><a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/"><img src="{{ url('theme://img/facebook_logo_white.svg')}}" alt="Logo Facebook"></a></li>
-                  <li><a href="#"><img src="{{ url('theme://img/youtube-logo.png')}}" alt="Logo Youtube"></a></li>    
+                  <li><a class="image-contact-size" href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/"><img src="{{ url('theme://img/facebook_logo_white.svg')}}" alt="Logo Facebook"></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvR6srRG5vodXrHYdMzY6rw/videos"><img src="{{ url('theme://img/youtube-logo.png')}}" alt="Logo Youtube"></a></li>    
                 </ul>   
               </div>
             </div>
