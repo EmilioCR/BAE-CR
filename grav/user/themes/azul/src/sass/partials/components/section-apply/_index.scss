@@ -35,59 +35,84 @@
 
 .info-pre-apply {
   padding: 60px 0;
-  width: 600px;
-  margin: 0 auto;
   text-align: center;
-
   h2{
     color: $c-blue;
-    font-size: 25px;
   }
 
   p{
     color: #7a7a7a;
-    margin-top: 2%;
+    margin-top: 20px;
+    padding: 0 10px;
+    @media screen and (min-width: $large) {
+      width: 410px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 
 }
 
 .apply {
-  margin-bottom: 20%;;
+  margin-bottom: 20px;;
 }
 
 .pre-apply, .apply {
-  display: flex;
+  padding: 0px 15px 0 15px;
+  // display: flex;
+  @media screen and (min-width: $large) {
+    display: flex;
+  }
 
   h2{ 
     color: #7a7a7a;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    @media screen and (min-width: $small) {
+      font-size: 22px;
+    }
   }
 
   p{
     padding: 10px 0 15px 0;
+    font-size: 15px;
   }
 
   a{
-    font: 700 16px $headings-font;
+    font: 700 13px $headings-font;
+    padding-left: 10px;
+    @media screen and (min-width: $small) {
+      font-size: 17px;
+    }
   }
 
 }    
 .number{
   float: left;
   position: relative;
+  right: 6px;
   bottom: 40px;
   font-family: $headings-font;
   font-size: 33px;
   color: #7A7A7A;
 }
 .pre-apply-step, .apply-step {
-  margin: 0 20px;
+  margin-bottom: 60px;
   padding: 60px 40px 60px 41px;
   text-align: center;
   -webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
   -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
   box-shadow: 0px 8px 15px -5px #a19d9d;
+  @media screen and (min-width: $large) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.space {
+  @media screen and (min-width: $large) {
+    margin-right: 40px;
+  }
 }
 
 .section-go-category {
