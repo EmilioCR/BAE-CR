@@ -13,14 +13,26 @@
 }
 
 .intro-winners {
-  
+
   h1 {
     color: $c-blue; 
     padding-bottom: 30px;
     font-size: 25px;
+    @media screen and (min-width: $large) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 30px;
+    }
   }
   h2 {
     font-size: 20px;
+    @media screen and (min-width: $large) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 25px;
+    }
   }
 
     
