@@ -146,6 +146,7 @@
     @media screen and (min-width: $x-large) {
       font-size: 17px;
     }
+
   }
   
   li {
@@ -171,7 +172,7 @@
   }
 
   @media screen and (min-width: $x-large) {
-    display: block;
+    display: block !important;
     border-top: 0;
   }
 
