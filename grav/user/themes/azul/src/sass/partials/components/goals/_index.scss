@@ -8,23 +8,74 @@
 // 
 // styleguide Components.goals
 .section-goal-container {
-  padding: 10% 0;
+  margin: 70px 0 70px 0; 
+  padding: 60px 10px 60px 0px;
 
   h2{
     color: $c-blue;
     font: 700 25px $headings-font;
     text-align: center;
+    display: inline-block;
     width: 100%;
   }
 
   p{
     font: 16px $body-font;
     color: #333333;   
-    margin: 5% 0 0 10%;
+    margin: 10px 0px 0 15px;
   }
 }
 
 .section-goal{
-  margin: 2% 0;
+  margin: 50px 0 0 0;
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $small) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $large) {
+    display: flex;
+    flex-direction: row;     
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $x-large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
+
+.columm-paragraph {
+    align-self: flex-start;
+
+    @media screen and (min-width: $medium) {
+        width: 550px;
+    }
+
+    @media screen and (min-width: $large) {
+        width: 550px;
+    }
+
+    @media screen and (min-width: $x-large) {
+        width: 550px;
+    }
+}
+
+.columm-img {
+  img {
+      width: 100%;
+    }
+}
+
+  
+
+

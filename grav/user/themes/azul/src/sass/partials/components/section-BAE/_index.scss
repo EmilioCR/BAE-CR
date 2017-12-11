@@ -6,9 +6,30 @@
 // .howIsBAE - Que es BAE
 // 
 // styleguide Components.section-BAE
+
 .section-what-is-BAE {
-  display: flex;
-  padding: 4% 0;
+  padding: 60px 10px 0 0;
+  justify-content: space-between;
+
+  @media screen and (min-width: $small) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $large) {
+    flex-direction: row;     
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $x-large) { 
+    flex-direction: row;
+    justify-content: space-around;
+  }
   
   h1 {
     font: 700 30px $headings-font;
@@ -17,9 +38,53 @@
 
   p {
     font: 16px $body-font;
-    width: 84%;
-    margin-top: 4%;
+    margin-top: 25px;
+  }
+}
+
+.col-txt {
+    margin-left: 20px;
+    margin-bottom: 35px;
+    align-self: flex-start;
+
+    @media screen and (min-width: $medium) {
+        width: 550px;
+    }
+
+    @media screen and (min-width: $large) {
+        width: 550px;
+    }
+
+    @media screen and (min-width: $x-large) {
+        width: 550px;
+    }
+}
+
+.col-img {
+    animation: moveUp 2s ease-in 0.5s forwards;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(5px);
+    align-self: flex-start;
+    
+    img {
+      width: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
   }
 
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
