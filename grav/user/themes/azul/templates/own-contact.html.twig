@@ -7,23 +7,26 @@
       <h1>{{header.contact_title}}</h1>
     </div>
     <div class="contact-image">
-      <img src="{{(header.bgImage|first).path}}" alt="">
+      <img class="image-contact" src="{{(header.bgImage|first).path}}" alt="">
     </div>
   </div>
   <div class="section-pattern section-pattern-lightblue-top">
     <div class="limiter">
       <div class="contact">
-        <div>
+        <div class="information-contact" >
           <p>{{header.description}}</p>
-          <a class="button button-white" href="{{base_url}}{{header.redirect_section}}">Ir a la sección de categorías</a>
+          <div class="arrow">
+            <a class="redirect-to-categories" href="{{base_url}}{{header.redirect_section}}">Ir a la sección de categorías</a>
+          </div>
+
         </div>
         <div class="social-media-contact">
           <p>{{header.redes_sociales}}</p>
           <ul>
             <a href="https://www.facebook.com/Programa-Bandera-Azul-EcologicaCosta-Rica-169072269797200/">
-              <li><img src="{{ url('theme://img/facebook_logo_color.svg')}}" alt="Logo Facebook"></li>
+              <li><img class="image-contact-size" src="{{ url('theme://img/facebook_logo_color.svg')}}" alt="Logo Facebook"></li>
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UCvR6srRG5vodXrHYdMzY6rw/videos">
               <li><img src="{{ url('theme://img/youtube-logo-color.png')}}" alt="Logo Youtube"></li>
             </a>
           </ul>   
