@@ -99,6 +99,7 @@
 
 
 .section-indicators {
+  margin-bottom: 90px;
   margin-top: 205px;
   padding: 70px 0;
   width: 100%;
@@ -159,25 +160,28 @@
 }
 
 .know-how-to-apply-section {
-  color: #fff;
-  padding: 70px 0;
-  margin-top: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px;
+  @media screen and (min-width: $large) {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   h2 {
     color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    @media screen and (min-width: $x-large) {
+      font-size: 25px;
+    }
+  }
+  a{
+    font-size: 17px;
+    padding: 10px 44px 10px 25px;
+    font-weight: bold;
+    white-space: nowrap;
   }
 }
 
-.button {
-  font-size: 17px;
-  padding: 10px 44px 10px 25px;
-  font-weight: bold;
-  white-space: nowrap;
-  @media screen and (min-width: $medium) {
-    font-size: 20px;
-    padding: 13px 50px;
-  }
-}
