@@ -38,6 +38,7 @@
   text-align: center;
   h2{
     color: $c-blue;
+    margin-bottom: 20px;
   }
 
   p{
@@ -71,11 +72,19 @@
     @media screen and (min-width: $small) {
       font-size: 22px;
     }
+    @media screen and (min-width: $x-large) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   p{
     padding: 10px 0 15px 0;
     font-size: 15px;
+    @media screen and (min-width: $x-large) {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
   }
 
   a{
@@ -106,6 +115,10 @@
   @media screen and (min-width: $large) {
     padding-right: 30px;
     padding-left: 30px;
+  }
+  @media screen and (min-width: $x-large) {
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 
