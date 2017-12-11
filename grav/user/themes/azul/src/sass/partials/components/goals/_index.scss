@@ -12,25 +12,34 @@
   padding: 60px 10px 60px 0;
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 19px;
     color: $c-blue;
     text-align: center;
     width: 100%;
+    
+    @media screen and (min-width: $small) {
+      font-size: 25px;  
+    }
 
     @media screen and (min-width: $medium) {
       width: 98%;
+    }
+
+    @media screen and (min-width: $large) {
+      font-size: 30px;
     }
     
   }
 
   p {
     color: #333333; 
-    font: 16px $body-font;
+    font: 15px $body-font;
     margin: 10px 15px 0 15px;
     line-height: 26px;
 
     @media screen and (min-width: $small) {
       margin: 10px;
+      font-size: 16px;
     }
   }
 }

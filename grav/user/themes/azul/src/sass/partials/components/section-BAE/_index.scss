@@ -32,14 +32,29 @@
   
   h1 {
     color: $c-blue;
-    font: 700 30px $headings-font;
+    font: 700 19px $headings-font;
+
+    @media screen and (min-width: $small) {
+      font-size: 25px;
+    }
+
+    @media screen and (min-width: $large) {
+      font-size: 30px;
+    }
+
   }
 
   p {
-    font: 16px $body-font;
+    font: 15px $body-font;
     margin-top: 25px;
     line-height: 26px;
+
+    @media screen and (min-width: $small) {
+      font-size: 16px;
+    }
+
   }
+  
 }
 
 .col-txt {
@@ -51,11 +66,7 @@
   }
 
   @media screen and (min-width: $large) {
-    width: 590px;
-  }
-
-  @media screen and (min-width: $x-large) {
-    width: 590px;
+    width: 650px;
   }
 }
 
