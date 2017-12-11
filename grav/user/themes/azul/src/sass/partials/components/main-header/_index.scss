@@ -15,6 +15,25 @@
   z-index: 5;
   position: relative;
   padding: 0;
+  
+  .limiter {
+    min-width: 100%;
+
+    @media screen and (min-width: $medium) {
+      min-width: $medium;
+    }
+
+    @media screen and (min-width: $large) {
+      min-width: $large;
+    }
+
+    @media screen and (min-width: $x-large) {
+      min-width: $x-large;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 
   @media screen and (min-width: $medium ) {
     padding: 10px;
@@ -33,6 +52,17 @@
     -moz-box-shadow: none;
     box-shadow: none;
   }
+
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+  }
+}
+
+.main-nav {
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+    text-align: right;
+  }
 }
 
 .menu-toggle {
@@ -48,12 +78,15 @@
 
 .menu-title {
   display: none;
+
   @media screen and (min-width: $medium) {
     display: block;
-    position: absolute;
-    top: 120px;
-    right: 50px;
+    text-align: right;
     z-index: 99;
+  }
+
+  @media screen and (min-width: $x-large) {
+    display: none;
   }
 }
 
@@ -93,12 +126,39 @@
     font-weight: 600;
     color: $c-blue;
     text-decoration: none;
+
+    @media screen and (min-width: $medium) {
+      border-radius: 3px;
+      color: #fff;
+      padding: 5px 5px;
+      font-size: 12px;
+      width: 25%;
+      &:hover {
+        background: #fff;
+        color: $c-blue;
+      }
+    }
+
+    @media screen and (min-width: $large) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $x-large) {
+      font-size: 17px;
+    }
   }
   
   li {
     list-style-type: none;
     padding: 20px;
     margin: 0;
+
+    @media screen and (min-width: $medium) {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
   }
   
   @media screen and (min-width: $medium) {
@@ -107,37 +167,14 @@
     display: none;
     background-color: transparent;
     border-top: 2px solid #fff;
-
-    a {
-      border-radius: 3px;
-      color: #fff;
-      padding: 5px 5px;
-      margin-right: 5px;
-      font-size: 15px;
-      width: 25%;
-      &:hover {
-        background: #fff;
-        color: $c-blue;
-      }
-      
-    }
-  
-    li {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
+    text-align: left;
   }
 
-}
-
-.navigation-show {
-  display: none;
-  @media screen and (min-width: $medium) {
-    display: flex;
-    margin: 0 20px;
+  @media screen and (min-width: $x-large) {
+    display: block;
+    border-top: 0;
   }
+
 }
 
 .active {
@@ -149,13 +186,21 @@
     @media screen and (min-width: $medium) {
       border-radius: 3px;
       padding: 5px 5px;
-      margin: 0 10px;
-      font-size: 15px;
+      font-size: 12px;
       background: #fff;
       color: $c-blue;
       width: initial;
     }
+
+    @media screen and (min-width: $large) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $x-large) {
+      font-size: 17px;
+    }
   }
+
   @media screen and (min-width: $medium) {
     color: $c-blue;
     width: initial;

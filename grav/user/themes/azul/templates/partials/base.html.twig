@@ -42,14 +42,15 @@
             </div>
           </div>
           <h3 class="menu-title">Menu</h3>
+          <div class="main-nav">
+            {% block header_extra %}{% endblock %}
+            {% block header_navigation %}
+            {% include 'partials/navigation.html.twig' %}
+            {% endblock %}
+            <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+          </div>
         </div>
-        <div class="main-nav">
-          {% block header_extra %}{% endblock %}
-          {% block header_navigation %}
-          {% include 'partials/navigation.html.twig' %}
-          {% endblock %}
-          <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
-        </div>
+        
       </header>
     {% endblock %}
     {% block showcase %}{% endblock %}

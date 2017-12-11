@@ -49,7 +49,7 @@ jQuery(document).ready(function($){
 
     var $menuTitle = $('.menu-title');
     $menuTitle.click(function () {
-        $navigation.toggleClass('navigation-show');
+        $navigation.toggle()
     })
 });
 
