@@ -8,6 +8,7 @@
 // styleguide Components.card-categories
 
 .card-categories {
+
   width: 250px;
   text-align: center;
   padding: 50px 10px;
@@ -15,24 +16,61 @@
   -webkit-box-shadow: 0px 7px 5px -3px #a19d9d;
   -moz-box-shadow: 0px 7px 5px -3px #a19d9d;
   box-shadow: 0px 7px 5px -3px #a19d9d;
-  display: inline-block;
-  margin: 20px 10px;
+  display: block;
+  margin: 20px auto;
   border-radius: 4px;
-  p{
+  position: relative;
+
+  p { 
+    @media screen and (min-width: $medium) {
+      text-align: center;
+      padding: 8px 0 8px 0;
+      font-size: 14px;
+    }
+  }
+  
+  .button {
+    @media screen and (min-width: $medium) {
+      font-size: 14px;
+      padding: 5px 20px;
+      background-size: 10px;
+      background-position: right;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      margin: 20px 60px;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    width: 250px;
     text-align: center;
-    padding: 8px 0 8px 0;
-    font-size: 14px;
+    padding: 50px 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 7px 5px -3px #a19d9d;
+    -moz-box-shadow: 0px 7px 5px -3px #a19d9d;
+    box-shadow: 0px 7px 5px -3px #a19d9d;
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 4px;
+    position: relative;
   }
 }
 
 
 .holder {
-  padding: 0;
+  padding: 40px 0 40px 0;
   margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  -webkit-justify-content: space-evenly;
+
+  @media screen and (min-width: $medium) {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+  
 }
 

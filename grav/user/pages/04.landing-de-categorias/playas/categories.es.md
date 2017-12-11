@@ -70,4 +70,4 @@ steps_report_file:
         path: user/pages/04.landing-de-categorias/playas/FORMATO-INFORME-FINAL-PLAYAS.doc
 ---
 
-Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas Playas
+Playas Playas Playas Playas Playas Playas Playas Playas Playas
