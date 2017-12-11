@@ -22,10 +22,19 @@
 //
 
 .section-pattern {
-  border-left: 30px solid $c-yellow;
+  border-left: 20px solid $c-yellow;
   width: 100%;
   @media screen and (min-width: $x-large) {
     padding-left: 20px;
+  }
+  @media screen and (min-width: $medium) {
+    border-left: 30px solid $c-yellow;
+  }
+   @media screen and (min-width: $large) {
+    border-left: 30px solid $c-yellow;
+  }
+  @media screen and (min-width: $x-large) {
+    border-left: 30px solid $c-yellow;
   }
 }
 
