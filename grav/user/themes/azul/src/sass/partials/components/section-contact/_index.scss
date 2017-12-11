@@ -18,10 +18,10 @@
 }
 
 .image-contact {
-  width: 249px;
-  margin-left: 31px;
+  border: 6px solid #fff;
+  width: 100%;
   @media screen and (min-width: $medium) {
-    width: 492px;
+    width: 50%;
   }
 }
 
