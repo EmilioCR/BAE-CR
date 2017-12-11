@@ -38,10 +38,10 @@
       font: 16px $body-font;
     }
     @media screen and (min-width: $large) {
-      order: 0;
       font: 16px $body-font;
     }
     @media screen and (min-width: $x-large) {
+      order: 0;
       font-size: 16px;
     }
   }
@@ -62,7 +62,6 @@
 
 }
 .social-media-footer {
-  margin-bottom: 36px;  
   @media screen and (min-width: $x-large) {
     display: inline-block;
     font-size: 16px;
@@ -75,7 +74,6 @@
 
 .logo-footer {
   width: 50%;
-  margin-bottom: 36px; 
   @media screen and (min-width: $large) {
       width: 30%;
     }
