@@ -12,22 +12,62 @@
     color: $c-blue;
     font-size: 30px;
     text-align: center;
-    padding: 3%;
+    padding: 30px;
   }
   
 }
 
-.contact {
-  display: flex;
-  justify-content: space-between;
-  padding: 14% 0;
-
-  p{
-    color: #333;
-    font-size: 18px;
-    padding-bottom: 4%;
+.image-contact {
+  border: 6px solid #fff;
+  width: 100%;
+  @media screen and (min-width: $medium) {
+    width: 50%;
   }
-  
+}
+
+.image-contact-size{
+  width: 28px;
+}
+
+.information-contact {
+  text-align: center;
+  @media screen and (min-width: $medium) {
+    width: 411px;
+  }  
+  p{
+    font: 700 18px $body-font;
+    padding-bottom: 21px;
+    @media screen and (min-width: $x-large) {
+      font-size: 21px;
+    }
+  }
+  a{
+    font: 18px $body-font;
+    @media screen and (min-width: $x-large) {
+      font-size: 21px;
+    }
+  }
+}
+
+.arrow:after{
+  content: url('../img/arrow-blue-buttons.svg');
+  position: relative;
+  top: 9px;
+  margin-left: 10px;
+}
+
+.redirect-to-categories {
+  color: #333;
+  font: 16px $body-font;
+  border-bottom: 2px solid #0984E3;
+}
+
+.contact {
+  padding: 95px 0 95px;
+  @media screen and (min-width: $medium) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .contact-image {
@@ -37,20 +77,29 @@
 }
 
 .social-media-contact {
-  display: flex;
+  text-align: center;
+  padding-top: 30px;
+  @media screen and (min-width: $medium) {
+    padding-top: 0;
+    padding-left: 32px;
+  }
 
   p {
     color: #333;
-    font-size: 18px;
+    font: 18px $body-font;
+    padding-bottom: 13px;
+    @media screen and (min-width: $x-large) {
+      font-size: 21px;
+    }
   }
 
   ul{
-    display: flex;
     list-style: none;
   }
 
   a{
-    padding-right: 25%;
+    display: inline-block;
+    padding-right: 25px;
   }
   
 }
