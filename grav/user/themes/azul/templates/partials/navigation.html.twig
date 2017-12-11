@@ -25,7 +25,7 @@
 
 <ul class="navigation">
   {% for page in pages.children.visible %}
-    {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+    {% set current_page = (page.active or page.activeChild) ? 'active-header' : '' %}
     <li class="{{ current_page }}">
       <a href="{{ page.url }}">
         {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
