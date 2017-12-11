@@ -63,10 +63,15 @@
 }
 
 .section-pattern-lightgray-vertical {
-  background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
+  background: $c-gray;
   border-left: 0;
   border-right: 30px solid $c-yellow;
   border-left: 30px solid $c-yellow;
+
+  @media screen and (min-width: $large) {
+      background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
+    }
+
 }
 
 .section-pattern-lightblue-squard {
