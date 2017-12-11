@@ -9,25 +9,25 @@
 // styleguide Components.goals
 .section-goal-container {
   margin: 70px 0 70px 0; 
-  padding: 60px 10px 60px 0px;
+  padding: 60px 10px 60px 0;
 
-  h2{
+  h2 {
     color: $c-blue;
-    font: 700 25px $headings-font;
-    text-align: center;
     display: inline-block;
+    text-align: center;
     width: 100%;
   }
 
-  p{
+  p {
+    color: #333333; 
     font: 16px $body-font;
-    color: #333333;   
-    margin: 10px 0px 0 15px;
+    margin: 10px 15px 0 15px;
+    text-align: justify;
   }
 }
 
-.section-goal{
-  margin: 50px 0 0 0;
+.section-goal {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 
@@ -55,25 +55,26 @@
 }
 
 .columm-paragraph {
-    align-self: flex-start;
+  align-self: flex-start;
 
     @media screen and (min-width: $medium) {
-        width: 550px;
+    width: 550px;
     }
 
     @media screen and (min-width: $large) {
-        width: 550px;
+    width: 550px;
     }
 
     @media screen and (min-width: $x-large) {
-        width: 550px;
+    width: 550px;
+
     }
 }
 
 .columm-img {
   img {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 
   
