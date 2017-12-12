@@ -19,15 +19,16 @@
 }
 .success-title {
   color: $c-orange;
+  background-color: #fafafa;
 }
 
 .item-section-stories {
   align-items: stretch;
   background-color: #fff;
+  margin-bottom: 50px;
   h2 {
     color: $c-orange;
     text-align: center;
-    margin-top: 30px;
     @media screen and (min-width: $large) {
       text-align: left;
     }
@@ -36,7 +37,7 @@
 }
 
 .card-succes {
-  
+  background-color: #fff;
   border-top: 7px solid $c-orange;
   padding: 20px 17px;
   width: 90%;
@@ -82,5 +83,27 @@
   }
 }
 
+.video-success{
+  padding: 63px 0;
+}
+
+.success-video {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0px 7px 3px -2px #a19d9d;
+  -moz-box-shadow: 0px 7px 3px -2px #a19d9d;
+  box-shadow: 0px 7px 3px -2px #a19d9d;
+  @media screen and (min-width: $small) {
+    width: 100%;
+  }
+  @media screen and (min-width: $large) {
+    height: 81vh;
+  }
+  @media screen and (min-width: $x-large) {
+    height: 70vh;
+  }
+}
 
 
