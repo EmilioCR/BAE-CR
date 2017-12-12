@@ -152,10 +152,30 @@
 
 .steps {
   background-color: $c-lightblue;
-  padding: 5% 0;
+  padding: 50px 0;
+
+  h3 {
+    color: $c-blue;
+    margin: 20px;
+
+    @media screen and (min-width: $medium) {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    background-color: $c-lightblue;
+    padding: 50px 0;
+  }
+  
 }
 
 .container-steps {
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 }
