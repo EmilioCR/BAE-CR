@@ -4,8 +4,9 @@ text: 'Este galardón promueve la organización de comités locales, la sana com
 button_first_text: 'Conozca Bandera Azul Ecológica'
 button_second_text: 'Conozca los galardonados'
 button_third_text: 'Quiero aplicar'
+decription_intro_categories: "Conozca cómo aplicar en alguna de las 15 categorías del Programa Bandera Azul Ecológica y las distintas organizaciones que pueden aplicar\r\n"
+categories_content: 'Conozca cómo aplicar en alguna de las ***15 categorías*** del **Programa Bandera Azul Ecológica** y las distintas organizaciones que pueden aplicar'
 categories_title: 'Descubra su categoría'
-categories_content: 'Conozca las diferentes categorías en que puede participar e inicie su proceso de inscripción'
 list_content:
     -
         content_categorie: 'Cambio Climático'
@@ -21,10 +22,10 @@ list_content:
         categorie_page: /que-es-bae
     -
         content_categorie: 'Recursos Naturales'
-        categorie_page: /landing-de-categorias/clima
+        categorie_page: /inicio
     -
         content_categorie: 'Salud Comunitaria'
-        categorie_page: /landing-de-categorias/panama
+        categorie_page: /inicio
 image:
     user/pages/01.inicio/_inicio/Group.png:
         name: Group.png
@@ -34,4 +35,4 @@ image:
 texto_intro: 'Que es'
 ---
 
-Bandera Azul es....
+Conozca cómo aplicar en alguna de las **15 categorías** del **Programa Bandera Azul Ecológica** y las distintas organizaciones que pueden aplicar

@@ -117,36 +117,11 @@ form:
               title: Categorías
               underline: false
 
-            header.categories_title:
-              type: text
-              autofocus: true
-              style: vertical
-              label: Título
-              default: Descubra su categoría
-
-            header.categories_content:
+            content:
               label: Texto
               type: editor
               validate:
                 type: textarea
-
-            categories_list:
-              type: Section
-              title: Lista de Categorías
-              underline: false
-
-            header.list_content:
-              type: list
-              label: Agregar categoría a la lista
-              fields:
-                .content_categorie:
-                  type: text
-                  label: Nombre de la categoría
-                .categorie_page:
-                  type: pages
-                  size: medium
-                  classes: fancy
-                  label: Paguina para redireccionar
           
         options:
           type: tab

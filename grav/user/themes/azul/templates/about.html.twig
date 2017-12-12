@@ -2,41 +2,41 @@
 
 {% block content %}
 
-  <div class="intro section-pattern section-pattern-lightblue ">
-    <div class="limiter">
-      <div class="section-what-is-BAE">
-       <div>
-          <h1>{{ header.about_title }}</h1>
-          <p>{{ header.about_text }}</p>
-       </div>
-       <div>
-          {% set image_parts = pathinfo(header.about_image) %}
-          {% set image_basename = image_parts.basename %}
-          {% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-          {{ image_page.media[image_basename].resize(600).html() }}
-       </div>
-      </div>
-    </div>
-  </div>
+	<div class="intro section-pattern section-pattern-lightblue ">
+		<div class="limiter">
+			<div class="section-what-is-BAE">
+				<div class="col-txt">
+					<h1>{{ header.about_title }}</h1>
+					<p>{{ header.about_text }}</p>
+				</div>
+				<div class="col-img">
+					{% set image_parts = pathinfo(header.about_image) %}
+					{% set image_basename = image_parts.basename %}
+					{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+					{{ image_page.media[image_basename].resize(600).html() }}
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <div class="section-pattern section-pattern-lightblue-left">
-    <div class="limiter">
-      <div class="section-goal-container">
-        <h2>{{header.goal_title}}</h2>
-        <div class="section-goal">
-          <div>
-            {% set image_parts = pathinfo(header.goal_image) %}
-            {% set image_basename = image_parts.basename %}
-            {% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
-            {{ image_page.media[image_basename].resize(600).html() }}
-          </div>
-          <div>
-            <p>{{header.goal_content}}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="section-pattern section-pattern-lightblue-left">
+		<div class="limiter">
+			<div class="section-goal-container">
+				<h2>{{header.goal_title}}</h2>
+				<div class="section-goal">
+					<div class="columm-img">
+						{% set image_parts = pathinfo(header.goal_image) %}
+						{% set image_basename = image_parts.basename %}
+						{% set image_page = image_parts.dirname == '.' ? page : page.find(image_parts.dirname) %}
+						{{ image_page.media[image_basename].resize(600).html() }}
+					</div>
+					<div class="columm-paragraph">
+						<p>{{header.goal_content}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
   <div class="tabs">
     <h2>Hechos relevantes</h2>

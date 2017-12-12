@@ -22,10 +22,19 @@
 //
 
 .section-pattern {
-  border-left: 30px solid $c-yellow;
+  border-left: 20px solid $c-yellow;
   width: 100%;
   @media screen and (min-width: $x-large) {
     padding-left: 20px;
+  }
+  @media screen and (min-width: $medium) {
+    border-left: 30px solid $c-yellow;
+  }
+   @media screen and (min-width: $large) {
+    border-left: 30px solid $c-yellow;
+  }
+  @media screen and (min-width: $x-large) {
+    border-left: 30px solid $c-yellow;
   }
 }
 
@@ -40,6 +49,16 @@
 
 .section-pattern-lightgray {
   background: url(../img/pattern-white.svg) no-repeat right $c-lightgray;
+  border-left: 20px solid $c-yellow;
+  @media screen and (min-width: $medium) {
+    border-left: 30px solid $c-yellow;
+  }
+   @media screen and (min-width: $large) {
+    border-left: 30px solid $c-yellow;
+  }
+  @media screen and (min-width: $x-large) {
+    border-left: 30px solid $c-yellow;
+  }
 }
 
 .section-pattern-lightgray-repeat {
@@ -63,10 +82,22 @@
 }
 
 .section-pattern-lightgray-vertical {
-  background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
+  background: $c-gray;
   border-left: 0;
-  border-right: 30px solid $c-yellow;
-  border-left: 30px solid $c-yellow;
+  border-right: 20px solid $c-yellow;
+  border-left: 20px solid $c-yellow;
+
+  @media screen and (min-width: $large) {
+      background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
+      border-right: 30px solid $c-yellow;
+      border-left: 30px solid $c-yellow;
+    }
+  @media screen and (min-width: $medium) {
+      background: url(../img/pattern-vertical-left.svg) no-repeat right, url(../img/pattern-vertical-right.svg) no-repeat left $c-gray;
+      border-right: 30px solid $c-yellow;
+      border-left: 30px solid $c-yellow;
+    }
+
 }
 
 .section-pattern-lightblue-squard {

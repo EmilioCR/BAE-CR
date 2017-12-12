@@ -8,24 +8,46 @@
 // styleguide Components.section-apply
 
 .info-apply {
-  padding: 80px 0;
+  padding: 80px 0 30px 0;
   color: $c-blue;
-  width: 600px;
+  width: 250px;
   margin: 0 auto;
+  @media screen and (min-width: $medium) {
+    width: 350px;
+  }
+  @media screen and (min-width: $large) {
+    width: 600px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 600px;
+  }
 
-  h1{
-    font-size: 30px;
+  h1 {
+    font-size: 25px;
     text-align: center;
+    @media screen and (min-width: $medium) {
+      font-size: 30px;
+    }
   }
 
   p {
     margin-top: 20px;
+    text-align: center;
+    font-family: $body-font;
+    font-weight: 700;
+    color: $c-darkgray;
   }
 
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
 
 .title-apply {
-  h2{
+
+  h2 {
     color: $c-blue;
     padding: 75px 0;
     text-align: center;   
@@ -50,8 +72,6 @@
       display: block;
       margin: 0 auto;
     }
-  }
-
 }
 
 .space {
@@ -71,7 +91,7 @@
     display: flex;
   }
 
-  h2{ 
+  h2 { 
     color: #7a7a7a;
     font-size: 17px;
     margin-bottom: 10px;
@@ -84,8 +104,9 @@
     }
   }
 
-  p{
+  p {
     padding: 10px 0 15px 0;
+
     font-size: 15px;
     @media screen and (min-width: $x-large) {
       font-size: 19px;
@@ -99,7 +120,10 @@
     @media screen and (min-width: $small) {
       font-size: 17px;
     }
+    font-weight: 700;
+    color: $c-darkgray;
   }
+
 
 }    
 .number{
@@ -109,7 +133,7 @@
   bottom: 40px;
   font-family: $headings-font;
   font-size: 33px;
-  color: #7A7A7A;
+  color: $c-darkgray;
 }
 .pre-apply-step, .apply-step {
   margin-bottom: 60px;
@@ -171,6 +195,5 @@
       font-size: 20px;
       padding: 13px 50px;
     }
-  }
-  
+  }  
 }

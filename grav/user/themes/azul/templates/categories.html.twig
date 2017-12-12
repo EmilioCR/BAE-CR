@@ -27,6 +27,10 @@
 					</div>
 					<div class="item-category-content">
 						<div class="category-description">
+							<p>{{ page.header.description_category }}</p>
+						</div>
+						<div class="organizations-list">
+							<h3>Organizaciones que pueden conformar la categoría</h3>
 							{{ page.content }}
 						</div>
 						<div class="category-require-list">
@@ -55,6 +59,7 @@
 		</div>
 		<div class="steps">
 			<div class="limiter">
+				<h3>Pasos a seguir:</h3>
 				<div class="container-steps">
 					{% set sum = 1 %}
 					{% if header.steps_signup_enable == 1 %}

@@ -1,15 +1,40 @@
 .discover-category {
-  width: 30%;
-  padding: 10% 0;
+  width: 350px;
+  padding: 70px 30px;
+   @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $medium) {
+    width: 75%;
+    padding: 60px 0 90px 0px;
+  }
+  @media screen and (min-width: $large) {
+    width: 45%;
+    padding: 60px 0 126px 0;
+  }
+
+  @media screen and (min-width: $x-large) {
+    width: 35%;
+    padding: 60px 0 155px 0;
+  }
 
   h1 {
     color: $c-blue;
     margin-bottom: 4%;
+    font-size: 25px;
+    @media screen and (min-width: 320px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 400px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: $medium) {
+      font-size: 30px;
+    }
   }
 }
 
 .wrapper-categories {
-  padding: 100px 100px;
   background-color: $c-lightblue;
 }
 
@@ -18,25 +43,37 @@
   border-bottom: 5px solid $c-orange;
 
   h5 {
-    width: 30%;
     font-size: 20px;
     color: #929292;
-    display: inline-block;
+    display: block;
+    margin: 20px 10px;
+    @media screen and (min-width: $x-large) {
+      width: 30%;
+      display: inline-block;
+    }
   }
 
   ul {
-    display: inline-block;
-    float: right;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $x-large) {
+      display: inline-block;
+    }
   }
 
   li {
-    list-style: none;
     display: inline-block;
-    margin: 0 10px;
-
-    &:hover {
-      background-color: $c-lightblue;
+    margin: 10px;
+    @media screen and (min-width: $medium) {
+      list-style: none;
+      display: inline-block;
+      margin: 20px;
+  
+      &:hover {
+        background-color: $c-lightblue;
+      }
     }
+    
 
   }
 
@@ -46,6 +83,14 @@
     font: 700 14px $headings-font;
   }
 
+}
+
+.filter-categories-container {
+  @media screen and (min-width: $x-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .info-category {
@@ -83,6 +128,10 @@
   
 }
 
+.organizations-list {
+  margin: 20px 0;
+}
+
 .category-require-list {
   margin-top: 20px;
 }
@@ -103,10 +152,30 @@
 
 .steps {
   background-color: $c-lightblue;
-  padding: 5% 0;
+  padding: 50px 0;
+
+  h3 {
+    color: $c-blue;
+    margin: 20px;
+
+    @media screen and (min-width: $medium) {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    background-color: $c-lightblue;
+    padding: 50px 0;
+  }
+  
 }
 
 .container-steps {
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
 }

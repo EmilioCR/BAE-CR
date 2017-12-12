@@ -1,43 +1,105 @@
 .all-info-winners {
-  padding: 80px 0 170px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 60px 30px;
+  width: 100%;
+  display: inline-block;
+  @media screen and (min-width: $large) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  p {
+    font-weight: 700;
+  }
 }
 
 .intro-winners {
-  width: 50%;
 
   h1 {
     color: $c-blue; 
     padding-bottom: 30px;
+    font-size: 25px;
+    @media screen and (min-width: $large) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 30px;
+    }
   }
-    
-}
+  h2 {
+    font-size: 20px;
+    @media screen and (min-width: $large) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 25px;
+    }
+  }
 
-.indicadores-info{
-  width: 300px;
-  margin-left: 33px;
+    
 }
 
 .intro-winners-info {
   font-family: $body-font;
-  width: 40%;
-
+  @media screen and (min-width: $large) {
+      margin-left: 300px;
+  }
+  @media screen and (min-width: $x-large) {
+      margin-left: 300px;
+      width: 500px;
+  }
+  
   a {
-    margin-top: 55px; 
-    font-size: 20px; 
-    background-color: $c-blue;
-    color: #fff;      
+    padding: 8px 45px 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 20px 0;
+    @media screen and (min-width: 400px) {
+      font-size: 17px;
+      padding: 10px 44px 10px 25px;
+    }
+    @media screen and (min-width: $medium) {
+      font-size: 17px;
+      padding: 13px 50px;
+    }
+    @media screen and (min-width: $large) {
+      margin-top: 100px;
+      margin-bottom: -30px;
+    }
   }
 
 }
 
 .header-winners-image {
   margin-top: 50px;
-  position: absolute;
+  width: 250px;
+  @media screen and (min-width: $medium) {
+      width: 350px;
+  }
+  @media screen and (min-width: $large) {
+      position: absolute;
+      margin-top: 60px;
+  }
+  @media screen and (min-width: $x-large) {
+      position: absolute;
+      width: 450px;
+      margin-top: 50px;
+  }
 }
 
+/*------Indicadores------*/
+
+.indicadores-info{
+  width: 300px;
+  margin-left: 33px;
+}
+
+
+
+
+
 .section-indicators {
+  margin-bottom: 90px;
   margin-top: 205px;
   padding: 70px 0;
   width: 100%;
@@ -98,25 +160,28 @@
 }
 
 .know-how-to-apply-section {
-  color: #fff;
-  padding: 70px 0;
-  margin-top: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px;
+  @media screen and (min-width: $large) {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   h2 {
     color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    @media screen and (min-width: $x-large) {
+      font-size: 25px;
+    }
+  }
+  a{
+    font-size: 17px;
+    padding: 10px 44px 10px 25px;
+    font-weight: bold;
+    white-space: nowrap;
   }
 }
 
-.button {
-  font-size: 17px;
-  padding: 10px 44px 10px 25px;
-  font-weight: bold;
-  white-space: nowrap;
-  @media screen and (min-width: $medium) {
-    font-size: 20px;
-    padding: 13px 50px;
-  }
-}

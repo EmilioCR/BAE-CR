@@ -1,4 +1,4 @@
-.section-intro-categories-list {
+.section-intro-categories {
   margin: 0 auto;
   margin-top: 200px;
   padding: 55px;
@@ -11,8 +11,32 @@
   }
 }
 
-.category-list {
-  margin-top: 50px;
+.jump-categories-page {
+  text-align: center;
+
+  p {
+    color: #fff;
+    font-size: 15px;
+
+    @media screen and (min-width: $medium) {
+      font-size: 19px;
+      margin: 0 auto;
+      width: 500px;
+    }
+
+  }
+
+  .button {
+    padding: 10px 40px;
+  }
+
+  .button-border-white {
+    font-weight: bold;
+    font-size: 15px;
+    @media screen and (min-width: $medium) {
+      font-size: 17px;
+    }
+  }
 }
 
 .list-content {

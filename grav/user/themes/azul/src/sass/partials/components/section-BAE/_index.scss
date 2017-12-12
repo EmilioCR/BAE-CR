@@ -6,21 +6,74 @@
 // .howIsBAE - Que es BAE
 // 
 // styleguide Components.section-BAE
+
 .section-what-is-BAE {
-  display: flex;
-  padding: 40px 0;
+  padding: 60px 10px 0 0;
+
+  @media screen and (min-width: $small) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $large) {
+    flex-direction: row;     
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $x-large) { 
+    flex-direction: row;
+    justify-content: space-around;
+  }
   
   h1 {
-    font: 700 30px $headings-font;
     color: $c-blue;
+    font: 700 19px $headings-font;
+
+    @media screen and (min-width: $small) {
+      font-size: 25px;
+    }
+
+    @media screen and (min-width: $large) {
+      font-size: 30px;
+    }
+
   }
 
   p {
-    font: 17px $body-font;
-    width: 84%;
-    margin-top: 40px;
+    font: 15px $body-font;
+    margin-top: 25px;
     line-height: 26px;
+
+    @media screen and (min-width: $small) {
+      font-size: 16px;
+    }
+  }
+  
+}
+
+.col-txt {
+  align-self: flex-start;
+  margin: 0 0 35px 20px;
+
+  @media screen and (min-width: $medium) {
+    width: 590px;
   }
 
+  @media screen and (min-width: $large) {
+    width: 650px;
+  }
+}
+
+.col-img {
+  align-self: flex-start;
+  img {
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }
 
