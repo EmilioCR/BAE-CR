@@ -1,6 +1,14 @@
 .section-stories {
   background-color: $c-lightgray;
-  padding-top: 10px;
+  padding-top: 100px;
+  margin-top: 200px;
+  @media screen and (min-width: $medium) {
+    margin-top: 300px;
+  }
+
+  @media screen and (min-width: $large) {
+    padding-top: 200px;
+  }
 }
 
 .content-intro-stories {
