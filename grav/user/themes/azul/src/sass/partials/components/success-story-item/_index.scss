@@ -1,23 +1,37 @@
 .section-stories {
   background-color: $c-lightgray;
-  padding-top: 10%;
+  padding-top: 10px;
 }
 
 .content-intro-stories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding-bottom: 32px;
+  @media screen and (min-width: $large) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px
+  }
 }
-
+.success-stories-image {
+  width: 100%;
+  @media screen and (min-width: $x-large) {
+    width: 460px;
+  }
+}
 .success-title {
   color: $c-orange;
+  background-color: #fafafa;
 }
 
 .item-section-stories {
-  width: 40%;
-  
+  align-items: stretch;
+  background-color: #fff;
+  margin-bottom: 50px;
   h2 {
     color: $c-orange;
+    text-align: center;
+    @media screen and (min-width: $large) {
+      text-align: left;
+    }
   }
 
 }
@@ -25,7 +39,17 @@
 .card-succes {
   background-color: #fff;
   border-top: 7px solid $c-orange;
-  padding: 20px 50px;
+  padding: 20px 17px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: $large) {
+    width: 380px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 600px;
+    padding: 33px 52px;
+  }
 
   h3 {
     margin:20px 0;
@@ -46,8 +70,40 @@
   border-top: 7px solid $c-orange;
   background-color: #fff;
   text-align:center;
-  padding: 20px 0;
+  padding: 20px 17px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: $large) {
+    width: 380px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 600px;
+    padding: 33px 52px;
+  }
 }
 
+.video-success{
+  padding: 63px 0;
+}
+
+.success-video {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0px 7px 3px -2px #a19d9d;
+  -moz-box-shadow: 0px 7px 3px -2px #a19d9d;
+  box-shadow: 0px 7px 3px -2px #a19d9d;
+  @media screen and (min-width: $small) {
+    width: 100%;
+  }
+  @media screen and (min-width: $large) {
+    height: 81vh;
+  }
+  @media screen and (min-width: $x-large) {
+    height: 70vh;
+  }
+}
 
 

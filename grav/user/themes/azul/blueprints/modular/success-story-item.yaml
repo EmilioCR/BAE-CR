@@ -57,6 +57,9 @@ form:
           title: Success Story
 
           fields:
+            header.success_video:
+              type: text
+              label: Añadir id del Video
             header.image:
               type: file
               label: Imagen de caso de exito
@@ -76,7 +79,7 @@ form:
               autofocus: true
               style: vertical
               label: Texto de caso de exito
-          
+
         options:
           type: tab
           title: PLUGIN_ADMIN.OPTIONS
