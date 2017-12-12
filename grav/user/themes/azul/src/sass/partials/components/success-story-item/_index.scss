@@ -7,13 +7,16 @@
   padding-bottom: 32px;
   @media screen and (min-width: $large) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 120px
   }
 }
 .success-stories-image {
   width: 100%;
   @media screen and (min-width: $x-large) {
-    width: 400px;
+    width: 460px;
+    // display: block;
+    // margin: 0 auto;
   }
 }
 .success-title {
@@ -21,7 +24,8 @@
 }
 
 .item-section-stories {
-
+  align-items: stretch;
+  background-color: #fff;
   h2 {
     color: $c-orange;
     text-align: center;
@@ -34,17 +38,18 @@
 }
 
 .card-succes {
-  background-color: #fff;
+  
   border-top: 7px solid $c-orange;
   padding: 20px 17px;
   width: 90%;
   display: block;
   margin: 0 auto;
   @media screen and (min-width: $large) {
-    width: 300px;
+    width: 380px;
   }
   @media screen and (min-width: $x-large) {
-    width: 440px;
+    width: 600px;
+    padding: 33px 52px;
   }
 
   h3 {
@@ -71,10 +76,11 @@
   display: block;
   margin: 0 auto;
   @media screen and (min-width: $large) {
-    width: 300px;
+    width: 380px;
   }
   @media screen and (min-width: $x-large) {
-    width: 440px;
+    width: 600px;
+    padding: 33px 52px;
   }
 }
 
