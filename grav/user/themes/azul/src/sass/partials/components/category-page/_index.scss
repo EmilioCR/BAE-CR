@@ -43,25 +43,37 @@
   border-bottom: 5px solid $c-orange;
 
   h5 {
-    width: 30%;
     font-size: 20px;
     color: #929292;
-    display: inline-block;
+    display: block;
+    margin: 20px 10px;
+    @media screen and (min-width: $x-large) {
+      width: 30%;
+      display: inline-block;
+    }
   }
 
   ul {
-    display: inline-block;
-    float: right;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $x-large) {
+      display: inline-block;
+    }
   }
 
   li {
-    list-style: none;
     display: inline-block;
-    margin: 0 10px;
-
-    &:hover {
-      background-color: $c-lightblue;
+    margin: 10px;
+    @media screen and (min-width: $medium) {
+      list-style: none;
+      display: inline-block;
+      margin: 20px;
+  
+      &:hover {
+        background-color: $c-lightblue;
+      }
     }
+    
 
   }
 
@@ -71,6 +83,14 @@
     font: 700 14px $headings-font;
   }
 
+}
+
+.filter-categories-container {
+  @media screen and (min-width: $x-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .info-category {
