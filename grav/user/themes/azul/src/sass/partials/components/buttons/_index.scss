@@ -74,12 +74,12 @@
 }
 
 .button-border-white {
-  background: transparent;
+  background: url(../img/arrow-white-buttons.svg) no-repeat right 20px center transparent;
   border: solid 4px #fff;
   color: #fff;
 
   &:hover {
-    background-color: #fff;
+    background: url(../img/arrow-blue-buttons.svg) no-repeat right 20px center #fff;
     border: solid 4px #fff;
     color: $c-blue;
   }
