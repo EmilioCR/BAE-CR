@@ -1,7 +1,7 @@
 ---
-title: 'Bandera Azul Ecologica'
+title: 'Programa Bandera Azul Ecológica'
 text: 'Este galardón promueve la organización de comités locales, la sana competencia y la organización comunitaria para el beneficio de las presentes y futuras generaciones.'
-button_first_text: 'Conozca Bandera Azul Ecológica'
+button_first_text: 'Conozca el Programa Bandera Azul Ecológica'
 button_second_text: 'Conozca los galardonados'
 button_third_text: 'Quiero aplicar'
 decription_intro_categories: "Conozca cómo aplicar en alguna de las 15 categorías del Programa Bandera Azul Ecológica y las distintas organizaciones que pueden aplicar\r\n"
