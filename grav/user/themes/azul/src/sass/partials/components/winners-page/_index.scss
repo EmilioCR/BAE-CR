@@ -90,13 +90,12 @@
 /*------Indicadores------*/
 
 .indicadores-info{
-  width: 300px;
   margin-left: 33px;
+
+  @media screen and (min-width: $medium) {
+    width: 300px;
+  }
 }
-
-
-
-
 
 .section-indicators {
   margin-bottom: 90px;
