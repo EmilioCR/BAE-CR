@@ -1,39 +1,53 @@
 .hero-header {
-  width: 100%;
   display: inline-block;
   margin: 50px 0 50px 0;
   padding-left: 15px;
+  width: 290px;
 
-  .title-allies {
-  color: $c-blue;
-  font-size: 30px;
-  letter-spacing: 0.5pt;
-  line-height: 3.5rem;
-  margin-bottom: 26px;
-  }
-
-  p {
-    font-size: 16.5px;
-    line-height: 2.8rem;
-  }
+  @media screen and (min-width: $small) {
+    margin: 50px 0 50px 20px;
+    padding-left: 0px;
+    width: 300px;
+    }
 
   @media screen and (min-width: $medium) {
-    width: 455px;
-    display: inline-block;
+    margin:50px 0 50px 15px;
   }
 
   @media screen and (min-width: $large) {
     width: 455px;
     display: inline-block;
     flex-direction: column;
-  }
+    margin: 50px 0 50px 10px;
+    }
 
   @media screen and (min-width: $x-large) {
-    width: 455px;
-    display: inline-block;
-    flex-direction: column;
+    margin: 50px 0 50px 15px;
+    }
+
+.title-allies {
+  color: $c-blue;
+  font-size: 19px;
+  line-height: 35px;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $small) {
+    font-size: 25px;
   }
 
+  @media screen and (min-width: $large) {
+    font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+
+  @media screen and (min-width: $large) {
+    font-size: 16px;
+    }
+  }
 }
 
 
@@ -49,7 +63,6 @@
 }
 
 .allies-list {
-  animation: moveUp 2s ease-in 2s forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,9 +70,7 @@
   -ms-flex-pack: center;
   width: 100%;
   flex-wrap: wrap;
-  opacity: 0;
   text-align: center;
-  transform: translateY(75px);
 }
 
 .our-allies {
@@ -79,21 +90,3 @@
     width: calc(100% * (1/4));
   }
 }
-
-@keyframes moveUp {
-  0% {
-    opacity: 0;
-    transform: translateY(75px);
-  }
-  65% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-
-
-
