@@ -43,25 +43,37 @@
   border-bottom: 5px solid $c-orange;
 
   h5 {
-    width: 30%;
     font-size: 20px;
     color: #929292;
-    display: inline-block;
+    display: block;
+    margin: 20px 10px;
+    @media screen and (min-width: $x-large) {
+      width: 30%;
+      display: inline-block;
+    }
   }
 
   ul {
-    display: inline-block;
-    float: right;
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $x-large) {
+      display: inline-block;
+    }
   }
 
   li {
-    list-style: none;
     display: inline-block;
-    margin: 0 10px;
-
-    &:hover {
-      background-color: $c-lightblue;
+    margin: 10px;
+    @media screen and (min-width: $medium) {
+      list-style: none;
+      display: inline-block;
+      margin: 20px;
+  
+      &:hover {
+        background-color: $c-lightblue;
+      }
     }
+    
 
   }
 
@@ -73,56 +85,152 @@
 
 }
 
+.filter-categories-container {
+  @media screen and (min-width: $x-large) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/*-----nodo-----*/
+
 .info-category {
   border-bottom: 5px solid $c-orange;
-  display: -webkit-flex; /* Safari */
-  -webkit-align-items: stretch; /* Safari 7.0+ */
-  display: flex;
-  align-items: stretch;
+
+  @media screen and (min-width: $large) {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: stretch; /* Safari 7.0+ */
+    display: flex;
+    align-items: stretch;
+    
+  }
+  @media screen and (min-width: $x-large) {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: stretch; /* Safari 7.0+ */
+    display: flex;
+    align-items: stretch;
+  }
 
   h3 {
     color: $c-blue;
   }
-
 }
 
 .category-content {
   width: 80%;
-  padding: 5% 0;
-  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  padding: 50px 0px;
+
+  @media screen and (min-width: $medium) {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0px;
+  }
+  @media screen and (min-width: $large) {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 30px 30px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 80%;
+    margin: 0;
+    display: inline-block;
+    padding: 30px 30px;
+  }
 }
 
 .category-logo {
-  display: inline-block;
+   margin-bottom: 30px;
+   text-align: center;
+
+  @media screen and (min-width: $large) {
+    display: inline-block;
+    padding: 50px 0;
+  }
+  @media screen and (min-width: $x-large) {
+    display: inline-block;
+  }
+
+  img {
+     width: 150px;
+
+      @media screen and (min-width: $x-large) {
+       width: initial;
+    }
+  }
 }
 
-.item-category-content {
-  display: inline-block;
-  width: 65%;
-  padding: 50px 0 0 50px;
-  vertical-align: top;
+@media screen and (min-width: $large) {
+  .item-category-content {
+    display: inline-block;
+    width: 70%;
+    padding: 50px 0 0 50px;
+    vertical-align: top;
   
-  li {
-    list-style: initial;
+    li {
+      list-style: initial;
+    }
   }
+}
+
+@media screen and (min-width: $x-large) {
+  .item-category-content {
+    display: inline-block;
+    width: 60%;
+    padding: 50px 0 0 50px;
+    vertical-align: top;
   
+    li {
+      list-style: initial;
+    }
+  }
 }
 
 .organizations-list {
   margin: 20px 0;
+
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    margin-top: 10px;
+  }
 }
 
 .category-require-list {
   margin-top: 20px;
+  ul {
+    margin-top: 10px;
+  }
 }
 
 .coordinator {
-  width: 20%;
   background-color: #f2f2f2;
-  float: right;
   text-align: center;
-  padding: 5% 0;
-  height: 100%;
+  padding: 20px 0;
+
+  @media screen and (min-width: $medium) {
+    margin: 0 -70px;
+  }
+  @media screen and (min-width: $large) {
+    width: 30%;
+    float: right;
+    height: 100%;
+    margin: 0 -100px;
+  }
+  @media screen and (min-width: $x-large) {
+    width: 20%;
+    background-color: #f2f2f2;
+    float: right;
+    text-align: center;
+    padding: 5% 0;
+    height: 100%;  
+    margin: 0;
+  }
   
   p {
     margin-top: 15px;
@@ -132,10 +240,28 @@
 
 .steps {
   background-color: $c-lightblue;
-  padding: 5% 0;
+  padding: 50px 0;
+
+  h3 {
+    color: $c-blue;
+    margin: 20px;
+
+    @media screen and (min-width: $medium) {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (min-width: $medium) {
+    background-color: $c-lightblue;
+    padding: 50px 0;
+  }
+  
 }
 
 .container-steps {
-  display: flex;
-  justify-content: space-between;
+ @media screen and (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }  
 }

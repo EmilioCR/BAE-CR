@@ -59,6 +59,7 @@
 		</div>
 		<div class="steps">
 			<div class="limiter">
+				<h3>Pasos a seguir:</h3>
 				<div class="container-steps">
 					{% set sum = 1 %}
 					{% if header.steps_signup_enable == 1 %}
@@ -125,8 +126,9 @@
 			</div>
 		</div>
 		<div class="limiter">
+			<h3 class="title-resources" >Recursos relacionados</h3>
 			<div class="resources">
-				<h3>Recursos relacionados</h3>
+				{#<h3>Recursos relacionados</h3>#}
 				{% for resource in page.header.document_files %}
 				<div class="resources-item">
 					<h4>{{resource.resource_title}}</h4>

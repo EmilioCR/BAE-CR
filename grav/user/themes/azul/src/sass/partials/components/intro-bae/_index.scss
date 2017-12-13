@@ -1,19 +1,19 @@
 .intro-bae {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   padding: 80px 0;
+  text-align: center;
 
-  @media screen and (max-width: $medium) {
-    display: block;
-    text-align: center;
+  @media screen and (min-width: $medium) {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
   }
 
 }
 
 .intro-home-description {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
+  width: 100%;
+  
 
   p { 
     margin-top: 20px;
@@ -21,21 +21,24 @@
 
   h1 {
     color: $c-blue;
+    font-size: 25px;
   }
 
-  @media screen and (max-width: $large) {
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: column;
     width: 50%;
   }
-  
-  @media screen and (max-width: $medium) {
-    width: 100%;
-  }
 
+  @media screen and (min-width: $large) {
+    width: 45%;
+  }
+  
 }
 
 .intro-home-buttons {
   display: inline-block;
-  width: 40%;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -43,49 +46,72 @@
   }
 
   li {
-    margin-top: 23px;
+    margin-top: 10px;
+    @media screen and (min-width: $medium) {
+      margin-top: 23px;
+    }
   }
 
   a {
-    font: 700 17px $headings-font;
+    padding: 10px 20px;
+    font: 700 14px $headings-font;
     display: block;
-    padding: 20px;
+
+    @media screen and (min-width: $small) {
+     font-size: 15px;
+    }
+
+    @media screen and (min-width: $medium) {
+      font-size: 17px;
+      padding: 20px;
+    }
   }
-  
-  @media screen and (max-width: $large) {
+
+  .button-border-blue, .button-orange {
+    background-size: 10px;
+    background-position: right 5px center;
+
+    @media screen and (min-width: $small) {
+      background-size: 15px;
+    }
+
+    @media screen and (min-width: $large) {
+      background-position: right 15px center;
+    }
+
+  }
+
+  @media screen and (min-width: $medium) {
     width: 50%;
-
-    li {
-      margin-top: 10px;
-    }
-
-    a {
-      padding: 10px 20px;
-    }
   }
 
-  @media screen and (max-width: $medium) {
-    width: 100%;
+  @media screen and (min-width: $large) {
+    width: 40%;
   }
+
 }
 
 .photo-intro-bae {
-  margin-top: 250px;
-  width: 400px;
-  position: absolute;
+  display: none;
 
-  @media screen and (max-width: $x-large) {
-    width: 350px;
-    margin-top: 200px;
-  }
-
-  @media screen and (max-width: $large) {
+  @media screen and (min-width: $medium) {
+    display: block;
     position: relative;
     margin-top: 50px;
     width: 300px;
   }
 
-  @media screen and (max-width: $medium) {
-    display: none;
+  @media screen and (min-width: $large) {
+    width: 100%;
   }
+
+  @media screen and (min-width: $x-large) {
+    margin-top: 250px;
+    width: 400px;
+    position: absolute;
+  }
+
+  
+
+
 }

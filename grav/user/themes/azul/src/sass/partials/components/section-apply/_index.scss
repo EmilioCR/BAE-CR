@@ -57,68 +57,109 @@
 
 .info-pre-apply {
   padding: 60px 0;
-  width: 600px;
-  margin: 0 auto;
   text-align: center;
-
-  h2 {
+  h2{
     color: $c-blue;
-    font-size: 25px;
+    margin-bottom: 20px;
   }
 
-  p {
-    color: $c-darkgray;
-    margin-top: 2%;
-    font-weight: 700;
+  p{
+    color: #7a7a7a;
+    margin-top: 20px;
+    padding: 0 10px;
+    @media screen and (min-width: $large) {
+      width: 410px;
+      display: block;
+      margin: 0 auto;
+    }
   }
-
 }
 
-.apply {
-  margin-bottom: 20%;;
+.space {
+  @media screen and (min-width: $large) {
+    margin-right: 40px;
+  }
+}
+
+.apply{
+  margin-bottom: 20px;
 }
 
 .pre-apply, .apply {
-  display: flex;
+  padding: 0px 15px 0 15px;
+  // display: flex;
+  @media screen and (min-width: $large) {
+    display: flex;
+  }
 
   h2 { 
     color: #7a7a7a;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    @media screen and (min-width: $small) {
+      font-size: 22px;
+    }
+    @media screen and (min-width: $x-large) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   p {
     padding: 10px 0 15px 0;
+
+    font-size: 15px;
+    @media screen and (min-width: $x-large) {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+  }
+
+  a{
+    font: 700 13px $headings-font;
+    padding-left: 10px;
+    @media screen and (min-width: $small) {
+      font-size: 17px;
+    }
     font-weight: 700;
     color: $c-darkgray;
   }
 
-  a {
-    font: 700 16px $headings-font;
-  }
 
 }    
 .number{
   float: left;
   position: relative;
+  right: 6px;
   bottom: 40px;
   font-family: $headings-font;
   font-size: 33px;
   color: $c-darkgray;
 }
 .pre-apply-step, .apply-step {
-  margin: 0 20px;
+  margin-bottom: 60px;
   padding: 60px 40px 60px 41px;
   text-align: center;
   -webkit-box-shadow: 0px 8px 15px -5px #a19d9d;
   -moz-box-shadow: 0px 8px 15px -5px #a19d9d;
   box-shadow: 0px 8px 15px -5px #a19d9d;
+  @media screen and (min-width: $large) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media screen and (min-width: $x-large) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
 }
 
+
 .section-go-category {
+
   color: #fff;
   margin-top: 9%;
   padding: 20px;
+
   @media screen and (min-width: $large) {
     padding: 7% 0;
     display: flex;
@@ -126,6 +167,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   @media screen and (min-width: $large) {
     max-width: 90%;
     margin: 0 auto;
@@ -136,15 +178,15 @@
   }
 
   h3 {
+
     font-size: 20px;
     color: #fff;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+
     @media screen and (min-width: $large) {
       font-size: 30px;
       margin-bottom: 0;
-    }
-    @media screen and (min-width: $large) {
-      padding-right: 20px;
+
     }
   }
 
@@ -153,9 +195,10 @@
     padding: 10px 44px 10px 25px;
     font-weight: bold;
     white-space: nowrap;
+
     @media screen and (min-width: $medium) {
       font-size: 20px;
       padding: 13px 50px;
     }
-  }  
+  } 
 }
