@@ -1,12 +1,13 @@
 .intro-bae {
   display: block;
-  padding: 80px 0;
+  padding: 20px;
   text-align: center;
 
   @media screen and (min-width: $medium) {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    padding: 80px 0;
   }
 
 }
@@ -17,6 +18,10 @@
 
   p { 
     margin-top: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: $medium) {
+      margin-top: 20px;
+    }
   }
 
   h1 {
@@ -110,8 +115,4 @@
     width: 400px;
     position: absolute;
   }
-
-  
-
-
 }
