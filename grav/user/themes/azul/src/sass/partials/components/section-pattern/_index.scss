@@ -39,8 +39,13 @@
 }
 
 .section-pattern-lightblue {
-  background: url(../img/pattern-white.svg) no-repeat right $c-lightblue;
-  background-size: contain;
+  background: url(../img/pattern-white-responsive.svg) no-repeat right $c-lightblue;
+  background-size: cover;
+  
+  @media screen and (min-width: $x-large) {
+    background-size: contain;
+    background: url(../img/pattern-white.svg) no-repeat right $c-lightblue;
+  }
 }
 
 .section-pattern-blue {
@@ -50,15 +55,6 @@
 .section-pattern-lightgray {
   background: url(../img/pattern-white.svg) no-repeat right $c-lightgray;
   border-left: 20px solid $c-yellow;
-  @media screen and (min-width: $medium) {
-    border-left: 30px solid $c-yellow;
-  }
-   @media screen and (min-width: $large) {
-    border-left: 30px solid $c-yellow;
-  }
-  @media screen and (min-width: $x-large) {
-    border-left: 30px solid $c-yellow;
-  }
 }
 
 .section-pattern-lightgray-repeat {
