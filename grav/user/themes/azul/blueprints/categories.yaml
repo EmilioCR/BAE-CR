@@ -101,11 +101,11 @@ form:
 
             header.steps_signup:
               type: section
-              title: 1. Inscripción
+              title: Primer Paso
               underline: false
             header.steps_signup_enable:
               type: toggle
-              label: Activar Inscripción
+              label: Activar o Desactivar paso
               highlight: 1
               options:
                   1: Sí
@@ -143,11 +143,11 @@ form:
 
             header.steps_diagnose:
               type: section
-              title: 2. Diagnóstico inicial
+              title: Segundo Paso
               underline: false
             header.steps_diagnose_enable:
               type: toggle
-              label: Activar Diagnóstico Inicial
+              label: Activar o Desactivar paso
               highlight: 1
               options:
                   1: Sí
@@ -185,11 +185,11 @@ form:
 
             header.steps_plan:
               type: section
-              title: 3. Plan de trabajo
+              title: Tercer Paso
               underline: false
             header.steps_plan_enable:
               type: toggle
-              label: Activar Plan de Trabajo
+              label: Activar o Desactivar paso
               highlight: 1
               options:
                   1: Sí
@@ -227,11 +227,11 @@ form:
 
             header.steps_report:
               type: section
-              title: 4. Informe Final
+              title: Cuarto Paso
               underline: false
             header.steps_report_enable:
               type: toggle
-              label: Activar Informe Final
+              label: Activar o Desactivar paso
               highlight: 1
               options:
                   1: Sí
@@ -268,11 +268,11 @@ form:
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
             header.steps_manual:
               type: section
-              title: 5. Manual de Procedimiento
+              title: Quinto Paso
               underline: false
             header.steps_manual_enable:
               type: toggle
-              label: Activar Manual de Procedimiento
+              label: Activar o Desactivar paso
               highlight: 1
               options:
                 1: Sí
