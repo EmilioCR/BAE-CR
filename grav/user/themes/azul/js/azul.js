@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
-
+    $(function(){
+        $('.fb-page').rwd();
+    });
     // get the action filter option item on page load
     var $filterType = $('#content li.active a').attr('class');
     
