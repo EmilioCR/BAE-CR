@@ -41,57 +41,8 @@
 .list-categories {
   padding: 20px 0;
   border-bottom: 5px solid $c-orange;
-
-  h5 {
-    font-size: 20px;
-    color: #929292;
-    display: block;
-    margin: 20px 10px;
-    @media screen and (min-width: $x-large) {
-      width: 30%;
-      display: inline-block;
-    }
-  }
-
-  ul {
-    display: block;
-    text-align: center;
-    @media screen and (min-width: $x-large) {
-      display: inline-block;
-    }
-  }
-
-  li {
-    display: inline-block;
-    margin: 10px;
-    @media screen and (min-width: $medium) {
-      list-style: none;
-      display: inline-block;
-      margin: 20px;
-  
-      &:hover {
-        background-color: $c-lightblue;
-      }
-    }
-    
-
-  }
-
-  a {
-    text-decoration: none;
-    color: $c-blue;
-    font: 700 14px $headings-font;
-  }
-
 }
 
-.filter-categories-container {
-  @media screen and (min-width: $x-large) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
 
 /*-----nodo-----*/
 
@@ -264,4 +215,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }  
+}
+
+.step-item {
+  a:hover {
+    background-color: $c-orange;
+  }
 }
