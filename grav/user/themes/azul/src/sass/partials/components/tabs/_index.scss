@@ -114,6 +114,7 @@
     width: 100%;
     @media screen and (min-width: $medium) {
       width: 300px;
+      height: 300px;
     }
     @media screen and (min-width: $large) {
       width: 400px;

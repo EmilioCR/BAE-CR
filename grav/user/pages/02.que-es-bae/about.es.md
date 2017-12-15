@@ -1,5 +1,5 @@
 ---
-title: '¿Qué es BAE?'
+title: '¿Qué es PBAE?'
 about_title: '¿Qué es Programa Bandera Azul Ecológica?'
 about_text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica."
 about_image: flag.png
@@ -146,37 +146,37 @@ director_img:
         type: image/jpeg
         size: 18190
         path: user/pages/02.que-es-bae/DarnerMora.jpg
-achieve_third_image:
-    user/pages/02.que-es-bae/AtractivoTuristico.jpg:
-        name: AtractivoTuristico.jpg
-        type: image/jpeg
-        size: 127413
-        path: user/pages/02.que-es-bae/AtractivoTuristico.jpg
-text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica. "
-achieve_first_image:
-    user/pages/02.que-es-bae/AtractivoTuristico.jpg:
-        name: AtractivoTuristico.jpg
-        type: image/jpeg
-        size: 127413
-        path: user/pages/02.que-es-bae/AtractivoTuristico.jpg
 achieve_second_image:
-    user/pages/02.que-es-bae/AtractivoTuristico.jpg:
-        name: AtractivoTuristico.jpg
+    user/pages/02.que-es-bae/IMG-20170623-WA0009.jpg:
+        name: IMG-20170623-WA0009.jpg
         type: image/jpeg
-        size: 127413
-        path: user/pages/02.que-es-bae/AtractivoTuristico.jpg
-achieve_fourth_image:
-    user/pages/02.que-es-bae/AtractivoTuristico.jpg:
-        name: AtractivoTuristico.jpg
-        type: image/jpeg
-        size: 127413
-        path: user/pages/02.que-es-bae/AtractivoTuristico.jpg
+        size: 167486
+        path: user/pages/02.que-es-bae/IMG-20170623-WA0009.jpg
+text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica. "
 director_image:
     user/pages/02.que-es-bae/Rectangle.jpg:
         name: Rectangle.jpg
         type: image/jpeg
         size: 1024
         path: user/pages/02.que-es-bae/Rectangle.jpg
+achieve_fourth_image:
+    user/pages/02.que-es-bae/image.jpg:
+        name: image.jpg
+        type: image/jpeg
+        size: 234678
+        path: user/pages/02.que-es-bae/image.jpg
+achieve_third_image:
+    user/pages/02.que-es-bae/image.jpg:
+        name: image.jpg
+        type: image/jpeg
+        size: 234678
+        path: user/pages/02.que-es-bae/image.jpg
+achieve_first_image:
+    user/pages/02.que-es-bae/image.jpg:
+        name: image.jpg
+        type: image/jpeg
+        size: 234678
+        path: user/pages/02.que-es-bae/image.jpg
 ---
 
 <p>La Bandera Azul Ecol&oacute;gica es un galard&oacute;n o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo voluntario en la b&uacute;squeda de la conservaci&oacute;n y el desarrollo, en concordancia con la protecci&oacute;n de los recursos naturales, la implementaci&oacute;n de acciones para enfrentar el cambio clim&aacute;tico, la b&uacute;squeda de mejores condiciones higi&eacute;nico sanitarias y la mejor&iacute;a de la salud p&uacute;blica de los habitantes de Costa Rica.</p>

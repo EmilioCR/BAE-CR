@@ -73,24 +73,10 @@ form:
                         - .png
                         - .jpg
 
-            upload_section:
-              type: section
-              title: Imágenes
-              underline: true
-
-            uploads:
-              type: pagemedia
-              label: Logo
-              multiple: false
-              destination: '@self'
-              accept:
-                - .png
-                - .jpg
-
-            team:
-              type: section
-              title: Equipo
-              underline: true
+        team:
+          type: tab
+          title: Equipo
+          fields:
 
             header.team_title:
               type: text
@@ -150,7 +136,7 @@ form:
 
         tabs_section:
           type: tab
-          title: Achievements
+          title: Tabs
 
           fields:
 
@@ -165,6 +151,15 @@ form:
               style: vertical
               label: Título
               default: Fortalecimiento
+
+            header.achieve_first_image:
+              type: file
+              label: Imagen del primer hecho relevante
+              destination: 'self@'
+              limit: 1
+              filesize: 1
+              accept:
+                - '*'
 
             header.achieve_first_content:
               label: Texto
@@ -184,6 +179,15 @@ form:
               label: Título
               default: Mejora del agua
 
+            header.achieve_second_image:
+              type: file
+              label: Imagen del segundo hecho relevante
+              destination: 'self@'
+              limit: 1
+              filesize: 1
+              accept:
+                - '*'
+
             header.achieve_second_content:
               label: Texto
               type: editor
@@ -202,6 +206,15 @@ form:
               label: Título
               default: Atractivo turístico
 
+            header.achieve_third_image:
+              type: file
+              label: Imagen del tercer hecho relevante
+              destination: 'self@'
+              limit: 1
+              filesize: 1
+              accept:
+                - '*'
+
             header.achieve_third_content:
               label: Texto
               type: editor
@@ -219,6 +232,15 @@ form:
               style: vertical
               label: Título
               default: Internacionalización
+
+            header.achieve_fourth_image:
+              type: file
+              label: Imagen del tercer hecho relevante
+              destination: 'self@'
+              limit: 1
+              filesize: 1
+              accept:
+                - '*'
 
             header.achieve_fourth_content:
               label: Texto
