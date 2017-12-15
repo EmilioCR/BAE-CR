@@ -77,6 +77,10 @@
   width: calc(100% * (1/2));
   margin-bottom: 50px;
 
+  img {
+    width: 35%;
+  }
+
 
   @media screen and (min-width: $medium) {
     width: calc(100% * (1/3));
