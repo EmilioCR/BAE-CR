@@ -9,6 +9,5 @@ bgImage:
         type: image/png
         size: 154555
         path: user/pages/07.contacto/equipo.png
-title: Contacto
 ---
 

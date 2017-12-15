@@ -1,4 +1,5 @@
 ---
+title: '¿Qué es BAE?'
 about_title: '¿Qué es Programa Bandera Azul Ecológica?'
 about_text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica."
 about_image: flag.png
@@ -151,7 +152,6 @@ achieve_third_image:
         type: image/jpeg
         size: 127413
         path: user/pages/02.que-es-bae/AtractivoTuristico.jpg
-title: '¿Qué es BAE?'
 text: "La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo\r\nvoluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos \r\nnaturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones \r\nhigiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica. "
 achieve_first_image:
     user/pages/02.que-es-bae/AtractivoTuristico.jpg:
@@ -179,7 +179,4 @@ director_image:
         path: user/pages/02.que-es-bae/Rectangle.jpg
 ---
 
-La Bandera Azul Ecológica es un galardón o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo
-voluntario en la búsqueda de la conservación y el desarrollo, en concordancia con la protección de los recursos 
-naturales, la implementación de acciones para enfrentar el cambio climático, la búsqueda de mejores condiciones 
-higiénico sanitarias y la mejoría de la salud pública de los habitantes de Costa Rica. 
+<p>La Bandera Azul Ecol&oacute;gica es un galard&oacute;n o distintivo que se otorga anualmente, el cual premia el esfuerzo y el trabajo voluntario en la b&uacute;squeda de la conservaci&oacute;n y el desarrollo, en concordancia con la protecci&oacute;n de los recursos naturales, la implementaci&oacute;n de acciones para enfrentar el cambio clim&aacute;tico, la b&uacute;squeda de mejores condiciones higi&eacute;nico sanitarias y la mejor&iacute;a de la salud p&uacute;blica de los habitantes de Costa Rica.</p>
