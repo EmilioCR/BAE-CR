@@ -96,33 +96,20 @@ jQuery(document).ready(function($){
                 // });
 
                 tabsSections.css({
-                    'position': 'absolute',
-                    'opacity': 0
+                    'display': 'none'
                 });
 
                 if(!tabsContent.find('.active-tab').length) {
                     tabsSectionsFirst.css({
-                        'opacity': 1
+                        'display': 'block'
                     });
                 } else {
                     tabsContent.find('.active-tab').css({
-                        'opacity': 1
+                        'display': 'block'
                     });
                 }
 
             }
-
-            $(window).resize(function() {
-
-                // Retrieve height of active section
-                var activeHeight = tabsContent.find('.active-tab').outerHeight();
-
-                // Set height of container based on active section
-                tabsContent.css({height: activeHeight});
-
-            });
-
-            $(window).trigger('resize');
 
             /**
              * Navigate through tabs on click
@@ -139,16 +126,15 @@ jQuery(document).ready(function($){
                 tabsSections.removeClass('active-tab');
 
                 if(settings.inlineStyles === true) {
-                    tabsSections.css({'opacity': 0});
+                    tabsSections.css({'display': 'none'});
                 }
 
                 // Add active class to tab item
                 $(this).addClass('active-tab');
 
                 // Get height of new tab
-                var newSection = tabsSections.eq($(this).index()),
-                    newHeight = newSection.outerHeight();
-                    newSection.css({opacity : 1})
+                var newSection = tabsSections.eq($(this).index());
+                    newSection.css({'display': 'block'});
                     newSection.addClass('active-tab');
 
 
