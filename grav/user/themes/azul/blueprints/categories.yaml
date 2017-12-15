@@ -266,7 +266,47 @@ form:
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-
+            header.steps_manual:
+              type: section
+              title: 5. Manual de Procedimiento
+              underline: false
+            header.steps_manual_enable:
+              type: toggle
+              label: Activar Manual de Procedimiento
+              highlight: 1
+              options:
+                1: Sí
+                0: No
+              validate:
+                type:
+                  bool
+            header.steps_manual_title:
+              label: Título
+              type: type
+              default: Manual de Procedimiento
+            header.steps_manual_description:
+              label: Descripción (2 renglones)
+              type: textarea
+            header.steps_manual_date_start:
+              label: Fecha inicial
+              type: text
+              placeholder: ej. 15 de enero
+            header.steps_manual_date_end:
+              label: Fecha cierre
+              type: text
+              placeholder: ej. 20 de marzo
+            header.steps_manual_file:
+              type: file
+              label: Documento adjunto de este paso
+              help: Solamente PDF, word o excel
+              multiple: false
+              destination: '@self'
+              accept:
+                - application/pdf
+                - application/msword
+                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                - application/vnd.ms-excel
+                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet            
         coordinator:
           type: tab
           title: Coordinador
