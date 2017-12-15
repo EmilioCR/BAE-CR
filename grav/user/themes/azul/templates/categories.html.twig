@@ -122,6 +122,21 @@
 							{% set sum = sum + 1 %}
 						</div>
 					{% endif %}
+					{% if header.steps_manual_enable == 1 %}
+						<div class="step-item">
+							<span class="step-number">{{sum}}</span>
+							<h3>{{header.steps_manual_title}}</h3>
+							<p class="step-dates">{{header.steps_manual_date_start}} <br>
+							{{header.steps_manual_date_end}}</p>
+							<div>
+								<p>{{header.steps_manual_description}}</p>
+								{% if header.steps_manual_file %}
+									<a href="{{(header.steps_manual_file|first).path}}" download="" class="button button-blue">Descargar</a>
+								{% endif %}
+							</div>
+							{% set sum = sum + 1 %}
+						</div>
+					{% endif %}
 				</div>
 			</div>
 		</div>
