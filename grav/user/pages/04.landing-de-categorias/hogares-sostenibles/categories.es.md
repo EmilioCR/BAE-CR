@@ -1,5 +1,7 @@
 ---
 title: 'Hogares Sostenibles'
+media_order: 'logo_hogares sostenibles.png'
+logo_image: 'logo_hogares sostenibles.png'
 commitee_type: community
 steps_signup_enable: false
 steps_signup_title: Inscripción
@@ -9,5 +11,6 @@ steps_plan_enable: false
 steps_plan_title: 'Plan de trabajo'
 steps_report_enable: false
 steps_report_title: 'Informe final'
+steps_manual_title: 'Manual de Procedimiento'
 ---
 

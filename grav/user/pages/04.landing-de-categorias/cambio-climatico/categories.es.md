@@ -1,6 +1,6 @@
 ---
 title: 'Cambio Climático'
-description_category: 'Incentivar a las organizaciones a tener un desarrollo con criterios de sostenibilidad socioambiental, minimizando el riesgo porvocado por efectos del cambio climático, mediante una gestiòn ambiental integral, que genere un efecto multiplicador en los diferentes sectores del paìs y que les permita ser competitivas.'
+media_order: 'LOGO BANDERA AZUL CAMBIO CLIMATICO.png'
 logo_image: 'LOGO BANDERA AZUL CAMBIO CLIMATICO.png'
 commitee_type: community
 steps_signup_enable: false
@@ -18,6 +18,8 @@ steps_report_title: 'Informe final'
 steps_report_description: 'Únicamente se reciben informes según el machote  oficial y en formato pdf'
 steps_report_date_start: '1 de enero'
 steps_report_date_end: '15 de febrero'
+steps_manual_title: 'Manual de Procedimiento'
+description_category: 'Incentivar a las organizaciones a tener un desarrollo con criterios de sostenibilidad socioambiental, minimizando el riesgo porvocado por efectos del cambio climático, mediante una gestiòn ambiental integral, que genere un efecto multiplicador en los diferentes sectores del paìs y que les permita ser competitivas.'
 coordinator_name: 'Carlos Fallas Saborío'
 coordinator_org: 'Instituto Costarricense de Electricidad'
 coordinator_email: cambioclimatico@cr.banderaazulecologica.org
