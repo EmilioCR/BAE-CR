@@ -121,9 +121,12 @@
   border-left: 30px solid $c-yellow;
 }
 .section-pattern-olas {
-    background-size: cover;
+    background-size: 100% !important;
     background: url(../img/pattern-olas.svg);
     border-left: 0;
+    @media screen and (min-width: $large) {
+      background-size: cover; 
+    }
 }
 .section-pattern-category-blue {
   background: url(../img/pattern-top-white.svg) no-repeat right, url(../img/pattern-bottom-white.svg) no-repeat left bottom $c-blue;

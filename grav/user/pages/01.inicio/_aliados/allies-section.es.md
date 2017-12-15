@@ -1,5 +1,10 @@
 ---
 title: Aliados
+content:
+    items: '@self.modular'
+    order:
+        by: date
+        dir: desc
 allies:
     -
         allie_item:

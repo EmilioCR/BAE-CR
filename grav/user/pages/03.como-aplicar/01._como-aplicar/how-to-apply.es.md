@@ -1,5 +1,10 @@
 ---
 title: '¿Cómo Aplicar?'
+content:
+    items: '@self.modular'
+    order:
+        by: date
+        dir: desc
 description: 'Para aplicar a Bandera Azul usted tiene que cumplir con un set de requisitos, para esto sigue los siguientes pasos'
 pre_apply_content: "Asegurese de cumplir con estos 2 requisitos para poder aplicar\r\n correctamente a Bandera Azul."
 pre_apply_category_title: 'Descubra su Categoría'
