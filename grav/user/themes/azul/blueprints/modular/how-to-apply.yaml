@@ -96,11 +96,13 @@ form:
               type: textarea
               label: Texto
             header.pre_apply_file:
-              type: pagemedia
-              multiple: false
-              description: '@self'
+              type: file
+              label: Adjuntar documento de 'Como conformar el comite' para descargar
+              destination: 'self@'
+              limit: 1
+              filesize: 1
               accept:
-                - .pdf
+                  - '*'
 
         apply:
           type: tab
