@@ -28,7 +28,7 @@ form:
 
             content:
                 type: title
-                label: Organizaciones que la conforman
+                label: Comités que pueden participar
 
             header.description_category:
               type: markdown
