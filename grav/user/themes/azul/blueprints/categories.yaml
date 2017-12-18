@@ -140,6 +140,9 @@ form:
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            header.steps_signup_url:
+              type: url
+              label: Agregue el link para redireccionar al formulario
 
             header.steps_diagnose:
               type: section
@@ -182,6 +185,9 @@ form:
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            header.steps_diagnose_url:
+              type: url
+              label: Agregue el link para redireccionar al formulario
 
             header.steps_plan:
               type: section
@@ -224,6 +230,9 @@ form:
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            header.steps_plan_url:
+              type: url
+              label: Agregue el link para redireccionar al formulario
 
             header.steps_report:
               type: section
@@ -266,6 +275,10 @@ form:
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
                 - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            header.steps_report_url:
+              type: url
+              label: Agregue el link para redireccionar al formulario
+
             header.steps_manual:
               type: section
               title: Quinto Paso
@@ -306,7 +319,11 @@ form:
                 - application/msword
                 - application/vnd.openxmlformats-officedocument.wordprocessingml.document
                 - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet            
+                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+            header.steps_manual_url:
+              type: url
+              label: Agregue el link para redireccionar al formulario
+
         coordinator:
           type: tab
           title: Coordinador

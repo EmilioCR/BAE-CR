@@ -1,6 +1,5 @@
 ---
 title: Playas
-description_category: 'Establecer un incentivo para promover la organización de comités locales que involucren la participación de líderes de la sociedad civil (hoteleros, cámaras locales de turismo, asociaciones de desarrollo, representantes de la iglesia, operadores de acueductos rurales y otros), con el afán de desarrollar sus zonas en concordancia con la protección de las playas.'
 logo_image: logo_playas.png
 commitee_type: community
 require_list:
@@ -30,6 +29,10 @@ steps_report_title: 'Informe final'
 steps_report_description: 'Para inscribirse debe descargar, completar el siguiente archivo y enviar al correo electrónico oficial de la categoría.'
 steps_report_date_start: '15 de noviembre '
 steps_report_date_end: '15 de diciembre'
+steps_manual_enable: true
+steps_manual_title: 'Manual de Procedimiento'
+steps_manual_url: 'https://github.com/EmilioCR/BAE-CR'
+description_category: 'Establecer un incentivo para promover la organización de comités locales que involucren la participación de líderes de la sociedad civil (hoteleros, cámaras locales de turismo, asociaciones de desarrollo, representantes de la iglesia, operadores de acueductos rurales y otros), con el afán de desarrollar sus zonas en concordancia con la protección de las playas.'
 coordinator_picture: 'Sergio Bolaños.jpg'
 coordinator_name: 'Virgilio Espinoza'
 coordinator_org: ICT
