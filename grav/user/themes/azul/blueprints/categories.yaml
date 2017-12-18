@@ -135,11 +135,13 @@ form:
               multiple: false
               destination: '@self'
               accept:
-                - application/pdf
-                - application/msword
-                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xml
+                - .ppt
+                - .pptx
             header.steps_signup_url:
               type: url
               label: Agregue el link para redireccionar al formulario
@@ -180,11 +182,13 @@ form:
               multiple: false
               destination: '@self'
               accept:
-                - application/pdf
-                - application/msword
-                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xml
+                - .ppt
+                - .pptx
             header.steps_diagnose_url:
               type: url
               label: Agregue el link para redireccionar al formulario
@@ -225,11 +229,13 @@ form:
               multiple: false
               destination: '@self'
               accept:
-                - application/pdf
-                - application/msword
-                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xml
+                - .ppt
+                - .pptx
             header.steps_plan_url:
               type: url
               label: Agregue el link para redireccionar al formulario
@@ -270,11 +276,13 @@ form:
               multiple: false
               destination: '@self'
               accept:
-                - application/pdf
-                - application/msword
-                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xml
+                - .ppt
+                - .pptx
             header.steps_report_url:
               type: url
               label: Agregue el link para redireccionar al formulario
@@ -315,11 +323,13 @@ form:
               multiple: false
               destination: '@self'
               accept:
-                - application/pdf
-                - application/msword
-                - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                - application/vnd.ms-excel
-                - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                - .pdf
+                - .doc
+                - .docx
+                - .xls
+                - .xml
+                - .ppt
+                - .pptx
             header.steps_manual_url:
               type: url
               label: Agregue el link para redireccionar al formulario
@@ -397,8 +407,10 @@ form:
                   multiple: false
                   destination: '@self'
                   accept:
-                    - application/pdf
-                    - application/msword
-                    - application/vnd.openxmlformats-officedocument.wordprocessingml.document
-                    - application/vnd.ms-excel
-                    - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                    - .pdf
+                    - .doc
+                    - .docx
+                    - .xls
+                    - .xml
+                    - .ppt
+                    - .pptx   
