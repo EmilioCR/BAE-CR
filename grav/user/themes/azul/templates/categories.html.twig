@@ -71,7 +71,7 @@
 							<div>	
 								<p>{{header.steps_signup_description}}</p>
 								{% if header.steps_signup_file %}
-									<a href="{{(header.steps_signup_file|first).path}}" download="" class="button button-blue">Descargar</a>	
+									<a href="{{ url((header.steps_signup_file|first).path) }}" download class="button button-blue">Descargar</a>	
 								{% endif %}
 								{% if header.steps_signup_url %}
 									<a href="{{header.steps_signup_url}}" class="button button-blue">Formulario</a>
@@ -89,7 +89,7 @@
 							<div>
 								<p> {{header.steps_diagnose_description}} </p>
 								{% if header.steps_diagnose_file %}
-									<a href="{{(header.steps_diagnose_file|first).path}}" download="" class="button button-blue">Descargar</a>
+									<a href="{{ url((header.steps_diagnose_file|first).path) }}" download="" class="button button-blue">Descargar</a>
 								{% endif %} 
 								{% if header.steps_diagnose_url %}
 									<a href="{{header.steps_diagnose_url}}" class="button button-blue"> Formulario</a>
@@ -107,7 +107,7 @@
 							<div>
 								<p>{{header.steps_plan_description}}</p>
 								{% if header.steps_plan_file %}
-									<a href="{{(header.steps_plan_file|first).path}}" download="" class="button button-blue">Descargar</a>
+									<a href="{{ url((header.steps_plan_file|first).path) }}" download="" class="button button-blue">Descargar</a>
 								{% endif %}
 								{% if header.steps_plan_url %}
 									<a href="{{header.steps_plan_url}}" class="button button-blue"> Formulario</a>
@@ -125,7 +125,7 @@
 							<div>
 								<p>{{header.steps_report_description}}</p>
 								{% if header.steps_report_file %}
-									<a href="{{(header.steps_report_file|first).path}}" download="" class="button button-blue">Descargar</a>
+									<a href="{{ url((header.steps_report_file|first).path) }}" download="" class="button button-blue">Descargar</a>
 								{% endif %}
 								{% if header.steps_report_url %}
 									<a href="{{header.steps_report_url}}" class="button button-blue"> Formulario</a>
@@ -143,7 +143,7 @@
 							<div>
 								<p>{{header.steps_manual_description}}</p>
 								{% if header.steps_manual_file %}
-									<a href="{{(header.steps_manual_file|first).path}}" download="" class="button button-blue">Descargar</a>
+									<a href="{{ url((header.steps_manual_file|first).path) }}" download="" class="button button-blue">Descargar</a>
 								{% endif %}
 								{% if header.steps_manual_url %}
 									<a href="{{header.steps_manual_url}}" class="button button-blue"> Formulario</a>
@@ -167,7 +167,7 @@
 						<a href="{{resource.resource_url}}" class="button button-blue">Ver recurso</a>
 					{% endif %}
 					{% if resource.resource_file_upload %}
-						<a href="{{(resource.resource_file_upload|first).path}}" download="" class="button button-blue">Descargar recurso relacionado</a>
+						<a href="{{ url((resource.resource_file_upload|first).path) }}" download="" class="button button-blue">Descargar recurso relacionado</a>
 					{% endif %}
 				</div>
 				{% endfor %}
