@@ -29,7 +29,9 @@ form:
             content:
                 type: title
                 label: Comités que pueden participar
-
+            header.subtitle_comite:
+              type: type
+              label: SubTitulo de Comités
             header.description_category:
               type: markdown
               label: Objetivo principal de la categoria
@@ -78,6 +80,9 @@ form:
               type: section
               title: Lista de requisitos
 
+            header.require_title:
+              type: text
+              label: Titulo
             header.require_list:
               type: list
               label: Agregar requisito
@@ -98,7 +103,9 @@ form:
               label: Instrucciones
               markdown: true
               content: "Si no desea utilizar uno de los siguientes pasos, deje los campos vacíos"
-
+            header.steps_title:
+              type: text
+              label: Titulo
             header.steps_signup:
               type: section
               title: Primer Paso
@@ -378,6 +385,9 @@ form:
                 label: Instrucciones
                 markdown: true
                 content: "Ingrese recursos importantes para esta categoría"
+            header.resources_title:
+              type: text
+              label: Titulo
             header.document_files:
               name: documentos
               type: list
