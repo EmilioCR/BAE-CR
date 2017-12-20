@@ -30,12 +30,14 @@
 							<p>{{ page.header.description_category }}</p>
 						</div>
 						<div class="organizations-list">
-							<h3>Comités que pueden conformar la categoría</h3>
+							{#<h3>Comités que pueden conformar la categoría</h3>#}
+							<h3>{{header.subtitle_comite}}</h3>
 							{{ page.content }}
 						</div>
 						<div class="category-require-list">
 							{% if header.require_list %}
-								<h3>Requisitos</h3>
+								{#<h3>Requisitos</h3>#}
+								<h3>{{header.require_title}}</h3>
 								<ul>
 									{% for requirement in header.require_list %}
 									    <li>{{requirement.require_item}}</li>
@@ -59,7 +61,8 @@
 		</div>
 		<div class="steps">
 			<div class="limiter">
-				<h3>Pasos a seguir:</h3>
+				{#<h3>Pasos a seguir:</h3>#}
+				<h3>{{header.steps_title}}</h3>
 				<div class="container-steps">
 					{% set sum = 1 %}
 					{% if header.steps_signup_enable == 1 %}
@@ -156,9 +159,9 @@
 			</div>
 		</div>
 		<div class="limiter">
-			<h3 class="title-resources" >Recursos relacionados</h3>
+			{#<h3 class="title-resources" >Recursos relacionados</h3>#}
+			<h3 class="title-resources" >{{header.resources_title}}</h3>
 			<div class="resources">
-				{#<h3>Recursos relacionados</h3>#}
 				{% for resource in page.header.document_files %}
 				<div class="resources-item">
 					<h4>{{resource.resource_title}}</h4>

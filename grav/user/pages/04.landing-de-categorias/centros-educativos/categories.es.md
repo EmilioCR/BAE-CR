@@ -17,6 +17,7 @@ steps_report_title: 'Informe Final'
 steps_report_description: 'La fecha de entrega inicia veintiún días antes y finaliza siete días después, del último día de clases'
 steps_manual_title: 'Manual de Procedimiento'
 description_category: 'Promover la transformación constante de la cultura y las prácticas ambientales de la población estudiantil, docente y administrativa de todos los centros educativos en el país, CEN CINAIS, CECUDI y guarderías, incentivando la creatividad y la rigurosidad en la gestión de los impactos ambientales de cada institución.'
+coordinator_picture: 'LOGO BANDERA AZUL CENTROS EDUCATIVOS.png'
 coordinator_name: 'Pablo Zárate Montero Montero'
 coordinator_org: 'Ministerio de Educación Pública'
 coordinator_email: centroseducativos@banderaazulecologica.org

@@ -22,8 +22,11 @@ form:
         successStory:
           type: tab
           title: Casos de Exito
+          
           fields:
-
+            header.title:
+              type: text
+              label: Titulo Principal
             header.main_successStory:
               name: Caso de Exito Principal
               type: section
